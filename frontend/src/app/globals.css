@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fef8fa;
+  --warm: #f6efe3;
+  --foreground: #110c0d;
+  --accent: #c78951;
+  --light-text: #a9a3a4;
+  --text: #5f5a54;
+  --black: #110c0d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Manrope", sans-serif;
+}
+
+.font-sora {
+  font-family: "Sora", sans-serif;
+}
+
+.font-manrope {
+  font-family: "Manrope", sans-serif;
+}
