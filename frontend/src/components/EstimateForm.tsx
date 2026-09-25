@@ -6,28 +6,23 @@ import { useLang } from "@/lib/lang";
 const serviceOptions = [
   {
     id: "4ee3fc5a-6e59-46b3-bc4a-f311c19658f4",
-    en: "Pergola / Patio Cover",
-    es: "Pérgola / Cubierta de Patio",
+    en: "Pergolas Screen Enclosures",
+    es: "Pérgolas y Cerramientos con Mosquitero",
   },
   {
     id: "4b06f424-4b9f-41d0-8bec-fc5e5064b51c",
-    en: "Outdoor Kitchen",
-    es: "Cocina Exterior",
+    en: "Outdoor Kitchens",
+    es: "Cocinas Exteriores",
   },
   {
     id: "02a37216-8de0-4be4-a370-3c083d2a0c18",
-    en: "Decking / Pavers",
-    es: "Decking / Pavers",
+    en: "Concrete Pavers",
+    es: "Pavers de Concreto",
   },
   {
     id: "c131ed6b-06b8-4b55-afbc-d1dc28ea737d",
-    en: "Custom Fencing",
-    es: "Cercas Personalizadas",
-  },
-  {
-    id: "fb8385ff-cd01-4099-93e6-a76c0778a586",
-    en: "Impact Products",
-    es: "Productos de Impacto",
+    en: "Modern Fencing — Wood, Aluminum, PVC",
+    es: "Cercas Modernas — Madera, Aluminio, PVC",
   },
   {
     id: "ed3ec3f5-2d13-4265-b3f3-d0a326961494",
@@ -35,16 +30,22 @@ const serviceOptions = [
     es: "Pisos Epóxicos",
   },
   {
-    id: "c5fe5f95-1da0-4fb1-b4c7-59a06054b084",
-    en: "Mailbox",
-    es: "Buzón",
+    id: "fb8385ff-cd01-4099-93e6-a76c0778a586",
+    en: "Impact Windows Doors",
+    es: "Ventanas y Puertas de Impacto",
   },
   {
-    id: "6b4ab573-9f56-48d1-8c01-bac429f45ff4",
-    en: "Interior Design",
-    es: "Diseño de Interiores",
+    id: "5edb51fe-3486-4782-a706-af2cc1fc3aa5",
+    en: "Accordion Shutters",
+    es: "Persianas Acordeón",
+  },
+  {
+    id: "c5fe5f95-1da0-4fb1-b4c7-59a06054b084",
+    en: "Modern Mailboxes",
+    es: "Buzones Modernos",
   },
 ];
+
 export default function EstimateForm() {
   const { lang, t } = useLang();
 
@@ -85,7 +86,6 @@ export default function EstimateForm() {
 
   function getServiceName(serviceId: string) {
     const service = serviceOptions.find((item) => item.id === serviceId);
-
     return service ? service[lang] : "";
   }
 
@@ -111,9 +111,28 @@ export default function EstimateForm() {
     const formData = new FormData(form);
 
     const fullName = String(formData.get("name") ?? "").trim();
+    const email = String(formData.get("email") ?? "").trim();
     const phone = String(formData.get("phone") ?? "").trim();
     const zipCode = String(formData.get("zipCode") ?? "").trim();
     const projectDetails = String(formData.get("notes") ?? "").trim();
+
+    if (!fullName || !email || !phone || !zipCode) {
+      setError(
+        lang === "es"
+          ? "Completa todos los campos requeridos."
+          : "Please complete all required fields.",
+      );
+      return;
+    }
+
+    if (!email.includes("@")) {
+      setError(
+        lang === "es"
+          ? "Introduce un correo electrónico válido."
+          : "Please enter a valid email address.",
+      );
+      return;
+    }
 
     if (selectedServices.length === 0) {
       setError(
@@ -128,22 +147,20 @@ export default function EstimateForm() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch(
-       "/api/estimate-requests",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            fullName,
-            phone,
-            zipCode,
-            serviceIds: selectedServices,
-            projectDetails: projectDetails || undefined,
-          }),
+      const response = await fetch("/api/estimate-requests", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-      );
+        body: JSON.stringify({
+          fullName,
+          email,
+          phone,
+          zipCode,
+          serviceIds: selectedServices,
+          projectDetails: projectDetails || undefined,
+        }),
+      });
 
       const data = await response.json();
 
@@ -176,61 +193,117 @@ export default function EstimateForm() {
   if (success) {
     return (
       <div className="lg:pt-4">
-        <div className="relative min-h-[520px] overflow-hidden bg-white px-6 py-14 text-center shadow-2xl sm:px-10 sm:py-16">
-          <div className="absolute -right-32 -top-32 h-80 w-80 animate-pulse rounded-full bg-[var(--accent)]/10 blur-3xl" />
+        <div className="relative min-h-[560px] overflow-hidden border border-black/5 bg-white px-6 py-14 text-center shadow-[0_30px_80px_rgba(0,0,0,0.18)] sm:px-10 sm:py-16">
+          <div className="absolute -right-32 -top-32 h-80 w-80 rounded-full bg-[var(--accent)]/10 blur-3xl" />
+          <div className="absolute -bottom-32 -left-32 h-80 w-80 rounded-full bg-[var(--accent)]/5 blur-3xl" />
 
-          <div className="absolute -bottom-32 -left-32 h-80 w-80 animate-pulse rounded-full bg-[var(--accent)]/5 blur-3xl [animation-delay:700ms]" />
+          <div className="absolute left-0 top-0 h-1 w-full bg-[var(--accent)]" />
 
-          <div className="absolute left-0 top-0 h-px w-full overflow-hidden bg-black/5">
-            <div className="h-full w-full origin-left animate-[scale-x_700ms_ease-out] bg-[var(--accent)]" />
-          </div>
+          <div className="relative flex min-h-[450px] flex-col items-center justify-center">
+         <div className="relative">
+ <div className="absolute inset-[-14px] animate-[successPulse_2.5s_ease-in-out_infinite] rounded-full border border-[var(--accent)]/20" />
 
-          <div className="relative flex min-h-[430px] flex-col items-center justify-center">
-            <div className="relative">
-              <div className="absolute inset-[-14px] animate-ping rounded-full border border-[var(--accent)]/20" />
+  <div className="absolute inset-[-7px] rounded-full border border-[var(--accent)]/15" />
 
-              <div className="relative flex h-24 w-24 animate-[successPop_700ms_cubic-bezier(.2,.8,.2,1)] items-center justify-center rounded-full border border-[var(--accent)]/30 bg-[var(--accent)]/10">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--accent)] shadow-lg shadow-[var(--accent)]/20">
-                  <svg
-                    width="30"
-                    height="30"
-                    viewBox="0 0 30 30"
-                    fill="none"
-                    className="animate-[checkDraw_600ms_ease-out_300ms_both]"
-                  >
-                    <path
-                      d="M7 15.5L12.5 21L23 9"
-                      stroke="white"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
+  <div className="relative flex h-24 w-24 animate-[successPop_0.6s_ease-out] items-center justify-center rounded-full border border-[var(--accent)]/30 bg-[var(--accent)]/10">
+    <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--accent)] shadow-xl shadow-[var(--accent)]/20">
+      <svg
+        width="30"
+        height="30"
+        viewBox="0 0 30 30"
+        fill="none"
+        className="animate-[checkAppear_0.5s_ease-out_0.25s_both]"
+        aria-hidden="true"
+      >
+        <path
+          d="M7 15.5L12.5 21L23 9"
+          stroke="white"
+          strokeWidth="2.8"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </div>
+  </div>
 
-            <div className="mt-10 animate-[fadeUp_700ms_ease-out_200ms_both]">
-              <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-[var(--accent)]">
+  <style jsx>{`
+    @keyframes successPop {
+      0% {
+        opacity: 0;
+        transform: scale(0.7);
+      }
+
+      70% {
+        transform: scale(1.06);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes checkAppear {
+      0% {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+
+      70% {
+        opacity: 1;
+        transform: scale(1.12);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes successPulse {
+      0%,
+      100% {
+        transform: scale(0.98);
+        opacity: 0.35;
+      }
+
+      50% {
+        transform: scale(1.10);
+        opacity: 0.75;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .animate-\\[successPulse_2\\.5s_ease-in-out_infinite\\],
+      .animate-\\[successPop_0\\.6s_ease-out\\],
+      .animate-\\[checkAppear_0\\.5s_ease-out_0\\.25s_both\\] {
+        animation: none;
+      }
+    }
+  `}</style>
+</div>
+
+            <div className="mt-10">
+              <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-[var(--accent)]">
                 {lang === "es" ? "Solicitud recibida" : "Request received"}
               </p>
 
-              <h2 className="mt-4 font-sora text-3xl font-semibold tracking-[-0.04em] text-[var(--black)] sm:text-4xl">
+              <h2 className="mt-4 font-sora text-3xl font-semibold leading-tight tracking-[-0.04em] text-[var(--black)] sm:text-4xl">
                 {lang === "es"
                   ? "¡Gracias por tu solicitud!"
                   : "Thank You For Your Submission!"}
               </h2>
 
-              <div className="mx-auto mt-5 h-px w-12 bg-[var(--accent)]" />
+              <div className="mx-auto mt-6 h-px w-14 bg-[var(--accent)]" />
 
-              <p className="mx-auto mt-6 max-w-md text-sm leading-7 text-[var(--text)]">
+              <p className="mx-auto mt-7 max-w-md text-sm leading-7 text-[var(--text)]">
                 {lang === "es"
                   ? "Recibimos la información de tu proyecto. Nuestro equipo se pondrá en contacto contigo pronto para hablar sobre los próximos pasos."
                   : "We received your project information. Our team will be in touch with you shortly to discuss your project and next steps."}
               </p>
             </div>
 
-            <div className="mt-9 animate-[fadeUp_700ms_ease-out_500ms_both]">
+            <div className="mt-9">
               <div className="inline-flex items-center gap-3 border border-black/10 px-5 py-3">
                 <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
 
@@ -242,54 +315,6 @@ export default function EstimateForm() {
               </div>
             </div>
           </div>
-
-          <style jsx>{`
-            @keyframes successPop {
-              0% {
-                opacity: 0;
-                transform: scale(0.5);
-              }
-              70% {
-                opacity: 1;
-                transform: scale(1.08);
-              }
-              100% {
-                opacity: 1;
-                transform: scale(1);
-              }
-            }
-
-            @keyframes checkDraw {
-              0% {
-                opacity: 0;
-                transform: scale(0.6);
-              }
-              100% {
-                opacity: 1;
-                transform: scale(1);
-              }
-            }
-
-            @keyframes fadeUp {
-              0% {
-                opacity: 0;
-                transform: translateY(18px);
-              }
-              100% {
-                opacity: 1;
-                transform: translateY(0);
-              }
-            }
-
-            @keyframes scale-x {
-              0% {
-                transform: scaleX(0);
-              }
-              100% {
-                transform: scaleX(1);
-              }
-            }
-          `}</style>
         </div>
       </div>
     );
@@ -299,53 +324,80 @@ export default function EstimateForm() {
     <div className="lg:pt-4">
       <form
         onSubmit={handleSubmit}
-        className="bg-white p-6 text-[var(--black)] shadow-2xl sm:p-8"
+        className="relative overflow-visible border border-black/5 bg-white p-5 text-[var(--black)] shadow-[0_25px_70px_rgba(0,0,0,0.18)] sm:p-6"
       >
-        <div className="mb-6 flex items-end justify-between gap-3">
+        <div className="absolute left-0 top-0 h-1 w-full bg-[var(--accent)]" />
+
+        <div className="mb-7 flex items-end justify-between gap-4">
           <div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--accent)]">
+            <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[var(--accent)]">
               {t.estimateForm.eyebrow}
             </p>
 
-            <h2 className="mt-2 text-2xl font-semibold">
+            <h2 className="mt-2 font-sora text-2xl font-semibold tracking-[-0.04em] text-[var(--black)] sm:text-3xl">
               {t.estimateForm.title}
             </h2>
           </div>
 
-          <span className="hidden text-xs text-[var(--text)] sm:block">
-            {t.estimateForm.takes}
-          </span>
+          <div className="hidden text-right sm:block">
+            <span className="text-xs text-[var(--text)]">
+              {t.estimateForm.takes}
+            </span>
+          </div>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-2">
-          <label className="block text-xs font-medium text-[var(--text)]">
-            <span className="mb-2 block">{t.estimateForm.name}</span>
+        <div className="mb-7 h-px w-full bg-black/10" />
+
+        <div className="grid gap-5 sm:grid-cols-2">
+          <label className="block">
+            <span className="mb-2 block text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--text)]">
+              {t.estimateForm.name}
+            </span>
 
             <input
               required
               name="name"
               type="text"
               autoComplete="name"
-              className="h-13 w-full rounded-none border border-black/10 bg-white px-4 text-sm text-[var(--black)] outline-none transition placeholder:text-black/40 focus:border-[var(--accent)]"
               placeholder={t.estimateForm.namePlaceholder}
+              className="h-14 w-full rounded-none border border-black/10 bg-[#fffdfb] px-4 text-sm text-[var(--black)] outline-none transition duration-200 placeholder:text-black/35 hover:border-black/20 focus:border-[var(--accent)] focus:bg-white focus:ring-2 focus:ring-[var(--accent)]/10"
             />
           </label>
 
-          <label className="block text-xs font-medium text-[var(--text)]">
-            <span className="mb-2 block">{t.estimateForm.phone}</span>
+          <label className="block">
+            <span className="mb-2 block text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--text)]">
+              Email
+            </span>
+
+            <input
+              required
+              name="email"
+              type="email"
+              autoComplete="email"
+              placeholder="you@example.com"
+              className="h-14 w-full rounded-none border border-black/10 bg-[#fffdfb] px-4 text-sm text-[var(--black)] outline-none transition duration-200 placeholder:text-black/35 hover:border-black/20 focus:border-[var(--accent)] focus:bg-white focus:ring-2 focus:ring-[var(--accent)]/10"
+            />
+          </label>
+
+          <label className="block">
+            <span className="mb-2 block text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--text)]">
+              {t.estimateForm.phone}
+            </span>
 
             <input
               required
               name="phone"
               type="tel"
               autoComplete="tel"
-              className="h-13 w-full rounded-none border border-black/10 bg-white px-4 text-sm text-[var(--black)] outline-none transition placeholder:text-black/40 focus:border-[var(--accent)]"
               placeholder={t.estimateForm.phonePlaceholder}
+              className="h-14 w-full rounded-none border border-black/10 bg-[#fffdfb] px-4 text-sm text-[var(--black)] outline-none transition duration-200 placeholder:text-black/35 hover:border-black/20 focus:border-[var(--accent)] focus:bg-white focus:ring-2 focus:ring-[var(--accent)]/10"
             />
           </label>
 
-          <label className="block text-xs font-medium text-[var(--text)]">
-            <span className="mb-2 block">{t.estimateForm.zip}</span>
+          <label className="block">
+            <span className="mb-2 block text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--text)]">
+              {t.estimateForm.zip}
+            </span>
 
             <input
               required
@@ -354,139 +406,237 @@ export default function EstimateForm() {
               inputMode="numeric"
               maxLength={5}
               autoComplete="postal-code"
-              className="h-13 w-full rounded-none border border-black/10 bg-white px-4 text-sm text-[var(--black)] outline-none transition placeholder:text-black/40 focus:border-[var(--accent)]"
               placeholder={t.estimateForm.zipPlaceholder}
+              className="h-14 w-full rounded-none border border-black/10 bg-[#fffdfb] px-4 text-sm text-[var(--black)] outline-none transition duration-200 placeholder:text-black/35 hover:border-black/20 focus:border-[var(--accent)] focus:bg-white focus:ring-2 focus:ring-[var(--accent)]/10"
             />
           </label>
 
           <div
             ref={dropdownRef}
-            className="relative text-xs font-medium text-[var(--black)]"
+            className="relative sm:col-span-2"
           >
-            <span className="mb-2 block uppercase tracking-[0.12em]">
+            <span className="mb-2 block text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--text)]">
               {t.estimateForm.service}
             </span>
 
-        <button
-  type="button"
-  onMouseDown={(event) => {
-    event.preventDefault();
-    event.stopPropagation();
-    setIsOpen((current) => !current);
-  }}
-  className="flex h-13 w-full cursor-pointer items-center justify-between rounded-none border border-[var(--accent)] bg-white px-4 text-left text-sm font-normal text-[var(--black)] transition hover:bg-[#faf7f4]"
->
-  <span className="truncate">{serviceText}</span>
+            <button
+              type="button"
+              onMouseDown={(event) => {
+                event.preventDefault();
+                event.stopPropagation();
+                setIsOpen((current) => !current);
+              }}
+              className={`flex h-14 w-full cursor-pointer items-center justify-between border bg-[#fffdfb] px-4 text-left text-sm transition duration-200 ${
+                isOpen || selectedServices.length > 0
+                  ? "border-[var(--accent)] ring-2 ring-[var(--accent)]/10"
+                  : "border-black/10 hover:border-black/20"
+              }`}
+            >
+              <span
+                className={
+                  selectedServices.length > 0
+                    ? "truncate text-[var(--black)]"
+                    : "truncate text-black/40"
+                }
+              >
+                {serviceText}
+              </span>
 
-  <svg
-    width="16"
-    height="16"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={`ml-2 shrink-0 transition-transform duration-300 ${
-      isOpen ? "rotate-180" : ""
-    }`}
-  >
-    <path d="m6 9 6 6 6-6" />
-  </svg>
-</button>
-
-{isOpen && (
-  <div
-    className="absolute left-0 right-0 top-full z-[100] border border-black/10 bg-white shadow-2xl"
-    onMouseDown={(event) => event.stopPropagation()}
-  >
-    {serviceOptions.map((service) => {
-      const selected = selectedServices.includes(service.id);
-      const label = service[lang];
-
-      return (
-        <button
-          key={service.id}
-          type="button"
-          onMouseDown={(event) => {
-            event.preventDefault();
-            event.stopPropagation();
-            toggleService(service.id);
-          }}
-          className="flex w-full cursor-pointer items-center gap-3 px-4 py-3 text-left transition hover:bg-[#f7f3ef]"
-        >
-          <span
-            className={`flex h-4 w-4 shrink-0 items-center justify-center border transition-all duration-200 ${
-              selected
-                ? "scale-105 border-[var(--accent)] bg-[var(--accent)]"
-                : "border-black/50 bg-white"
-            }`}
-          >
-            {selected && (
               <svg
-                width="10"
-                height="10"
-                viewBox="0 0 12 12"
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
                 fill="none"
-                stroke="white"
+                stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
+                className={`ml-3 shrink-0 text-[var(--accent)] transition-transform duration-300 ${
+                  isOpen ? "rotate-180" : ""
+                }`}
               >
-                <path d="m2 6 2.5 2.5L10 3" />
+                <path d="m6 9 6 6 6-6" />
               </svg>
-            )}
-          </span>
+            </button>
 
-          <span className="text-[12px] font-bold uppercase leading-4 tracking-[0.04em] text-[var(--black)]">
-            {label}
-          </span>
-        </button>
-      );
-    })}
-  </div>
-)}
+            {isOpen && (
+              <div
+                className="absolute left-0 right-0 top-full z-[100] mt-1 max-h-[360px] overflow-y-auto border border-black/10 bg-white shadow-[0_20px_50px_rgba(0,0,0,0.16)]"
+                onMouseDown={(event) => event.stopPropagation()}
+              >
+                <div className="border-b border-black/5 px-4 py-3">
+                  <p className="text-[9px] font-bold uppercase tracking-[0.18em] text-[var(--text)]">
+                    {lang === "es"
+                      ? "Selecciona uno o más servicios"
+                      : "Select one or more services"}
+                  </p>
+                </div>
+
+                {serviceOptions.map((service) => {
+                  const selected = selectedServices.includes(service.id);
+                  const label = service[lang];
+
+                  return (
+                    <button
+                      key={service.id}
+                      type="button"
+                      onMouseDown={(event) => {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        toggleService(service.id);
+                      }}
+                      className={`flex w-full cursor-pointer items-center gap-4 px-4 py-3.5 text-left transition duration-150 ${
+                        selected
+                          ? "bg-[var(--accent)]/8"
+                          : "hover:bg-[#faf7f4]"
+                      }`}
+                    >
+                      <span
+                        className={`flex h-5 w-5 shrink-0 items-center justify-center border transition-all duration-200 ${
+                          selected
+                            ? "border-[var(--accent)] bg-[var(--accent)]"
+                            : "border-black/25 bg-white"
+                        }`}
+                      >
+                        {selected && (
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                            stroke="white"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="m2 6 2.5 2.5L10 3" />
+                          </svg>
+                        )}
+                      </span>
+
+                      <span className="text-xs font-bold uppercase leading-5 tracking-[0.05em] text-[var(--black)]">
+                        {label}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
 
-          <label className="block text-xs font-medium text-[var(--text)] sm:col-span-2">
-            <span className="mb-2 block">
-              {t.estimateForm.projectDetails}
-            </span>
+          <label className="block sm:col-span-2">
+            <div className="mb-2 flex items-center justify-between">
+              <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[var(--text)]">
+                {t.estimateForm.projectDetails}
+              </span>
+
+              <span className="text-[9px] uppercase tracking-[0.12em] text-black/30">
+                {lang === "es" ? "Opcional" : "Optional"}
+              </span>
+            </div>
 
             <textarea
               name="notes"
-              rows={4}
+              rows={2}
               maxLength={2000}
-              className="min-h-20 w-full resize-none rounded-none border border-black/10 bg-white px-4 py-3 text-sm text-[var(--black)] outline-none transition placeholder:text-black/40 focus:border-[var(--accent)]"
               placeholder={t.estimateForm.projectPlaceholder}
+              className="min-h-[80px] w-full resize-none rounded-none border border-black/10 bg-[#fffdfb] px-4 py-4 text-sm leading-6 text-[var(--black)] outline-none transition duration-200 placeholder:text-black/35 hover:border-black/20 focus:border-[var(--accent)] focus:bg-white focus:ring-2 focus:ring-[var(--accent)]/10"
             />
           </label>
         </div>
 
         {error && (
-          <p className="mt-4 text-sm text-red-600">
-            {error}
-          </p>
+          <div className="mt-5 flex items-start gap-3 border border-red-200 bg-red-50 px-4 py-3">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              className="mt-0.5 shrink-0 text-red-600"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 8v5" />
+              <path d="M12 16h.01" />
+            </svg>
+
+            <p className="text-sm leading-5 text-red-700">{error}</p>
+          </div>
         )}
 
         <button
           type="submit"
           disabled={isSubmitting}
-          className="mt-4 h-13 w-full rounded-none bg-[var(--accent)] px-7 text-xs font-bold uppercase tracking-widest text-white shadow-none transition hover:bg-[#b47745] disabled:cursor-not-allowed disabled:opacity-60"
+          className="group mt-6 flex h-14 w-full cursor-pointer items-center justify-center gap-3 bg-[var(--accent)] px-7 text-xs font-bold uppercase tracking-[0.16em] text-white shadow-lg shadow-[var(--accent)]/15 transition duration-300 hover:bg-[#b47745] hover:shadow-xl hover:shadow-[var(--accent)]/20 disabled:cursor-not-allowed disabled:opacity-60"
         >
-          {isSubmitting
-            ? lang === "es"
-              ? "Enviando..."
-              : "Submitting..."
-            : t.estimateForm.submit}
+          {isSubmitting ? (
+            <>
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                className="animate-spin"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="9"
+                  className="opacity-30"
+                />
+                <path d="M21 12a9 9 0 0 0-9-9" />
+              </svg>
+
+              {lang === "es" ? "Enviando..." : "Submitting..."}
+            </>
+          ) : (
+            <>
+              {t.estimateForm.submit}
+
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="transition-transform duration-300 group-hover:translate-x-1"
+              >
+                <path d="M5 12h14" />
+                <path d="m13 6 6 6-6 6" />
+              </svg>
+            </>
+          )}
         </button>
 
-        <p className="mt-4 text-xs leading-5 text-[var(--text)]">
-          <strong className="text-current">
-            {t.estimateForm.free}
-          </strong>{" "}
-          {t.estimateForm.reimbursement}
-        </p>
+        <div className="mt-5 flex items-start gap-3 border-t border-black/10 pt-5">
+          <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--accent)]/10">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              className="text-[var(--accent)]"
+            >
+              <path d="M12 3 5 6v5c0 4.5 2.9 8.5 7 10 4.1-1.5 7-5.5 7-10V6l-7-3Z" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+          </div>
+
+          <p className="text-xs leading-5 text-[var(--text)]">
+            <strong className="font-semibold text-[var(--black)]">
+              {t.estimateForm.free}
+            </strong>{" "}
+            {t.estimateForm.reimbursement}
+          </p>
+        </div>
       </form>
     </div>
   );

@@ -37,6 +37,7 @@ export async function POST(request: Request) {
     const body = await request.json();
 
     const fullName = String(body.fullName ?? "").trim();
+    const email = String(body.email ?? "").trim();
     const phone = String(body.phone ?? "").trim();
     const zipCode = String(body.zipCode ?? "").trim();
     const projectDetails = String(body.projectDetails ?? "").trim();
@@ -45,11 +46,11 @@ export async function POST(request: Request) {
       ? body.serviceIds.map((value: unknown) => String(value))
       : [];
 
-    if (!fullName || !phone || !zipCode) {
+    if (!fullName || !email || !phone || !zipCode) {
       return NextResponse.json(
         {
           success: false,
-          message: "Name, phone number, and ZIP code are required.",
+          message: "Name, email, phone number, and ZIP code are required.",
         },
         { status: 400 },
       );
@@ -84,6 +85,7 @@ export async function POST(request: Request) {
         .from("estimate_requests")
         .insert({
           full_name: fullName,
+          email,
           phone,
           zip_code: zipCode,
           project_details: projectDetails,

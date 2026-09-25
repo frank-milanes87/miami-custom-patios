@@ -118,7 +118,7 @@ export default function Hero() {
           gap-10
           px-6
           py-12
-          lg:grid-cols-[minmax(0,1fr)_440px]
+          lg:grid-cols-[minmax(0,1fr)_540px]
           lg:px-10
           lg:py-[72px]
         "
@@ -333,7 +333,10 @@ export default function Hero() {
             lg:pt-4
           "
         >
-          <EstimateForm />
+          <div id="estimate">
+      <EstimateForm />
+   </div>
+        
         </div>
       </div>
     </section>

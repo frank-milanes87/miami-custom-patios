@@ -4,7 +4,6 @@ import Services from "@/components/Services";
 import CustomPergolas from "@/components/CustomPergolas";
 import Projects from "@/components/Projects";
 import AboutSouthFlorida from "@/components/AboutSouthFlorida";
-import MoreThanPatios from "@/components/MoreThanPatios";
 import ProjectPartners from "@/components/ProjectPartners";
 import ProcessSection from "@/components/ProcessSection";
 import ReviewsSection from "@/components/ReviewsSection";
@@ -21,7 +20,6 @@ export default function Home() {
       <CustomPergolas />
       <Projects />
       <AboutSouthFlorida />
-      <MoreThanPatios />
       <ProjectPartners />
       <ProcessSection />
       <ReviewsSection />

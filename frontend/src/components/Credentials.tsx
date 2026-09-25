@@ -208,37 +208,50 @@ const credentials = [
 export default function Credentials() {
   const { lang } = useLang();
 
-  return (
-    <section
-      className="border-b border-[#e5e2df] bg-background"
-      aria-label={lang === "es" ? "Credenciales" : "Credentials"}
-    >
-      <div className="mx-auto grid w-full max-w-[1440px] grid-cols-2 lg:grid-cols-5">
-        {credentials.map((item, index) => {
-          const Icon = item.icon;
+return (
+  <section
+    className="border-b border-[#e5e2df] bg-background"
+    aria-label={lang === "es" ? "Credenciales" : "Credentials"}
+  >
+    <div className="mx-auto grid w-full max-w-[1440px] grid-cols-2 lg:grid-cols-5">
+      {credentials.map((item, index) => {
+        const Icon = item.icon;
 
-          return (
-            <div
-              key={item.enTitle}
-              className={`flex min-h-28 items-center gap-3 px-3 py-5 ${
-                index < credentials.length - 1
-                  ? "border-r border-[#e5e2df]"
-                  : ""
-              }`}
-            >
-              <Icon />
+        return (
+          <div
+            key={item.enTitle}
+            className={`
+              flex min-h-28 items-center gap-3 px-3 py-5
+              border-[#e5e2df]
+              ${
+                index === 0
+                  ? "border-r border-b sm:border-b"
+                  : index === 1
+                    ? "border-b sm:border-b"
+                    : index === 2
+                      ? "border-r"
+                      : index === 3
+                        ? "border-b"
+                        : "md:col-span-1 border-t sm:col-span-2 col-span-2 justify-center lg:justify-left"
+              }
+              lg:border-0
+              lg:border-r
+              lg:last:border-r-0
+            `}
+          >
+            <Icon />
 
-              <p className="font-sora text-[10px] font-medium uppercase leading-5 text-[#110c0d] sm:text-xs">
-                {lang === "es" ? item.esTitle : item.enTitle}
-                <br />
-                <span className="font-manrope font-normal text-[var(--text)]">
-                  {lang === "es" ? item.esSubtitle : item.enSubtitle}
-                </span>
-              </p>
-            </div>
-          );
-        })}
-      </div>
-    </section>
-  );
+            <p className="font-sora text-[10px] font-medium uppercase leading-5 text-[#110c0d] sm:text-xs">
+              {lang === "es" ? item.esTitle : item.enTitle}
+              <br />
+              <span className="font-manrope font-normal text-[var(--text)]">
+                {lang === "es" ? item.esSubtitle : item.enSubtitle}
+              </span>
+            </p>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+);
 }

@@ -19,7 +19,7 @@ export default function ProjectPartners() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-[#fef8fa] py-24 sm:py-28 lg:py-36">
+    <section className="relative overflow-hidden bg-[#fef8fa] pb-16 sm:pb-18 lg:pb-24">
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
         <div className="grid border-t border-black/10 lg:grid-cols-2">
           {partners.map((partner, index) => (
