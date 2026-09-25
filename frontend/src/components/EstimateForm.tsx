@@ -129,7 +129,7 @@ export default function EstimateForm() {
 
     try {
       const response = await fetch(
-        `${process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:3001"}/api/estimate-requests`,
+       "/api/estimate-requests",
         {
           method: "POST",
           headers: {
@@ -367,74 +367,85 @@ export default function EstimateForm() {
               {t.estimateForm.service}
             </span>
 
-            <button
-              type="button"
-              onClick={() => setIsOpen((current) => !current)}
-              className="flex h-13 w-full cursor-pointer items-center justify-between rounded-none border border-[var(--accent)] bg-white px-4 text-left text-sm font-normal text-[var(--black)] transition hover:bg-[#faf7f4]"
-            >
-              <span className="truncate">{serviceText}</span>
+        <button
+  type="button"
+  onMouseDown={(event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    setIsOpen((current) => !current);
+  }}
+  className="flex h-13 w-full cursor-pointer items-center justify-between rounded-none border border-[var(--accent)] bg-white px-4 text-left text-sm font-normal text-[var(--black)] transition hover:bg-[#faf7f4]"
+>
+  <span className="truncate">{serviceText}</span>
 
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={`ml-2 shrink-0 transition-transform duration-300 ${
+      isOpen ? "rotate-180" : ""
+    }`}
+  >
+    <path d="m6 9 6 6 6-6" />
+  </svg>
+</button>
+
+{isOpen && (
+  <div
+    className="absolute left-0 right-0 top-full z-[100] border border-black/10 bg-white shadow-2xl"
+    onMouseDown={(event) => event.stopPropagation()}
+  >
+    {serviceOptions.map((service) => {
+      const selected = selectedServices.includes(service.id);
+      const label = service[lang];
+
+      return (
+        <button
+          key={service.id}
+          type="button"
+          onMouseDown={(event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            toggleService(service.id);
+          }}
+          className="flex w-full cursor-pointer items-center gap-3 px-4 py-3 text-left transition hover:bg-[#f7f3ef]"
+        >
+          <span
+            className={`flex h-4 w-4 shrink-0 items-center justify-center border transition-all duration-200 ${
+              selected
+                ? "scale-105 border-[var(--accent)] bg-[var(--accent)]"
+                : "border-black/50 bg-white"
+            }`}
+          >
+            {selected && (
               <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
+                width="10"
+                height="10"
+                viewBox="0 0 12 12"
                 fill="none"
-                stroke="currentColor"
+                stroke="white"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                className={`ml-2 shrink-0 transition-transform duration-300 ${
-                  isOpen ? "rotate-180" : ""
-                }`}
               >
-                <path d="m6 9 6 6 6-6" />
+                <path d="m2 6 2.5 2.5L10 3" />
               </svg>
-            </button>
-
-            {isOpen && (
-              <div className="absolute left-0 right-0 top-full z-50 border border-black/10 bg-white shadow-xl">
-                {serviceOptions.map((service, index) => {
-                  const selected = selectedServices.includes(service.id);
-                  const label = service[lang];
-
-                  return (
-                    <button
-                      key={service.id}
-                      type="button"
-                      onClick={() => toggleService(service.id)}
-                      className="flex w-full cursor-pointer items-center gap-3 px-4 py-2.5 text-left transition hover:bg-[#f7f3ef]"
-                    >
-                      <span
-                        className={`flex h-3.5 w-3.5 shrink-0 items-center justify-center border transition-all duration-200 ${
-                          selected
-                            ? "scale-105 border-[var(--accent)] bg-[var(--accent)]"
-                            : "border-black/50 bg-white"
-                        }`}
-                      >
-                        {selected && (
-                          <svg
-                            width="10"
-                            height="10"
-                            viewBox="0 0 12 12"
-                            fill="none"
-                            stroke="white"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          >
-                            <path d="m2 6 2.5 2.5L10 3" />
-                          </svg>
-                        )}
-                      </span>
-
-                      <span className="text-[12px] font-bold uppercase leading-4 tracking-[0.04em] text-[var(--black)]">
-                        {label}
-                      </span>
-                    </button>
-                  );
-                })}
-              </div>
             )}
+          </span>
+
+          <span className="text-[12px] font-bold uppercase leading-4 tracking-[0.04em] text-[var(--black)]">
+            {label}
+          </span>
+        </button>
+      );
+    })}
+  </div>
+)}
           </div>
 
           <label className="block text-xs font-medium text-[var(--text)] sm:col-span-2">
