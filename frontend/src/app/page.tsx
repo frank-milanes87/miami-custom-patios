@@ -10,6 +10,7 @@ import ReviewsSection from "@/components/ReviewsSection";
 import FaqSection from "@/components/FaqSection";
 import FinalCtaSection from "@/components/FinalCtaSection";
 import ContactSection from "@/components/ContactSection";
+import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <FaqSection />
       <FinalCtaSection />
       <ContactSection />
+      <BackToTop />
     </main>
   );
 }
