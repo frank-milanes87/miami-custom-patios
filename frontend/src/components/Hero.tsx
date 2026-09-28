@@ -120,11 +120,11 @@ export default function Hero() {
           py-12
           lg:grid-cols-[minmax(0,1fr)_540px]
           lg:px-10
-          lg:py-[72px]
+          lg:py-[60px]
         "
       >
         {/* Left Content */}
-        <div className="max-w-3xl pt-8 lg:pt-0">
+        <div className="max-w-3xl">
           {/* Eyebrow */}
           <p
             className="
@@ -145,7 +145,7 @@ export default function Hero() {
               mt-6
               max-w-3xl
               font-sora
-              text-5xl
+              text-4xl
               font-semibold
               uppercase
               leading-[0.98]
@@ -163,7 +163,7 @@ export default function Hero() {
           {/* Description */}
           <p
             className="
-              mt-7
+              mt-4
               max-w-2xl
               font-manrope
               text-base

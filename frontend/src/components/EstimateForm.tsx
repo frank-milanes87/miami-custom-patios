@@ -316,7 +316,7 @@ export default function EstimateForm() {
   }
 
   return (
-    <div className="lg:pt-4">
+    <div>
       <form
         onSubmit={handleSubmit}
         className="relative overflow-visible border border-black/5 bg-white p-5 text-[var(--black)] shadow-[0_25px_70px_rgba(0,0,0,0.18)] sm:p-6"
