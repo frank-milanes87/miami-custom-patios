@@ -2,14 +2,13 @@ import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 
 const allowedServiceIds = new Set([
-  "02a37216-8de0-4be4-a370-3c083d2a0c18",
-  "4b06f424-4b9f-41d0-8bec-fc5e5064b51c",
-  "4ee3fc5a-6e59-46b3-bc4a-f311c19658f4",
-  "6b4ab573-9f56-48d1-8c01-bac429f45ff4",
-  "c131ed6b-06b8-4b55-afbc-d1dc28ea737d",
+  "4ee3fc5a-6e59-46b3-bc4a-f311c19658f4", 
+  "c131ed6b-06b8-4b55-afbc-d1dc28ea737d", 
+  "ed3ec3f5-2d13-4265-b3f3-d0a326961494", 
+  "02a37216-8de0-4be4-a370-3c083d2a0c18", 
+  "fb8385ff-cd01-4099-93e6-a76c0778a586", 
+  "5edb51fe-3486-4782-a706-af2cc1fc3aa5", 
   "c5fe5f95-1da0-4fb1-b4c7-59a06054b084",
-  "ed3ec3f5-2d13-4265-b3f3-d0a326961494",
-  "fb8385ff-cd01-4099-93e6-a76c0778a586",
 ]);
 
 export async function POST(request: Request) {
@@ -114,22 +113,26 @@ export async function POST(request: Request) {
       .from("estimate_request_services")
       .insert(serviceRows);
 
-    if (serviceError) {
-      console.error("Estimate services error:", serviceError);
+if (serviceError) {
+  console.error("Estimate services error:", serviceError);
 
-      await supabase
-        .from("estimate_requests")
-        .delete()
-        .eq("id", estimateRequest.id);
+  await supabase
+    .from("estimate_requests")
+    .delete()
+    .eq("id", estimateRequest.id);
 
-      return NextResponse.json(
-        {
-          success: false,
-          message: "Unable to save selected services.",
-        },
-        { status: 500 },
-      );
-    }
+  return NextResponse.json(
+    {
+      success: false,
+      message: "Unable to save selected services.",
+      error: serviceError.message,
+      code: serviceError.code,
+      details: serviceError.details,
+      hint: serviceError.hint,
+    },
+    { status: 500 },
+  );
+}
 
     return NextResponse.json({
       success: true,

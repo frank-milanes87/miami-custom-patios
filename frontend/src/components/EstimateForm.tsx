@@ -6,23 +6,13 @@ import { useLang } from "@/lib/lang";
 const serviceOptions = [
   {
     id: "4ee3fc5a-6e59-46b3-bc4a-f311c19658f4",
-    en: "Pergolas Screen Enclosures",
+    en: "Pergolas & Screen Enclosures",
     es: "Pérgolas y Cerramientos con Mosquitero",
   },
   {
-    id: "4b06f424-4b9f-41d0-8bec-fc5e5064b51c",
-    en: "Outdoor Kitchens",
-    es: "Cocinas Exteriores",
-  },
-  {
-    id: "02a37216-8de0-4be4-a370-3c083d2a0c18",
-    en: "Concrete Pavers",
-    es: "Pavers de Concreto",
-  },
-  {
     id: "c131ed6b-06b8-4b55-afbc-d1dc28ea737d",
-    en: "Modern Fencing — Wood, Aluminum, PVC",
-    es: "Cercas Modernas — Madera, Aluminio, PVC",
+    en: "Modern Fencing (Wood, Aluminum, PVC)",
+    es: "Cercas Modernas (Madera, Aluminio, PVC)",
   },
   {
     id: "ed3ec3f5-2d13-4265-b3f3-d0a326961494",
@@ -30,8 +20,13 @@ const serviceOptions = [
     es: "Pisos Epóxicos",
   },
   {
+    id: "02a37216-8de0-4be4-a370-3c083d2a0c18",
+    en: "Concrete & Pavers",
+    es: "Concreto y Pavers",
+  },
+  {
     id: "fb8385ff-cd01-4099-93e6-a76c0778a586",
-    en: "Impact Windows Doors",
+    en: "Impact Windows & Doors",
     es: "Ventanas y Puertas de Impacto",
   },
   {
