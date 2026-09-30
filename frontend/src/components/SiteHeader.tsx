@@ -14,10 +14,12 @@ const serviceGroups = [
       {
         en: "Pergolas & Screen Enclosures",
         es: "Pérgolas y Cerramientos con Mosquitero",
+        href: "/services/pergolas-screen-enclosures",
       },
       {
         en: "Motorized Louvered Roofs",
         es: "Techos de Lamas Motorizados",
+        href: "/services",
       },
     ],
   },
@@ -30,14 +32,17 @@ const serviceGroups = [
       {
         en: "Outdoor Kitchens",
         es: "Cocinas Exteriores",
+        href: "/services/outdoor-kitchens",
       },
       {
         en: "Concrete",
         es: "Concreto",
+        href: "/services/concrete-pavers",
       },
       {
         en: "Pavers",
         es: "Pavers",
+        href: "/services/concrete-pavers",
       },
     ],
   },
@@ -50,14 +55,17 @@ const serviceGroups = [
       {
         en: "Wood Fencing",
         es: "Cercas de Madera",
+        href: "/services/modern-fencing",
       },
       {
         en: "Aluminum Fencing",
         es: "Cercas de Aluminio",
+        href: "/services/modern-fencing",
       },
       {
         en: "PVC Fencing",
         es: "Cercas de PVC",
+        href: "/services/modern-fencing",
       },
     ],
   },
@@ -70,6 +78,7 @@ const serviceGroups = [
       {
         en: "Epoxy Flooring",
         es: "Pisos Epóxicos",
+        href: "/services/epoxy-flooring",
       },
     ],
   },
@@ -82,18 +91,22 @@ const serviceGroups = [
       {
         en: "Impact Windows Doors",
         es: "Ventanas y Puertas de Impacto",
+        href: "/services/impact-windows-doors",
       },
       {
         en: "Modern Aluminum Mailboxes",
         es: "Buzones Modernos de Aluminio",
+        href: "/services/modern-mailboxes",
       },
       {
         en: "Accordion Shutters",
         es: "Persianas Acordeón",
+        href: "/services/accordion-shutters",
       },
       {
         en: "Interior Design",
         es: "Diseño de Interiores",
+        href: "/services",
       },
     ],
   },
@@ -103,22 +116,22 @@ const navigation = [
   {
     en: "Projects",
     es: "Proyectos",
-    href: "#portfolio",
+    href: "/#portfolio",
   },
   {
     en: "About Us",
     es: "Nosotros",
-    href: "#about",
+    href: "/#about",
   },
   {
     en: "Reviews",
     es: "Reseñas",
-    href: "#reviews",
+    href: "/#reviews",
   },
   {
     en: "Contact",
     es: "Contacto",
-    href: "#contact",
+    href: "/#contact",
   },
 ];
 
@@ -136,6 +149,25 @@ function ChevronDown({ open = false }: { open?: boolean }) {
         d="m6 9 6 6 6-6"
         stroke="currentColor"
         strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function ArrowRight() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      className="h-4 w-4"
+      aria-hidden="true"
+    >
+      <path
+        d="M5 12h14M13 6l6 6-6 6"
+        stroke="currentColor"
+        strokeWidth="1.8"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
@@ -226,6 +258,7 @@ function LanguageToggle({
 
 export default function SiteHeader() {
   const { lang, setLang, t } = useLang();
+
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -234,9 +267,13 @@ export default function SiteHeader() {
     setMobileOpen(false);
   };
 
+  const toggleMobileServices = () => {
+    setServicesOpen((value) => !value);
+  };
+
   return (
-    <header className="fixed inset-x-0 top-0 z-[100] w-full border-b border-white/[0.08] bg-[#070405]/95 text-white backdrop-blur-md shadow-[0_4px_18px_rgba(0,0,0,0.18)]">
-      <div className="mx-auto grid h-[72px] w-full max-w-[1440px] grid-cols-[1fr_auto_1fr] items-center px-5 sm:px-7 xl:px-10">
+    <header className="fixed inset-x-0 top-0 z-[100] w-full border-b border-white/[0.08] bg-[#070405]/95 text-white shadow-[0_4px_18px_rgba(0,0,0,0.18)] backdrop-blur-md">
+      <div className="mx-auto grid h-[72px] w-full max-w-[1440px] grid-cols-[1fr_auto_1fr] items-center px-4 sm:px-7 xl:px-10">
         <Link
           href="/"
           onClick={closeMenus}
@@ -250,33 +287,64 @@ export default function SiteHeader() {
         </Link>
 
         <nav className="hidden h-full items-center justify-center xl:flex">
-          <div className="group relative h-full">
-            <button
-              type="button"
-              onClick={() => setServicesOpen(!servicesOpen)}
-              className="flex h-full min-w-[116px] cursor-pointer items-center justify-center gap-1.5 px-2 font-sora text-[12px] font-medium uppercase tracking-[0.07em] text-[#b8b2b3] transition-colors hover:text-white"
+          <div
+            className="group relative flex h-full items-center"
+            onMouseEnter={() => setServicesOpen(true)}
+            onMouseLeave={() => setServicesOpen(false)}
+          >
+            <Link
+              href="/services"
+              onClick={closeMenus}
+              className="flex h-full min-w-[94px] cursor-pointer items-center justify-center px-2 font-sora text-[12px] font-medium uppercase tracking-[0.07em] text-[#b8b2b3] transition-colors hover:text-white"
             >
               {t.nav.services}
+            </Link>
 
-              <span className={servicesOpen ? "rotate-180" : ""}>
+            <button
+              type="button"
+              onClick={() => setServicesOpen((value) => !value)}
+              aria-label={
+                servicesOpen
+                  ? "Close services menu"
+                  : "Open services menu"
+              }
+              aria-expanded={servicesOpen}
+              className="flex h-full w-5 cursor-pointer items-center justify-center text-[#b8b2b3] transition-colors hover:text-white"
+            >
+              <span
+                className={`transition-transform duration-200 ${
+                  servicesOpen ? "rotate-180" : ""
+                }`}
+              >
                 <ChevronDown />
               </span>
             </button>
 
             <div
-              className={`absolute left-1/2 top-[72px] w-[760px] -translate-x-1/2 overflow-hidden rounded-[2px] border border-white/[0.18] bg-[#110c0d]/[0.98] shadow-[0_18px_45px_rgba(0,0,0,0.38),0_4px_16px_rgba(0,0,0,0.22)] ring-1 ring-[#c78951]/[0.08] transition-all duration-200 ${
+              className={`absolute left-1/2 top-[72px] w-[min(760px,calc(100vw-32px))] -translate-x-1/2 overflow-hidden rounded-[2px] border border-white/[0.18] bg-[#110c0d]/[0.98] shadow-[0_18px_45px_rgba(0,0,0,0.38),0_4px_16px_rgba(0,0,0,0.22)] ring-1 ring-[#c78951]/[0.08] transition-all duration-200 ${
                 servicesOpen
                   ? "visible translate-y-0 opacity-100"
-                  : "invisible -translate-y-2 opacity-0 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100"
+                  : "invisible -translate-y-2 opacity-0"
               }`}
             >
-              <div className="border-b border-[#c78951]/20 px-8 py-3">
+              <div className="flex items-center justify-between gap-6 border-b border-[#c78951]/20 px-6 py-3 sm:px-8">
                 <span className="font-manrope text-[9px] font-medium uppercase tracking-[0.22em] text-[#c78951]">
                   {lang === "en" ? "Our Services" : "Nuestros Servicios"}
                 </span>
+
+                <Link
+                  href="/services"
+                  onClick={closeMenus}
+                  className="flex items-center gap-2 whitespace-nowrap font-manrope text-[9px] font-semibold uppercase tracking-[0.18em] text-white/60 transition-colors hover:text-[#c78951]"
+                >
+                  {lang === "en"
+                    ? "View All Services"
+                    : "Ver Todos los Servicios"}
+                  <ArrowRight />
+                </Link>
               </div>
 
-              <div className="grid grid-cols-3 gap-x-10 gap-y-8 p-8">
+              <div className="grid grid-cols-2 gap-x-8 gap-y-8 p-6 sm:grid-cols-3 sm:p-8">
                 {serviceGroups.map((group) => (
                   <div key={group.title.en}>
                     <p className="mb-4 font-sora text-[10px] font-medium uppercase tracking-[0.15em] text-[#c78951]">
@@ -287,10 +355,12 @@ export default function SiteHeader() {
                       {group.items.map((item) => (
                         <li key={item.en}>
                           <Link
-                            href="#services"
+                            href={item.href}
                             onClick={closeMenus}
-                            className="group/item block font-manrope text-[13px] leading-5 text-[#b8b2b3] transition-colors duration-200 hover:text-white"
+                            className="group/item flex items-start gap-2 font-manrope text-[13px] leading-5 text-[#b8b2b3] transition-colors duration-200 hover:text-white"
                           >
+                            <span className="mt-2 h-1 w-1 shrink-0 bg-[#c78951] opacity-50 transition-opacity group-hover/item:opacity-100" />
+
                             <span className="transition-colors group-hover/item:text-[#c78951]">
                               {item[lang]}
                             </span>
@@ -308,6 +378,7 @@ export default function SiteHeader() {
             <Link
               key={item.en}
               href={item.href}
+              onClick={closeMenus}
               className="flex h-full min-w-[108px] items-center justify-center whitespace-nowrap px-2 font-sora text-[12px] font-medium uppercase tracking-[0.07em] text-[#b8b2b3] transition-colors hover:text-white"
             >
               {item[lang]}
@@ -344,6 +415,7 @@ export default function SiteHeader() {
 
           <Link
             href="/estimate"
+            onClick={closeMenus}
             className="flex h-[44px] min-w-[182px] items-center justify-center whitespace-nowrap bg-[#c78951] px-6 font-sora text-[12px] font-semibold text-white transition-colors hover:bg-[#b47742]"
           >
             {t.nav.estimate}
@@ -351,7 +423,13 @@ export default function SiteHeader() {
         </div>
 
         <div className="ml-auto flex items-center gap-2 xl:hidden">
-          <LanguageToggle lang={lang} setLang={setLang} />
+          <LanguageToggle
+            lang={lang}
+            setLang={(nextLang) => {
+              setLang(nextLang);
+              setServicesOpen(false);
+            }}
+          />
 
           <a
             href="tel:+13055634756"
@@ -385,38 +463,64 @@ export default function SiteHeader() {
       >
         <div className="px-5 pb-32 pt-5 sm:px-7">
           <nav className="flex flex-col">
-            <button
-              type="button"
-              onClick={() => setServicesOpen((value) => !value)}
-              className="flex min-h-[54px] cursor-pointer items-center justify-between border-b border-white/15 font-sora text-[13px] font-semibold uppercase tracking-[0.07em] text-white"
-            >
-              {t.nav.services}
+            <div className="flex min-h-[54px] items-center border-b border-white/15">
+              <button
+                type="button"
+                onClick={toggleMobileServices}
+                aria-label={
+                  servicesOpen
+                    ? "Close services menu"
+                    : "Open services menu"
+                }
+                aria-expanded={servicesOpen}
+                className="flex min-h-[54px] w-full items-center justify-between font-sora text-[13px] font-semibold uppercase tracking-[0.07em] text-white"
+              >
+                <span>{t.nav.services}</span>
 
-              <ChevronDown open={servicesOpen} />
-            </button>
+                <ChevronDown open={servicesOpen} />
+              </button>
+            </div>
 
             {servicesOpen && (
-              <div className="border-x border-b border-white/15 bg-[#0d090a] px-4 py-6 shadow-[0_12px_30px_rgba(0,0,0,0.28)]">
-                {serviceGroups.map((group) => (
-                  <div key={group.title.en} className="mb-7 last:mb-0">
-                    <p className="mb-3 font-sora text-[9px] font-semibold uppercase tracking-[0.15em] text-[#c78951]">
-                      {group.title[lang]}
-                    </p>
+              <div className="border-x border-b border-white/15 bg-[#0d090a] px-4 py-6 shadow-[0_12px_30px_rgba(0,0,0,0.28)] sm:px-5">
+                <Link
+                  href="/services"
+                  onClick={closeMenus}
+                  className="mb-6 flex items-center justify-between border-b border-white/10 pb-4 font-sora text-[10px] font-semibold uppercase tracking-[0.15em] text-[#c78951]"
+                >
+                  <span>
+                    {lang === "en"
+                      ? "View All Services"
+                      : "Ver Todos los Servicios"}
+                  </span>
 
-                    <div className="space-y-3">
-                      {group.items.map((item) => (
-                        <Link
-                          key={item.en}
-                          href="#services"
-                          onClick={closeMenus}
-                          className="block font-manrope text-[13px] leading-5 text-[#b8b2b3] transition-colors hover:text-white"
-                        >
-                          {item[lang]}
-                        </Link>
-                      ))}
+                  <ArrowRight />
+                </Link>
+
+                <div className="grid grid-cols-1 gap-7 sm:grid-cols-2">
+                  {serviceGroups.map((group) => (
+                    <div key={group.title.en}>
+                      <p className="mb-3 font-sora text-[9px] font-semibold uppercase tracking-[0.15em] text-[#c78951]">
+                        {group.title[lang]}
+                      </p>
+
+                      <div className="space-y-3">
+                        {group.items.map((item) => (
+                          <Link
+                            key={item.en}
+                            href={item.href}
+                            onClick={closeMenus}
+                            className="flex items-start gap-2 font-manrope text-[13px] leading-5 text-[#b8b2b3] transition-colors hover:text-white"
+                          >
+                            <span className="mt-2 h-1 w-1 shrink-0 bg-[#c78951]" />
+
+                            <span>{item[lang]}</span>
+                          </Link>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             )}
 

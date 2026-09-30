@@ -34,7 +34,7 @@ export default function BackToTop() {
       onClick={scrollToTop}
       aria-label={lang === "en" ? "Back to top" : "Volver arriba"}
       title={lang === "en" ? "Back to top" : "Volver arriba"}
-      className={`fixed bottom-6 right-5 z-50 flex h-11 w-11 items-center justify-center border border-[var(--accent)] bg-[var(--black)] text-[var(--accent)] shadow-lg transition-all duration-500 hover:bg-[var(--accent)] hover:text-white sm:bottom-8 sm:right-8 ${
+      className={`fixed bottom-6 right-5 z-50 flex h-11 w-11 items-center justify-center border border-[var(--accent)] bg-[var(--black)] text-[var(--accent)] shadow-lg transition-all duration-500 hover:bg-[var(--accent)] hover:text-white cursor-pointer   sm:bottom-8 sm:right-8 ${
         isVisible
           ? "translate-y-0 opacity-100"
           : "pointer-events-none translate-y-4 opacity-0"
