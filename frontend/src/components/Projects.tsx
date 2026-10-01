@@ -18,7 +18,7 @@ const projects = [
   {
     id: 1,
     category: "pergolas" as Category,
-    image: "/assets/images/project1.webp",
+    image: "/assets/images/pergola-project-pool.webp",
     title: {
       en: "Poolside Aluminum Pavilion",
       es: "Pabellón de Aluminio junto a la Piscina",
@@ -60,7 +60,7 @@ const projects = [
   {
     id: 4,
     category: "fencing" as Category,
-    image: "/assets/images/project4.webp",
+    image: "/assets/images/project6.webp",
     title: {
       en: "Modern Custom Fencing",
       es: "Cercado Moderno Personalizado",
@@ -74,7 +74,7 @@ const projects = [
   {
     id: 5,
     category: "impact" as Category,
-    image: "/assets/images/project5.webp",
+    image: "/assets/images/project10.webp",
     title: {
       en: "Hurricane Impact Windows",
       es: "Ventanas de Impacto para Huracanes",
@@ -88,7 +88,7 @@ const projects = [
   {
     id: 6,
     category: "epoxy" as Category,
-    image: "/assets/images/project6.webp",
+    image: "/assets/images/project5.webp",
     title: {
       en: "Premium Epoxy Flooring",
       es: "Pisos Epóxicos Premium",
