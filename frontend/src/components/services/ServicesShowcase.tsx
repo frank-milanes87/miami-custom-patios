@@ -10,6 +10,7 @@ const serviceContent = [
     slug: "pergolas-screen-enclosures",
     en: {
       name: "Pergolas & Screen Enclosures",
+      projectLine: "Custom outdoor structures for patios and pool areas",
       headline: [
         "Create an outdoor space",
         "that feels like an",
@@ -27,12 +28,14 @@ const serviceContent = [
     },
     es: {
       name: "Pérgolas y Cerramientos con Mosquitero",
+      projectLine:
+        "Estructuras exteriores personalizadas para patios y áreas de piscina",
       headline: [
         "Cree un espacio exterior",
         "que se sienta como una",
         "extensión de su hogar.",
       ],
-      body: "Las pérgolas y los cerramientos con mosquitero pueden transformar patios, áreas de piscina y espacios exteriores en lugares más cómodos para relajarse, recibir invitados y disfrutar del exterior.",
+      body: "Las pérgolas y los cerramientos con mosquitero a medida pueden convertir patios, áreas de piscina y espacios exteriores poco utilizados en lugares más cómodos para relajarse, recibir invitados y disfrutar del aire libre.",
       features: [
         "Estructuras exteriores personalizadas",
         "Aplicaciones junto a piscinas",
@@ -48,6 +51,7 @@ const serviceContent = [
     en: {
       name: "Modern Fencing",
       sub: "Wood / Aluminum / PVC",
+      projectLine: "Privacy and boundaries in wood, aluminum and PVC",
       headline: [
         "Privacy, boundaries",
         "and architectural",
@@ -66,12 +70,13 @@ const serviceContent = [
     es: {
       name: "Cercas Modernas",
       sub: "Madera / Aluminio / PVC",
+      projectLine: "Privacidad y límites en madera, aluminio y PVC",
       headline: [
         "Privacidad, límites",
         "y carácter",
         "arquitectónico.",
       ],
-      body: "Las cercas modernas pueden definir una propiedad mientras complementan la arquitectura del hogar. Elija entre opciones de madera, aluminio y PVC según sus necesidades.",
+      body: "Las vallas modernas pueden delimitar una propiedad y, al mismo tiempo, complementar la arquitectura de la vivienda. Elige entre opciones de madera, aluminio y PVC según tus necesidades de privacidad, estética y las características de tu propiedad.",
       features: [
         "Cercas de madera",
         "Cercas de aluminio",
@@ -86,6 +91,7 @@ const serviceContent = [
     slug: "epoxy-flooring",
     en: {
       name: "Epoxy Flooring",
+      projectLine: "Finished surfaces for garages and patios",
       headline: [
         "A cleaner,",
         "more finished",
@@ -103,6 +109,7 @@ const serviceContent = [
     },
     es: {
       name: "Pisos Epóxicos",
+      projectLine: "Superficies terminadas para garajes y patios",
       headline: [
         "Una superficie",
         "más limpia y",
@@ -123,6 +130,7 @@ const serviceContent = [
     slug: "concrete-pavers",
     en: {
       name: "Concrete & Pavers",
+      projectLine: "Patios, walkways and pool deck surfaces",
       headline: [
         "The foundation",
         "of a great",
@@ -140,6 +148,8 @@ const serviceContent = [
     },
     es: {
       name: "Concreto y Pavers",
+      projectLine:
+        "Patios, caminos y superficies para áreas de piscina",
       headline: [
         "La base",
         "de un gran",
@@ -160,6 +170,7 @@ const serviceContent = [
     slug: "impact-windows-doors",
     en: {
       name: "Impact Windows & Doors",
+      projectLine: "Storm protection and exterior upgrades",
       headline: [
         "Protection",
         "without losing",
@@ -177,6 +188,8 @@ const serviceContent = [
     },
     es: {
       name: "Ventanas y Puertas de Impacto",
+      projectLine:
+        "Protección contra tormentas y mejoras exteriores",
       headline: [
         "Protección",
         "sin perder",
@@ -197,6 +210,7 @@ const serviceContent = [
     slug: "accordion-shutters",
     en: {
       name: "Accordion Shutters",
+      projectLine: "Practical storm preparation for openings",
       headline: [
         "Practical",
         "storm preparation",
@@ -214,6 +228,8 @@ const serviceContent = [
     },
     es: {
       name: "Persianas Acordeón",
+      projectLine:
+        "Preparación práctica contra tormentas para aberturas",
       headline: [
         "Preparación práctica",
         "contra tormentas",
@@ -234,6 +250,7 @@ const serviceContent = [
     slug: "modern-mailboxes",
     en: {
       name: "Modern Mailboxes",
+      projectLine: "Architectural details for curb appeal",
       headline: [
         "The details",
         "that complete",
@@ -251,6 +268,8 @@ const serviceContent = [
     },
     es: {
       name: "Buzones Modernos",
+      projectLine:
+        "Detalles arquitectónicos para mejorar el atractivo exterior",
       headline: [
         "Los detalles",
         "que completan",
@@ -374,7 +393,7 @@ export default function ServicesShowcase() {
                     />
                   ) : (
                     <div className="flex size-full items-center justify-center bg-[#f3eee7]">
-                      <span className="text-[8rem] font-semibold leading-none text-[#ddd3c5] lg:text-[10rem]">
+                      <span className="font-sora text-[8rem] font-semibold leading-none text-[#ddd3c5] lg:text-[10rem]">
                         {String(index + 1).padStart(2, "0")}
                       </span>
                     </div>
@@ -386,14 +405,12 @@ export default function ServicesShowcase() {
                     <div className="border-t border-white/30 pt-5">
                       <div className="flex items-end justify-between gap-6">
                         <div>
-                          <p className="text-lg font-semibold uppercase tracking-[-0.02em] text-white">
+                          <p className="font-sora text-lg font-semibold uppercase tracking-[-0.02em] text-white">
                             {content.name}
                           </p>
 
                           <p className="mt-1 text-[10px] font-bold uppercase tracking-[0.2em] text-white/65">
-                            {lang === "en"
-                              ? "Project photography coming soon"
-                              : "Fotografía del proyecto próximamente"}
+                            {content.projectLine}
                           </p>
                         </div>
 
@@ -414,24 +431,24 @@ export default function ServicesShowcase() {
                 }`}
               >
                 <div className="flex items-baseline gap-5 border-b border-[#e5e2df] pb-5">
-                  <span className="text-6xl font-semibold leading-none text-[var(--accent)] lg:text-7xl">
+                  <span className="font-sora text-6xl font-semibold leading-none text-[var(--accent)] lg:text-7xl">
                     {String(index + 1).padStart(2, "0")}
                   </span>
 
                   <div>
-                    <h2 className="text-sm font-bold uppercase tracking-[0.18em]">
+                    <h2 className="font-sora text-sm font-bold uppercase tracking-[0.18em]">
                       {content.name}
                     </h2>
 
                     {"sub" in content && content.sub && (
-                      <p className="mt-1 text-[11px] font-bold uppercase tracking-[0.2em] text-black/45">
+                      <p className="mt-1 text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--text)]">
                         {content.sub}
                       </p>
                     )}
                   </div>
                 </div>
 
-                <h3 className="mt-7 text-3xl font-semibold uppercase leading-[1.05] sm:text-4xl">
+                <h3 className="mt-7 font-sora text-3xl font-semibold uppercase leading-[1.05] sm:text-4xl">
                   {content.headline.map((line) => (
                     <span key={line} className="block">
                       {line}
@@ -439,7 +456,7 @@ export default function ServicesShowcase() {
                   ))}
                 </h3>
 
-                <p className="mt-6 leading-7 text-black/55">
+                <p className="mt-6 leading-7 text-[var(--text)]">
                   {content.body}
                 </p>
 
@@ -481,7 +498,9 @@ export default function ServicesShowcase() {
                   href={`/services/${service.slug}`}
                   className="group/cta mt-8 inline-flex items-center gap-3 border-b border-black pb-1 text-xs font-bold uppercase tracking-widest transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
                 >
-                  {lang === "en" ? "Explore Service" : "Explorar Servicio"}
+                  {lang === "en"
+                    ? "Explore Service"
+                    : "Explorar Servicio"}
 
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

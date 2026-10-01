@@ -1,10 +1,10 @@
 export const servicesPageCopy = {
   en: {
     hero: {
-      eyebrow: "Our Services",
+      eyebrow: "Miami Custom Patios",
       title: "Services|Designed Around|Your Property.",
       description:
-        "Explore custom outdoor living, home improvement, and property enhancement solutions designed for South Florida homes.",
+        "From outdoor living structures and architectural fencing to flooring, hardscape surfaces and South Florida storm protection, explore the services available through Miami Custom Patios across Miami-Dade, Broward County and South Florida.",
     },
 
     services: {
@@ -33,9 +33,9 @@ export const servicesPageCopy = {
   es: {
     hero: {
       eyebrow: "Nuestros Servicios",
-      title: "Servicios|Diseñados Para|Su Propiedad.",
+      title: "Servicios|diseñados a medida|de tu propiedad.",
       description:
-        "Explore soluciones personalizadas para espacios exteriores, mejoras del hogar y propiedades diseñadas para hogares del Sur de Florida.",
+        "Desde estructuras para espacios exteriores y vallas arquitectónicas hasta suelos, superficies de paisajismo y protección contra las tormentas en el sur de Florida, descubre los servicios que ofrece Miami Custom Patios en Miami-Dade, el condado de Broward y el sur de Florida.",
     },  
 
     services: {

@@ -8,14 +8,14 @@ const services = [
   {
     number: "01",
     title: {
-      en: "Pergolas Screen Enclosures",
+      en: "Pergolas & Screen Enclosures",
       es: "Pérgolas y Cerramientos con Mosquitero",
     },
     description: {
       en: "Custom pergolas and screened outdoor living spaces designed for shade, comfort, and South Florida living.",
       es: "Pérgolas personalizadas y espacios exteriores con cerramiento de malla diseñados para sombra, comodidad y el clima del Sur de Florida.",
     },
-    image: "/assets/images/project2.webp",
+    image: "/assets/images/project10.webp",
     alt: {
       en: "Custom modern pergola and screened pool patio in South Florida",
       es: "Pérgola moderna personalizada junto a una piscina en el Sur de Florida",
@@ -26,22 +26,39 @@ const services = [
   {
     number: "02",
     title: {
-      en: "Outdoor Kitchens",
-      es: "Cocinas Exteriores",
+      en: "Modern Fencing",
+      es: "Cercas Modernas",
     },
     description: {
-      en: "Custom outdoor kitchens designed for cooking, entertaining, and comfortable year-round outdoor living.",
-      es: "Cocinas exteriores personalizadas diseñadas para cocinar, recibir invitados y disfrutar de espacios exteriores durante todo el año.",
+      en: "Wood, aluminum, and PVC fencing designed for privacy, security, durability, and curb appeal.",
+      es: "Cercas modernas de madera, aluminio y PVC diseñadas para privacidad, seguridad, durabilidad y atractivo exterior.",
     },
-    image: "/assets/images/project3.webp",
+    image: "/assets/images/project6.webp",
     alt: {
-      en: "Outdoor living space in South Florida",
-      es: "Espacio exterior residencial en el Sur de Florida",
+      en: "Modern outdoor privacy structure in South Florida",
+      es: "Estructura moderna de privacidad para exteriores en el Sur de Florida",
     },
-    href: "/services/outdoor-kitchens",
+    href: "/services/fencing",
+  },
+   {
+    number: "03",
+    title: {
+      en: "Epoxy Flooring",
+      es: "Pisos Epóxicos",
+    },
+    description: {
+      en: "Durable epoxy flooring systems for garages and spaces that need a clean, resilient, easy-to-maintain surface.",
+      es: "Sistemas de pisos epóxicos duraderos para garajes y espacios que requieren una superficie limpia, resistente y fácil de mantener.",
+    },
+    image: "/assets/images/project5.webp",
+    alt: {
+      en: "Residential outdoor flooring project in South Florida",
+      es: "Proyecto residencial de pisos exteriores en el Sur de Florida",
+    },
+    href: "/services/epoxy-flooring",
   },
   {
-    number: "03",
+    number: "04",
     title: {
       en: "Concrete Pavers",
       es: "Pavers de Concreto",
@@ -58,41 +75,7 @@ const services = [
     href: "/services/pavers-concrete",
   },
   {
-    number: "04",
-    title: {
-      en: "Modern Fencing",
-      es: "Cercas Modernas",
-    },
-    description: {
-      en: "Wood, aluminum, and PVC fencing designed for privacy, security, durability, and curb appeal.",
-      es: "Cercas modernas de madera, aluminio y PVC diseñadas para privacidad, seguridad, durabilidad y atractivo exterior.",
-    },
-    image: "/assets/images/project5.webp",
-    alt: {
-      en: "Modern outdoor privacy structure in South Florida",
-      es: "Estructura moderna de privacidad para exteriores en el Sur de Florida",
-    },
-    href: "/services/fencing",
-  },
-  {
     number: "05",
-    title: {
-      en: "Epoxy Flooring",
-      es: "Pisos Epóxicos",
-    },
-    description: {
-      en: "Durable epoxy flooring systems for garages and spaces that need a clean, resilient, easy-to-maintain surface.",
-      es: "Sistemas de pisos epóxicos duraderos para garajes y espacios que requieren una superficie limpia, resistente y fácil de mantener.",
-    },
-    image: "/assets/images/project7.webp",
-    alt: {
-      en: "Residential outdoor flooring project in South Florida",
-      es: "Proyecto residencial de pisos exteriores en el Sur de Florida",
-    },
-    href: "/services/epoxy-flooring",
-  },
-  {
-    number: "06",
     title: {
       en: "Impact Windows Doors",
       es: "Ventanas y Puertas de Impacto",
@@ -101,7 +84,7 @@ const services = [
       en: "Impact windows and doors designed for protection, durability, energy efficiency, and South Florida conditions.",
       es: "Ventanas y puertas de impacto diseñadas para protección, durabilidad, eficiencia energética y las condiciones del Sur de Florida.",
     },
-    image: "/assets/images/project8.webp",
+    image: "/assets/images/project4.webp",
     alt: {
       en: "South Florida residential exterior project",
       es: "Proyecto exterior residencial en el Sur de Florida",
@@ -109,7 +92,7 @@ const services = [
     href: "/services/impact-windows-doors",
   },
   {
-    number: "07",
+    number: "06",
     title: {
       en: "Accordion Shutters",
       es: "Persianas Acordeón",
@@ -118,7 +101,7 @@ const services = [
       en: "Durable accordion shutters providing convenient storm protection for South Florida homes.",
       es: "Persianas acordeón duraderas que proporcionan protección práctica contra tormentas para hogares del Sur de Florida.",
     },
-    image: "/assets/images/project9.webp",
+    image: "/assets/images/project3.webp",
     alt: {
       en: "South Florida residential exterior with storm-ready construction",
       es: "Exterior residencial en el Sur de Florida con construcción preparada para tormentas",
@@ -126,7 +109,7 @@ const services = [
     href: "/services/accordion-shutters",
   },
   {
-    number: "08",
+    number: "07",
     title: {
       en: "Modern Mailboxes",
       es: "Buzones Modernos",
@@ -135,7 +118,7 @@ const services = [
       en: "Modern mailbox installations designed to complement your home's architecture and improve curb appeal.",
       es: "Instalación de buzones modernos diseñados para complementar la arquitectura de su hogar y mejorar su atractivo exterior.",
     },
-    image: "/assets/images/project6.webp",
+    image: "/assets/images/project2.webp",
     alt: {
       en: "Modern residential exterior detail in South Florida",
       es: "Detalle moderno de un exterior residencial en el Sur de Florida",
@@ -173,19 +156,17 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="mt-10 grid grid-cols-2 gap-[2px] bg-[var(--background)] lg:mt-14 lg:grid-cols-4">
-          {services.map((service) => (
-            <Link
-              key={service.number}
-              href={service.href}
-              className={`group relative block overflow-hidden bg-[var(--black)] ${
-                service.number === "01"
-                  ? "col-span-2 min-h-[250px] sm:min-h-[300px] lg:col-span-3 lg:min-h-[330px]"
-                  : service.number === "08"
-                    ? "col-span-2 min-h-[250px] sm:min-h-[300px] lg:col-span-3 lg:min-h-[330px]"
-                    : "min-h-[250px] sm:min-h-[300px] lg:min-h-[330px]"
-              }`}
-            >
+<div className="mt-10 grid grid-cols-2 gap-[2px] bg-[var(--background)] sm:grid-cols-3 lg:mt-14">
+  {services.map((service) => (
+    <Link
+      key={service.number}
+      href={service.href}
+      className={`group relative block min-h-[250px] overflow-hidden bg-[var(--black)] sm:min-h-[300px] lg:min-h-[330px] ${
+        service.number === "01" || service.number === "07"
+          ? "sm:col-span-2 col-span-3"
+          : "sm:col-span-1"
+      }`}
+    >
               <Image
                 src={service.image}
                 alt={service.alt[lang]}

@@ -105,7 +105,7 @@ export default function ServicesGrid() {
             01 — 07
           </p>
 
-          <h2 className="mt-4 text-4xl font-semibold uppercase tracking-[-0.04em] sm:text-5xl">
+          <h2 className="font-sora mt-4 text-4xl font-semibold uppercase tracking-[-0.04em] sm:text-5xl">
             {lang === "en" ? "Our Services" : "Nuestros Servicios"}
           </h2>
 
@@ -136,7 +136,7 @@ export default function ServicesGrid() {
                       : "Servicio Destacado"}
                   </p>
 
-                  <p className="mt-2 text-xl font-semibold uppercase tracking-tight text-white">
+                  <p className="font-sora mt-2 text-xl font-semibold uppercase tracking-tight text-white">
                     {activeService[lang].name}
                   </p>
                 </div>
@@ -171,21 +171,21 @@ export default function ServicesGrid() {
                   }`}
                 >
                   <span
-                    className={`text-3xl font-semibold leading-none tracking-[-0.05em] transition-all duration-300 sm:text-4xl ${
+                    className={`text-3xl font-sora font-semibold leading-none tracking-[-0.05em] transition-all duration-300 sm:text-4xl ${
                       isActive
                         ? "text-[var(--accent)]"
-                        : "text-[#d8d0c5] group-hover:text-[var(--accent)]"
+                        : "text-[var(--warm-deep)] group-hover:text-[var(--accent)]"
                     }`}
                   >
                     {number}
                   </span>
 
                   <span>
-                    <span className="block text-lg font-semibold uppercase tracking-[-0.025em] sm:text-xl">
+                    <span className="font-sora block text-lg font-semibold uppercase tracking-[-0.025em] sm:text-xl">
                       {content.name}
                     </span>
 
-                    <span className="mt-1.5 block text-sm leading-6 text-black/50 transition-colors group-hover:text-black/65">
+                    <span className="mt-1.5 block text-sm leading-6 text-[var(--text)] transition-colors group-hover:text-black/65">
                       {content.line}
                     </span>
                   </span>

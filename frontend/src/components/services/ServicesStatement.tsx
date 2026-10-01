@@ -36,7 +36,7 @@ export default function ServicesStatement() {
             {t.label}
           </p>
 
-          <h2 className="max-w-6xl text-5xl font-semibold uppercase leading-[0.91] tracking-[-0.045em] sm:text-6xl lg:text-8xl xl:text-[7.5rem]">
+          <h2 className="font-sora max-w-6xl text-5xl font-semibold uppercase leading-[0.91] tracking-[-0.045em] sm:text-6xl lg:text-7xl xl:text-[6.5rem]">
             {t.lines.map((line, index) => (
               <span
                 key={line}

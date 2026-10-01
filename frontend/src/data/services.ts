@@ -30,7 +30,7 @@ export const services = [
       ],
     },
 
-    image: "/assets/images/project1.webp",
+    image: "/assets/images/project10.webp",
   },
 
   {
@@ -98,7 +98,7 @@ export const services = [
       ],
     },
 
-    image: "/assets/images/project3.webp",
+    image: "/assets/images/project8.webp",
   },
 
   {
@@ -132,7 +132,7 @@ export const services = [
       ],
     },
 
-    image: "/assets/images/project4.webp",
+    image: "/assets/images/project6.webp",
   },
 
   {
@@ -200,7 +200,7 @@ export const services = [
       ],
     },
 
-    image: "/assets/images/project6.webp",
+    image: "/assets/images/project4.webp",
   },
 
   {
@@ -234,7 +234,7 @@ export const services = [
       ],
     },
 
-    image: "/assets/images/project7.webp",
+    image: "/assets/images/project3.webp",
   },
 
   {
@@ -268,6 +268,6 @@ export const services = [
       ],
     },
 
-    image: "/assets/images/project8.webp",
+    image: "/assets/images/project2.webp",
   },
 ];

@@ -29,7 +29,7 @@ export default function ServicesHero({ copy }: ServicesHeroProps) {
                             {copy.eyebrow}
                         </p>
 
-                        <h1 className="mt-6 text-[2.6rem] font-semibold uppercase leading-[0.98] tracking-[-0.03em] sm:text-6xl lg:text-7xl xl:text-[5.5rem]">
+                        <h1 className="font-sora mt-6 text-[2.6rem] font-semibold uppercase leading-[0.98] tracking-[-0.03em] sm:text-6xl lg:text-7xl xl:text-[5.5rem]">
                             {titleLines.map((line, index) => (
                                 <span
                                     key={line}

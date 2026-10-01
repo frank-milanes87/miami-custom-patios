@@ -422,7 +422,7 @@ export default function SiteHeader() {
           </Link>
         </div>
 
-        <div className="ml-auto flex items-center gap-2 xl:hidden">
+        <div className="ml-auto flex items-center gap-2 xl:hidden col-span-2">
           <LanguageToggle
             lang={lang}
             setLang={(nextLang) => {

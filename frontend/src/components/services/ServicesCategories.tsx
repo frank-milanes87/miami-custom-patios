@@ -129,7 +129,7 @@ export default function ServicesCategories() {
             {lang === "en" ? "Explore by Need" : "Explore por Necesidad"}
           </p>
 
-          <h2 className="mt-5 text-4xl font-semibold uppercase leading-[1.02] tracking-[-0.04em] sm:text-5xl lg:text-6xl">
+          <h2 className="font-sora mt-5 text-4xl font-semibold uppercase leading-[1.02] tracking-[-0.04em] sm:text-5xl lg:text-6xl">
             {lang === "en"
               ? "What are you looking to improve?"
               : "¿Qué le gustaría mejorar?"}
@@ -143,14 +143,14 @@ export default function ServicesCategories() {
               className="border-b border-[#e5e2df] py-8 md:border-b-0 md:px-8 md:first:pl-0 md:last:pr-0"
             >
               <div className="flex items-center justify-between">
-                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-black/40">
+                <p className="font-sora text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--text)]">
                   {category.number}
                 </p>
 
                 <span className="h-px w-10 bg-[var(--accent)]" />
               </div>
 
-              <h3 className="mt-4 text-xl font-semibold uppercase tracking-[-0.02em]">
+              <h3 className="font-sora mt-4 text-xl font-semibold uppercase tracking-[-0.02em]">
                 {category.title}
               </h3>
 
@@ -165,7 +165,7 @@ export default function ServicesCategories() {
                       className="group flex items-center justify-between gap-4 py-4 text-sm transition-colors hover:text-[var(--accent)]"
                     >
                       <span>
-                        <span className="mr-3 text-[10px] font-bold text-[var(--accent)]">
+                        <span className="mr-3 text-[12px] font-bold text-[var(--accent)]">
                           {service.number}
                         </span>
 
