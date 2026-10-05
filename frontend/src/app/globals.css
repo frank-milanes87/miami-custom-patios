@@ -2,6 +2,7 @@
 
 :root {
   --background: #fef8fa;
+  --light-bg: oklch(98.5% .006 85);
   --warm: #f6efe3;
   --warm-deep: #e8dccc;
   --foreground: #110c0d;
@@ -33,4 +34,10 @@ body {
 
 .font-manrope {
   font-family: "Manrope", sans-serif;
+}
+.section-shell {
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+    padding-inline: 20px;
 }

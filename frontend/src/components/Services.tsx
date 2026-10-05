@@ -40,7 +40,7 @@ const services = [
     },
     href: "/services/fencing",
   },
-   {
+  {
     number: "03",
     title: {
       en: "Epoxy Flooring",
@@ -156,17 +156,16 @@ export default function Services() {
           </p>
         </div>
 
-<div className="mt-10 grid grid-cols-2 gap-[2px] bg-[var(--background)] sm:grid-cols-3 lg:mt-14">
-  {services.map((service) => (
-    <Link
-      key={service.number}
-      href={service.href}
-      className={`group relative block min-h-[250px] overflow-hidden bg-[var(--black)] sm:min-h-[300px] lg:min-h-[330px] ${
-        service.number === "01" || service.number === "07"
-          ? "sm:col-span-2 col-span-3"
-          : "sm:col-span-1"
-      }`}
-    >
+        <div className="mt-10 grid grid-cols-2 gap-[2px] bg-[var(--background)] sm:grid-cols-3 lg:mt-14">
+          {services.map((service) => (
+            <Link
+              key={service.number}
+              href={service.href}
+              className={`group relative block min-h-[250px] overflow-hidden bg-[var(--black)] sm:min-h-[300px] lg:min-h-[330px] ${service.number === "01" || service.number === "07"
+                  ? "sm:col-span-2 col-span-3"
+                  : "sm:col-span-1"
+                }`}
+            >
               <Image
                 src={service.image}
                 alt={service.alt[lang]}
