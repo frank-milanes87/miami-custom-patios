@@ -10,8 +10,16 @@ type ProcessStep = {
 
 type ServiceProcessProps = {
   steps: {
-    en: ProcessStep[];
-    es: ProcessStep[];
+    en: readonly {
+      number: string;
+      title: string;
+      description: string;
+    }[];
+    es: readonly {
+      number: string;
+      title: string;
+      description: string;
+    }[];
   };
 };
 

@@ -11,8 +11,16 @@ type FaqItem = {
 
 type ServiceFaqProps = {
   items: {
-    en: FaqItem[];
-    es: FaqItem[];
+    en: readonly {
+      number: string;
+      question: string;
+      answer: string;
+    }[];
+    es: readonly {
+      number: string;
+      question: string;
+      answer: string;
+    }[];
   };
 };
 

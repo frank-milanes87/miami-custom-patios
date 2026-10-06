@@ -10,8 +10,16 @@ type Application = {
 
 type ServiceApplicationsProps = {
   applications: {
-    en: Application[];
-    es: Application[];
+    en: readonly {
+      number: string;
+      title: string;
+      description: string;
+    }[];
+    es: readonly {
+      number: string;
+      title: string;
+      description: string;
+    }[];
   };
 };
 

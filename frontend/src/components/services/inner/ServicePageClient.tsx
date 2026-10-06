@@ -28,7 +28,7 @@ type ServicePageClientProps = {
             eyebrow: string;
             title: string;
             description: string;
-            features: string[];
+            features: readonly string[];
             cta: string;
         };
 
@@ -36,28 +36,28 @@ type ServicePageClientProps = {
             eyebrow: string;
             title: string;
             description: string;
-            features: string[];
+            features: readonly string[];
             cta: string;
         };
 
         introduction?: {
             en: {
                 title: string;
-                paragraphs: string[];
+                paragraphs: readonly string[];
             };
             es: {
                 title: string;
-                paragraphs: string[];
+                paragraphs: readonly string[];
             };
         };
 
         offerings?: {
-            en: {
+            en: readonly {
                 number: string;
                 title: string;
                 description: string;
             }[];
-            es: {
+            es: readonly {
                 number: string;
                 title: string;
                 description: string;
@@ -65,17 +65,18 @@ type ServicePageClientProps = {
         };
 
         applications?: {
-            en: {
+            en: readonly {
                 number: string;
                 title: string;
                 description: string;
             }[];
-            es: {
+            es: readonly {
                 number: string;
                 title: string;
                 description: string;
             }[];
         };
+
         showcase?: {
             title: {
                 en: string;
@@ -86,6 +87,7 @@ type ServicePageClientProps = {
                 es: string;
             };
         };
+
         localContext?: {
             title: {
                 en: string;
@@ -96,11 +98,12 @@ type ServicePageClientProps = {
                 es: string;
             };
             paragraphs: {
-                en: string[];
-                es: string[];
+                en: readonly string[];
+                es: readonly string[];
             };
         };
-        considerations?: {
+
+        considerations?: readonly {
             number: string;
             en: {
                 title: string;
@@ -111,36 +114,40 @@ type ServicePageClientProps = {
                 description: string;
             };
         }[];
+
         process?: {
-            en: {
+            en: readonly {
                 number: string;
                 title: string;
                 description: string;
             }[];
-            es: {
+            es: readonly {
                 number: string;
                 title: string;
                 description: string;
             }[];
         };
+
         faq?: {
-            en: {
+            en: readonly {
                 number: string;
                 question: string;
                 answer: string;
             }[];
-            es: {
+            es: readonly {
                 number: string;
                 question: string;
                 answer: string;
             }[];
         };
-        relatedServices?: {
+
+        relatedServices?: readonly {
             number: string;
             href: string;
             en: string;
             es: string;
         }[];
+
         estimateCta?: {
             title: {
                 en: string;
@@ -172,7 +179,7 @@ export default function ServicePageClient({
                 image={service.image}
                 imageAlt={service.imageAlt}
                 number={service.number}
-                total="07"
+                total="10"
                 category={service.category}
                 projectLabel={service.projectLabel}
             />
@@ -182,16 +189,23 @@ export default function ServicePageClient({
             <ServiceSectionNav />
 
             {service.introduction && (
-                <ServiceIntroduction content={service.introduction[lang]} />
+                <ServiceIntroduction
+                    content={service.introduction[lang]}
+                />
             )}
 
             {service.offerings && (
-                <ServiceOfferings offerings={service.offerings} />
+                <ServiceOfferings
+                    offerings={service.offerings}
+                />
             )}
 
             {service.applications && (
-                <ServiceApplications applications={service.applications} />
+                <ServiceApplications
+                    applications={service.applications}
+                />
             )}
+
             {service.showcase && (
                 <ServiceShowcase
                     image={service.image}
@@ -201,6 +215,7 @@ export default function ServicePageClient({
                     projectLabel={service.showcase.projectLabel}
                 />
             )}
+
             {service.localContext && (
                 <ServiceLocalContext
                     title={service.localContext.title}
@@ -208,20 +223,31 @@ export default function ServicePageClient({
                     paragraphs={service.localContext.paragraphs}
                 />
             )}
+
             {service.considerations && (
                 <ServiceConsiderations
                     considerations={service.considerations}
                 />
             )}
+
             {service.process && (
-                <ServiceProcess steps={service.process} />
+                <ServiceProcess
+                    steps={service.process}
+                />
             )}
+
             {service.faq && (
-                <ServiceFaq items={service.faq} />
+                <ServiceFaq
+                    items={service.faq}
+                />
             )}
+
             {service.relatedServices && (
-                <ServiceRelated services={service.relatedServices} />
+                <ServiceRelated
+                    services={service.relatedServices}
+                />
             )}
+
             {service.estimateCta && (
                 <ServiceEstimateCta
                     number={service.number}
@@ -230,6 +256,7 @@ export default function ServicePageClient({
                     subject={service.estimateCta.subject}
                 />
             )}
+
             <BackToTop />
         </main>
     );

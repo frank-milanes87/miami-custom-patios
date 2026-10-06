@@ -11,7 +11,7 @@ type RelatedService = {
 };
 
 type ServiceRelatedProps = {
-  services: RelatedService[];
+  services: readonly RelatedService[];
 };
 
 function ArrowUpRight() {

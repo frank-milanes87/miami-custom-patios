@@ -15,7 +15,17 @@ type Consideration = {
 };
 
 type ServiceConsiderationsProps = {
-  considerations: Consideration[];
+  considerations: readonly {
+    number: string;
+    en: {
+      title: string;
+      description: string;
+    };
+    es: {
+      title: string;
+      description: string;
+    };
+  }[];
 };
 
 export default function ServiceConsiderations({

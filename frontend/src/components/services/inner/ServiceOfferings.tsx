@@ -11,8 +11,16 @@ type ServiceOffering = {
 
 type ServiceOfferingsProps = {
   offerings: {
-    en: ServiceOffering[];
-    es: ServiceOffering[];
+    en: readonly {
+      number: string;
+      title: string;
+      description: string;
+    }[];
+    es: readonly {
+      number: string;
+      title: string;
+      description: string;
+    }[];
   };
 };
 

@@ -1,29 +1,23 @@
 "use client";
 
 import { useLang } from "@/lib/lang";
-
 type ServiceLocalContextProps = {
   title: {
     en: string;
     es: string;
   };
-  eyebrow?: {
-    en: string;
-    es: string;
-  };
-  counties?: {
+  counties: {
     en: string;
     es: string;
   };
   paragraphs: {
-    en: string[];
-    es: string[];
+    en: readonly string[];
+    es: readonly string[];
   };
 };
 
 export default function ServiceLocalContext({
   title,
-  eyebrow,
   counties,
   paragraphs,
 }: ServiceLocalContextProps) {
@@ -31,18 +25,16 @@ export default function ServiceLocalContext({
 
   return (
     <section
-      id="considerations"
+      id="local-context"
       className="scroll-mt-40 bg-[var(--foreground)] py-20 text-white lg:py-28"
     >
       <div className="section-shell">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           <div>
             <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--accent)]">
-              {eyebrow
-                ? eyebrow[lang]
-                : lang === "en"
-                  ? "The local context"
-                  : "El contexto local"}
+              {lang === "en"
+                ? "The local context"
+                : "El contexto local"}
             </p>
 
             <h2 className="mt-6 max-w-xl text-4xl font-semibold leading-tight sm:text-5xl">

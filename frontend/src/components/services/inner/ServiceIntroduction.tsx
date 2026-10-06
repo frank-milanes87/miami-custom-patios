@@ -5,7 +5,7 @@ import { useLang } from "@/lib/lang";
 type ServiceIntroductionProps = {
   content: {
     title: string;
-    paragraphs: string[];
+    paragraphs: readonly string[];
   };
 };
 
