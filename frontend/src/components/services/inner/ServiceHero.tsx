@@ -106,84 +106,82 @@ export default function ServiceHero({
                         </figcaption>
                     </figure>
                 </div>
+<div className="lg:col-start-1 lg:row-start-2 lg:mt-0">
+    <div className="flex flex-col gap-3 sm:items-start">
+        <a
+            href="/#contact"
+            className="inline-flex min-h-13 max-w-full items-center justify-center gap-2 rounded-none bg-[var(--accent)] px-7 py-4 text-center text-xs font-bold uppercase tracking-widest text-white shadow-none transition-colors hover:brightness-95"
+        >
+            {content.cta}
 
-                <div className="lg:col-start-1 lg:row-start-2 lg:mt-0">
-                    <div className="flex flex-col gap-3 sm:items-start">
-                        <a
-                            href={`mailto:info@miamicustompatios.com?subject=${encodeURIComponent(
-                                estimateSubject
-                            )}`}
-                            className="inline-flex min-h-13 max-w-full items-center justify-center gap-2 rounded-none bg-[var(--accent)] px-7 py-4 text-center text-xs font-bold uppercase tracking-widest text-white shadow-none transition-colors hover:brightness-95"
-                        >
-                            {content.cta}
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+            >
+                <path d="M7 7h10v10" />
+                <path d="M7 17 17 7" />
+            </svg>
+        </a>
 
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                aria-hidden="true"
-                            >
-                                <path d="M7 7h10v10" />
-                                <path d="M7 17 17 7" />
-                            </svg>
-                        </a>
+        <a
+            href="tel:+13055634756"
+            className="inline-flex min-h-12 max-w-full items-center justify-center gap-2 rounded-none px-0 text-xs font-bold uppercase tracking-widest transition-colors hover:text-[var(--accent)]"
+        >
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+            >
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.08 5.18 2 2 0 0 1 5.07 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.05 10.95a16 16 0 0 0 4 4l1.31-1.31a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 1 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+            </svg>
 
-                        <a
-                            href="tel:+13055634756"
-                            className="inline-flex min-h-12 max-w-full items-center justify-center gap-2 rounded-none px-0 text-xs font-bold uppercase tracking-widest transition-colors hover:text-[var(--accent)]"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                aria-hidden="true"
-                            >
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.08 5.18 2 2 0 0 1 5.07 3h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L9.05 10.95a16 16 0 0 0 4 4l1.31-1.31a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                            </svg>
+            {lang === "en"
+                ? "Call (305) 563-4756"
+                : "Llame al (305) 563-4756"}
+        </a>
+    </div>
 
-                            {lang === "en"
-                                ? "Call (305) 563-4756"
-                                : "Llame al (305) 563-4756"}
-                        </a>
-                    </div>
+    <a
+        href="#introduction"
+        className="mt-5 inline-flex items-center gap-2 text-xs text-black/50 transition-colors hover:text-black"
+    >
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="13"
+            height="13"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+        >
+            <path d="M12 5v14" />
+            <path d="m19 12-7 7-7-7" />
+        </svg>
 
-                    <a
-                        href="#introduction"
-                        className="mt-5 inline-flex items-center gap-2 text-xs text-black/50 transition-colors hover:text-black"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="13"
-                            height="13"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            aria-hidden="true"
-                        >
-                            <path d="M12 5v14" />
-                            <path d="m19 12-7 7-7-7" />
-                        </svg>
-
-                        {lang === "en"
-                            ? "Explore the possibilities"
-                            : "Explore las posibilidades"}
-                    </a>
-                </div>
+        {lang === "en"
+            ? "Explore the possibilities"
+            : "Explore las posibilidades"}
+    </a>
+</div>
             </div>
         </section>
     );

@@ -33,12 +33,12 @@ const services = [
       en: "Wood, aluminum, and PVC fencing designed for privacy, security, durability, and curb appeal.",
       es: "Cercas modernas de madera, aluminio y PVC diseñadas para privacidad, seguridad, durabilidad y atractivo exterior.",
     },
-    image: "/assets/images/project6.webp",
+    image: "/assets/images/modern-fancing.webp",
     alt: {
       en: "Modern outdoor privacy structure in South Florida",
       es: "Estructura moderna de privacidad para exteriores en el Sur de Florida",
     },
-    href: "/services/fencing",
+    href: "/services/modern-fencing",
   },
   {
     number: "03",
@@ -50,7 +50,7 @@ const services = [
       en: "Durable epoxy flooring systems for garages and spaces that need a clean, resilient, easy-to-maintain surface.",
       es: "Sistemas de pisos epóxicos duraderos para garajes y espacios que requieren una superficie limpia, resistente y fácil de mantener.",
     },
-    image: "/assets/images/project5.webp",
+    image: "/assets/images/epoxy-flooring.webp",
     alt: {
       en: "Residential outdoor flooring project in South Florida",
       es: "Proyecto residencial de pisos exteriores en el Sur de Florida",
@@ -72,7 +72,7 @@ const services = [
       en: "Concrete paver patio and outdoor living area in South Florida",
       es: "Patio de pavers de concreto y espacio exterior en el Sur de Florida",
     },
-    href: "/services/pavers-concrete",
+    href: "/services/concrete-pavers",
   },
   {
     number: "05",
@@ -101,7 +101,7 @@ const services = [
       en: "Durable accordion shutters providing convenient storm protection for South Florida homes.",
       es: "Persianas acordeón duraderas que proporcionan protección práctica contra tormentas para hogares del Sur de Florida.",
     },
-    image: "/assets/images/project3.webp",
+    image: "/assets/images/accordion-shutters.webp",
     alt: {
       en: "South Florida residential exterior with storm-ready construction",
       es: "Exterior residencial en el Sur de Florida con construcción preparada para tormentas",
@@ -118,12 +118,12 @@ const services = [
       en: "Modern mailbox installations designed to complement your home's architecture and improve curb appeal.",
       es: "Instalación de buzones modernos diseñados para complementar la arquitectura de su hogar y mejorar su atractivo exterior.",
     },
-    image: "/assets/images/project2.webp",
+    image: "/assets/images/modern-mailbox.webp",
     alt: {
       en: "Modern residential exterior detail in South Florida",
       es: "Detalle moderno de un exterior residencial en el Sur de Florida",
     },
-    href: "/services/mailboxes",
+    href: "/services/modern-mailboxes",
   },
 ];
 

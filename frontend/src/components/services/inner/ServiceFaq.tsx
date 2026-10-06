@@ -88,7 +88,7 @@ export default function ServiceFaq({
                   onClick={() =>
                     setOpenIndex(open ? null : index)
                   }
-                  className="flex w-full items-center gap-5 py-6 text-left transition-all duration-300 sm:py-7"
+                  className="flex w-full items-center gap-5 py-6 text-left transition-all duration-300 sm:py-7 cursor-pointer"
                 >
                   <span className="hidden text-[10px] font-bold tracking-[0.15em] text-[var(--accent)] sm:block">
                     {item.number}

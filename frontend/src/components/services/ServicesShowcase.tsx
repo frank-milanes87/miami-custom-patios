@@ -8,6 +8,7 @@ import { services } from "@/data/services";
 const serviceContent = [
   {
     slug: "pergolas-screen-enclosures",
+
     en: {
       name: "Pergolas & Screen Enclosures",
       projectLine: "Custom outdoor structures for patios and pool areas",
@@ -26,6 +27,7 @@ const serviceContent = [
       ],
       alt: "Custom pergola and screened outdoor living space in Miami",
     },
+
     es: {
       name: "Pérgolas y Cerramientos con Mosquitero",
       projectLine:
@@ -46,11 +48,12 @@ const serviceContent = [
       alt: "Pérgola personalizada y espacio exterior con mosquitero en Miami",
     },
   },
+
   {
     slug: "modern-fencing",
+
     en: {
       name: "Modern Fencing",
-      sub: "Wood / Aluminum / PVC",
       projectLine: "Privacy and boundaries in wood, aluminum and PVC",
       headline: [
         "Privacy, boundaries",
@@ -67,16 +70,16 @@ const serviceContent = [
       ],
       alt: "Modern residential fencing in South Florida",
     },
+
     es: {
-      name: "Cercas Modernas",
-      sub: "Madera / Aluminio / PVC",
+      name: "Cercas",
       projectLine: "Privacidad y límites en madera, aluminio y PVC",
       headline: [
         "Privacidad, límites",
         "y carácter",
         "arquitectónico.",
       ],
-      body: "Las vallas modernas pueden delimitar una propiedad y, al mismo tiempo, complementar la arquitectura de la vivienda. Elige entre opciones de madera, aluminio y PVC según tus necesidades de privacidad, estética y las características de tu propiedad.",
+      body: "Las cercas modernas pueden delimitar una propiedad y, al mismo tiempo, complementar la arquitectura de la vivienda. Elija entre opciones de madera, aluminio y PVC según sus necesidades de privacidad, estética y las características de su propiedad.",
       features: [
         "Cercas de madera",
         "Cercas de aluminio",
@@ -87,8 +90,10 @@ const serviceContent = [
       alt: "Cerca residencial moderna en el Sur de Florida",
     },
   },
+
   {
     slug: "epoxy-flooring",
+
     en: {
       name: "Epoxy Flooring",
       projectLine: "Finished surfaces for garages and patios",
@@ -107,6 +112,7 @@ const serviceContent = [
       ],
       alt: "Epoxy flooring installation in South Florida",
     },
+
     es: {
       name: "Pisos Epóxicos",
       projectLine: "Superficies terminadas para garajes y patios",
@@ -126,8 +132,10 @@ const serviceContent = [
       alt: "Instalación de piso epóxico en el Sur de Florida",
     },
   },
+
   {
     slug: "concrete-pavers",
+
     en: {
       name: "Concrete & Pavers",
       projectLine: "Patios, walkways and pool deck surfaces",
@@ -146,6 +154,7 @@ const serviceContent = [
       ],
       alt: "Concrete paver outdoor living area in South Florida",
     },
+
     es: {
       name: "Concreto y Pavers",
       projectLine:
@@ -166,8 +175,10 @@ const serviceContent = [
       alt: "Área exterior con pavers de concreto en el Sur de Florida",
     },
   },
+
   {
     slug: "impact-windows-doors",
+
     en: {
       name: "Impact Windows & Doors",
       projectLine: "Storm protection and exterior upgrades",
@@ -186,6 +197,7 @@ const serviceContent = [
       ],
       alt: "Impact windows and doors for a South Florida home",
     },
+
     es: {
       name: "Ventanas y Puertas de Impacto",
       projectLine:
@@ -206,8 +218,10 @@ const serviceContent = [
       alt: "Ventanas y puertas de impacto para un hogar del Sur de Florida",
     },
   },
+
   {
     slug: "accordion-shutters",
+
     en: {
       name: "Accordion Shutters",
       projectLine: "Practical storm preparation for openings",
@@ -226,6 +240,7 @@ const serviceContent = [
       ],
       alt: "Accordion shutters for a South Florida home",
     },
+
     es: {
       name: "Persianas Acordeón",
       projectLine:
@@ -246,8 +261,10 @@ const serviceContent = [
       alt: "Persianas acordeón para un hogar del Sur de Florida",
     },
   },
+
   {
     slug: "modern-mailboxes",
+
     en: {
       name: "Modern Mailboxes",
       projectLine: "Architectural details for curb appeal",
@@ -266,6 +283,7 @@ const serviceContent = [
       ],
       alt: "Modern architectural mailbox installation",
     },
+
     es: {
       name: "Buzones Modernos",
       projectLine:
@@ -286,26 +304,160 @@ const serviceContent = [
       alt: "Instalación de buzón arquitectónico moderno",
     },
   },
+
+  {
+    slug: "motorized-louvered-roofs",
+
+    en: {
+      name: "Motorized Louvered Roofs",
+      projectLine: "Adjustable shade and outdoor comfort",
+      headline: [
+        "Control the light.",
+        "Shape the shade.",
+        "Enjoy the outdoors.",
+      ],
+      body: "Motorized louvered roofs provide adjustable outdoor coverage, allowing you to control shade and create a more flexible outdoor environment around your home.",
+      features: [
+        "Motorized louvers",
+        "Adjustable shade",
+        "Outdoor comfort",
+        "Patio applications",
+        "Contemporary design",
+      ],
+      alt: "Motorized louvered roof outdoor structure in South Florida",
+    },
+
+    es: {
+      name: "Techos de Lamas Motorizados",
+      projectLine: "Sombra ajustable y comodidad exterior",
+      headline: [
+        "Controle la luz.",
+        "Defina la sombra.",
+        "Disfrute el exterior.",
+      ],
+      body: "Los techos de lamas motorizados ofrecen una cobertura exterior ajustable, permitiendo controlar la sombra y crear un ambiente exterior más flexible alrededor de su hogar.",
+      features: [
+        "Lamas motorizadas",
+        "Sombra ajustable",
+        "Comodidad exterior",
+        "Aplicaciones para patios",
+        "Diseño contemporáneo",
+      ],
+      alt: "Techo de lamas motorizado para espacio exterior en el Sur de Florida",
+    },
+  },
+
+  {
+    slug: "outdoor-kitchens",
+
+    en: {
+      name: "Outdoor Kitchens",
+      projectLine: "Custom outdoor cooking and entertaining spaces",
+      headline: [
+        "Bring the kitchen",
+        "outside.",
+        "Make it yours.",
+      ],
+      body: "Outdoor kitchens create dedicated spaces for cooking, dining and entertaining while extending the way you use your patio and outdoor living areas.",
+      features: [
+        "Outdoor cooking spaces",
+        "Entertaining areas",
+        "Custom layouts",
+        "Patio integration",
+        "Outdoor dining",
+      ],
+      alt: "Custom outdoor kitchen and entertaining area in Miami",
+    },
+
+    es: {
+      name: "Cocinas Exteriores",
+      projectLine:
+        "Espacios personalizados para cocinar y recibir al aire libre",
+      headline: [
+        "Lleve la cocina",
+        "al exterior.",
+        "Hágala suya.",
+      ],
+      body: "Las cocinas exteriores crean espacios dedicados para cocinar, comer y recibir invitados, ampliando la forma en que utiliza su patio y sus áreas de vida exterior.",
+      features: [
+        "Espacios para cocinar al aire libre",
+        "Áreas para recibir invitados",
+        "Distribuciones personalizadas",
+        "Integración con el patio",
+        "Comedor exterior",
+      ],
+      alt: "Cocina exterior personalizada y área para recibir invitados en Miami",
+    },
+  },
+
+  {
+    slug: "interior-design",
+
+    en: {
+      name: "Interior Design",
+      projectLine:
+        "Thoughtful interior spaces designed around your home",
+      headline: [
+        "Interior spaces",
+        "with purpose,",
+        "character and balance.",
+      ],
+      body: "Interior design brings together layout, materials, finishes and furnishings to create spaces that feel cohesive with the home and the way you live.",
+      features: [
+        "Space planning",
+        "Material selections",
+        "Finish coordination",
+        "Furniture direction",
+        "Interior styling",
+      ],
+      alt: "Refined residential interior design in South Florida",
+    },
+
+    es: {
+      name: "Diseño de Interiores",
+      projectLine:
+        "Espacios interiores diseñados pensando en su hogar",
+      headline: [
+        "Espacios interiores",
+        "con propósito,",
+        "carácter y equilibrio.",
+      ],
+      body: "El diseño de interiores reúne distribución, materiales, acabados y mobiliario para crear espacios que se sientan coherentes con el hogar y con la forma en que usted vive.",
+      features: [
+        "Planificación de espacios",
+        "Selección de materiales",
+        "Coordinación de acabados",
+        "Orientación de mobiliario",
+        "Estilismo interior",
+      ],
+      alt: "Diseño de interiores residencial refinado en el Sur de Florida",
+    },
+  },
 ];
 
 export default function ServicesShowcase() {
   const { lang } = useLang();
   const [active, setActive] = useState(0);
-
   useEffect(() => {
     const sections = serviceContent
       .map((service) => document.getElementById(service.slug))
       .filter(Boolean) as HTMLElement[];
 
+    if (!sections.length) return;
+
     const observer = new IntersectionObserver(
       (entries) => {
         const visible = entries
           .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+          .sort(
+            (a, b) =>
+              b.intersectionRatio - a.intersectionRatio,
+          );
 
         if (visible[0]) {
           const index = serviceContent.findIndex(
-            (service) => service.slug === visible[0].target.id,
+            (service) =>
+              service.slug === visible[0].target.id,
           );
 
           if (index !== -1) {
@@ -323,11 +475,20 @@ export default function ServicesShowcase() {
 
     return () => observer.disconnect();
   }, []);
-
   const jump = (slug: string) => {
-    document.getElementById(slug)?.scrollIntoView({
+    const section = document.getElementById(slug);
+
+    if (!section) return;
+
+    const headerOffset = 90;
+
+    const sectionTop =
+      section.getBoundingClientRect().top +
+      window.scrollY;
+
+    window.scrollTo({
+      top: sectionTop - headerOffset,
       behavior: "smooth",
-      block: "start",
     });
   };
 
@@ -353,6 +514,7 @@ export default function ServicesShowcase() {
             }`}
           >
             {String(index + 1).padStart(2, "0")}
+
             <span
               className={`ml-1 inline-block h-px align-middle transition-all ${
                 active === index
@@ -363,7 +525,6 @@ export default function ServicesShowcase() {
           </button>
         ))}
       </nav>
-
       {serviceContent.map((service, index) => {
         const content = service[lang];
         const image = getImage(service.slug);
@@ -374,13 +535,17 @@ export default function ServicesShowcase() {
             key={service.slug}
             id={service.slug}
             className={`scroll-mt-20 border-b border-[#e5e2df] py-16 lg:py-28 ${
-              flip ? "bg-[#f8f4ee]" : "bg-[var(--background)]"
+              flip
+                ? "bg-[#f8f4ee]"
+                : "bg-[var(--background)]"
             }`}
           >
             <div className="mx-auto grid w-full max-w-[1440px] gap-8 px-6 sm:px-8 lg:grid-cols-12 lg:items-center lg:gap-0 lg:px-12">
               <div
                 className={`group overflow-hidden lg:col-span-6 ${
-                  flip ? "lg:order-2 lg:col-start-7" : ""
+                  flip
+                    ? "lg:order-2 lg:col-start-7"
+                    : ""
                 }`}
               >
                 <div className="relative aspect-[4/3] overflow-hidden bg-[#f3eee7] lg:aspect-[5/6]">
@@ -404,6 +569,7 @@ export default function ServicesShowcase() {
                   <div className="absolute inset-x-0 bottom-0 p-7 lg:p-9">
                     <div className="border-t border-white/30 pt-5">
                       <div className="flex items-end justify-between gap-6">
+
                         <div>
                           <p className="font-sora text-lg font-semibold uppercase tracking-[-0.02em] text-white">
                             {content.name}
@@ -417,12 +583,14 @@ export default function ServicesShowcase() {
                         <span className="text-6xl font-semibold leading-none text-white/30 lg:text-8xl">
                           {String(index + 1).padStart(2, "0")}
                         </span>
+
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
+              {/* CONTENT */}
               <div
                 className={`lg:col-span-5 ${
                   flip
@@ -431,6 +599,7 @@ export default function ServicesShowcase() {
                 }`}
               >
                 <div className="flex items-baseline gap-5 border-b border-[#e5e2df] pb-5">
+
                   <span className="font-sora text-6xl font-semibold leading-none text-[var(--accent)] lg:text-7xl">
                     {String(index + 1).padStart(2, "0")}
                   </span>
@@ -439,18 +608,16 @@ export default function ServicesShowcase() {
                     <h2 className="font-sora text-sm font-bold uppercase tracking-[0.18em]">
                       {content.name}
                     </h2>
-
-                    {"sub" in content && content.sub && (
-                      <p className="mt-1 text-[11px] font-bold uppercase tracking-[0.2em] text-[var(--text)]">
-                        {content.sub}
-                      </p>
-                    )}
                   </div>
+
                 </div>
 
                 <h3 className="mt-7 font-sora text-3xl font-semibold uppercase leading-[1.05] sm:text-4xl">
                   {content.headline.map((line) => (
-                    <span key={line} className="block">
+                    <span
+                      key={line}
+                      className="block"
+                    >
                       {line}
                     </span>
                   ))}
@@ -461,7 +628,9 @@ export default function ServicesShowcase() {
                 </p>
 
                 <p className="mt-8 text-[10px] font-bold uppercase tracking-[0.2em] text-black/45">
-                  {lang === "en" ? "Features" : "Características"}
+                  {lang === "en"
+                    ? "Features"
+                    : "Características"}
                 </p>
 
                 <ul className="mt-3 grid border-t border-[#e5e2df] sm:grid-cols-2 sm:gap-x-6">
@@ -476,6 +645,7 @@ export default function ServicesShowcase() {
                   ))}
                 </ul>
 
+                {/* FEATURED FABRICATION PARTNER */}
                 {index === 4 && (
                   <div className="mt-7 border-l-2 border-[var(--accent)] pl-4">
                     <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[var(--accent)]">
@@ -494,6 +664,7 @@ export default function ServicesShowcase() {
                   </div>
                 )}
 
+                {/* EXPLORE SERVICE */}
                 <Link
                   href={`/services/${service.slug}`}
                   className="group/cta mt-8 inline-flex items-center gap-3 border-b border-black pb-1 text-xs font-bold uppercase tracking-widest transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"

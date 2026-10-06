@@ -64,7 +64,7 @@ export const services = [
       ],
     },
 
-    image: "/assets/images/project2.webp",
+    image: "/assets/images/outdoor-kitchens.webp",
   },
 
   {
@@ -132,7 +132,7 @@ export const services = [
       ],
     },
 
-    image: "/assets/images/project6.webp",
+    image: "/assets/images/modern-fancing.webp",
   },
 
   {
@@ -166,7 +166,7 @@ export const services = [
       ],
     },
 
-    image: "/assets/images/project5.webp",
+    image: "/assets/images/epoxy-flooring.webp",
   },
 
   {
@@ -234,7 +234,7 @@ export const services = [
       ],
     },
 
-    image: "/assets/images/project3.webp",
+    image: "/assets/images/accordion-shutters.webp",
   },
 
   {
@@ -268,6 +268,107 @@ export const services = [
       ],
     },
 
-    image: "/assets/images/project2.webp",
+    image: "/assets/images/modern-mailbox.webp",
+  },
+    {
+    slug: "motorized-louvered-roofs",
+
+    en: {
+      title: "Motorized Louvered Roofs",
+      shortDescription:
+        "Adjustable outdoor shade systems designed for comfort, flexibility, and year-round outdoor living.",
+      description:
+        "Create a more flexible outdoor living space with a motorized louvered roof designed to provide adjustable shade and protection.",
+      features: [
+        "Motorized louver systems",
+        "Adjustable shade",
+        "Outdoor comfort",
+        "Patio applications",
+      ],
+    },
+
+    es: {
+      title: "Techos de Lamas Motorizados",
+      shortDescription:
+        "Sistemas de sombra exterior ajustable diseñados para comodidad, flexibilidad y vida al aire libre.",
+      description:
+        "Cree un espacio exterior más flexible con un techo de lamas motorizado diseñado para proporcionar sombra y protección ajustables.",
+      features: [
+        "Sistemas de lamas motorizadas",
+        "Sombra ajustable",
+        "Comodidad exterior",
+        "Aplicaciones para patios",
+      ],
+    },
+
+    image: "/assets/images/roof.webp",
+  },
+
+  {
+    slug: "outdoor-kitchens",
+
+    en: {
+      title: "Outdoor Kitchens",
+      shortDescription:
+        "Custom outdoor kitchens designed for cooking, entertaining, and comfortable outdoor living.",
+      description:
+        "Extend your living space outdoors with a custom kitchen designed for cooking, entertaining, and enjoying time with family and friends.",
+      features: [
+        "Custom outdoor kitchen layouts",
+        "Outdoor cooking areas",
+        "Entertainment-focused designs",
+        "Durable outdoor materials",
+      ],
+    },
+
+    es: {
+      title: "Cocinas Exteriores",
+      shortDescription:
+        "Cocinas exteriores personalizadas diseñadas para cocinar, recibir invitados y disfrutar al aire libre.",
+      description:
+        "Amplíe su espacio de vida al exterior con una cocina personalizada diseñada para cocinar, recibir invitados y disfrutar en familia.",
+      features: [
+        "Diseños personalizados",
+        "Áreas para cocinar al aire libre",
+        "Espacios para entretenimiento",
+        "Materiales duraderos para exteriores",
+      ],
+    },
+
+    image: "/assets/images/project1.webp",
+  },
+
+  {
+    slug: "interior-design",
+
+    en: {
+      title: "Interior Design",
+      shortDescription:
+        "Thoughtful interior design solutions created to complement your home, lifestyle, and personal style.",
+      description:
+        "Create refined interior spaces with thoughtful design solutions tailored to your home's layout, materials, furnishings, and lifestyle.",
+      features: [
+        "Interior space planning",
+        "Material and finish selections",
+        "Furniture coordination",
+        "Custom interior design solutions",
+      ],
+    },
+
+    es: {
+      title: "Diseño de Interiores",
+      shortDescription:
+        "Soluciones de diseño de interiores creadas para complementar su hogar, estilo de vida y estilo personal.",
+      description:
+        "Cree espacios interiores refinados con soluciones de diseño pensadas para la distribución, materiales, mobiliario y estilo de vida de su hogar.",
+      features: [
+        "Planificación de espacios interiores",
+        "Selección de materiales y acabados",
+        "Coordinación de mobiliario",
+        "Soluciones personalizadas de diseño interior",
+      ],
+    },
+
+    image: "/assets/images/interior-design.webp",
   },
 ];

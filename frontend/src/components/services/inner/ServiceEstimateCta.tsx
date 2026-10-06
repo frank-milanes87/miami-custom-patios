@@ -98,20 +98,20 @@ export default function ServiceEstimateCta({
 
           <div className="border-l border-white/10 pl-6 lg:pl-12">
             <div className="flex flex-col gap-3 sm:items-start">
-              <a
-                href={`mailto:info@miamicustompatios.com?subject=${emailSubject}`}
-                className="group inline-flex min-h-13 max-w-full items-center justify-center gap-3 bg-[var(--accent)] px-7 py-4 text-center text-xs font-bold uppercase tracking-widest text-white transition-all duration-300 hover:brightness-110"
-              >
-                <span>
-                  {lang === "en"
-                    ? "Get a free virtual estimate"
-                    : "Obtenga un estimado virtual gratis"}
-                </span>
+            <a
+  href="/#contact"
+  className="group inline-flex min-h-13 max-w-full items-center justify-center gap-3 bg-[var(--accent)] px-7 py-4 text-center text-xs font-bold uppercase tracking-widest text-white transition-all duration-300 hover:brightness-110"
+>
+  <span>
+    {lang === "en"
+      ? "Get a free virtual estimate"
+      : "Obtenga un estimado virtual gratis"}
+  </span>
 
-                <span className="transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1">
-                  <ArrowUpRight />
-                </span>
-              </a>
+  <span className="transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1">
+    <ArrowUpRight />
+  </span>
+</a>
 
               <a
                 href="tel:+13055634756"

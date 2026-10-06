@@ -7,75 +7,85 @@ const navigation = [
   {
     en: "Home",
     es: "Inicio",
-    href: "#top",
+    href: "/",
   },
   {
     en: "Services",
     es: "Servicios",
-    href: "#services",
+    href: "/services",
   },
   {
     en: "Projects",
     es: "Proyectos",
-    href: "#portfolio",
+    href: "/projects",
   },
   {
     en: "About Us",
     es: "Nosotros",
-    href: "#about",
+    href: "/#about",
   },
   {
     en: "Reviews",
     es: "Reseñas",
-    href: "#reviews",
+    href: "/#reviews",
   },
   {
     en: "Contact",
     es: "Contacto",
-    href: "#contact",
+    href: "/#contact",
   },
 ];
 
 const services = [
   {
-    en: "Pergolas Screen Enclosures",
+    en: "Pergolas & Screen Enclosures",
     es: "Pérgolas y Cerramientos con Mosquitero",
-    href: "#services",
-  },
-  {
-    en: "Outdoor Kitchens",
-    es: "Cocinas Exteriores",
-    href: "#services",
-  },
-  {
-    en: "Concrete Pavers",
-    es: "Pavers de Concreto",
-    href: "#services",
+    href: "/services/pergolas-screen-enclosures",
   },
   {
     en: "Modern Fencing",
     es: "Cercas Modernas",
-    href: "#services",
+    href: "/services/modern-fencing",
   },
   {
     en: "Epoxy Flooring",
     es: "Pisos Epóxicos",
-    href: "#services",
+    href: "/services/epoxy-flooring",
   },
   {
-    en: "Impact Windows Doors",
+    en: "Concrete & Pavers",
+    es: "Concreto y Pavers",
+    href: "/services/concrete-pavers",
+  },
+  {
+    en: "Impact Windows & Doors",
     es: "Ventanas y Puertas de Impacto",
-    href: "#services",
+    href: "/services/impact-windows-doors",
   },
   {
     en: "Accordion Shutters",
     es: "Persianas Acordeón",
-    href: "#services",
+    href: "/services/accordion-shutters",
   },
   {
     en: "Modern Mailboxes",
     es: "Buzones Modernos",
-    href: "#services",
+    href: "/services/modern-mailboxes",
+  },
+  {
+    en: "Motorized Louvered Roofs",
+    es: "Techos de Lamas Motorizados",
+    href: "/services/motorized-louvered-roofs",
+  },
+  {
+    en: "Outdoor Kitchens",
+    es: "Cocinas Exteriores",
+    href: "/services/outdoor-kitchens",
+  },
+  {
+    en: "Interior Design",
+    es: "Diseño de Interiores",
+    href: "/services/interior-design",
   },
 ];
 
@@ -238,8 +248,6 @@ export default function SiteFooter() {
               ))}
             </ul>
           </div>
-
-          {/* Services */}
           <div>
             <p className="font-sora text-xs font-bold uppercase tracking-[0.08em] text-[#c78951]">
               {t.services}
@@ -258,15 +266,12 @@ export default function SiteFooter() {
               ))}
             </ul>
           </div>
-
-          {/* Contact */}
           <div>
             <p className="font-sora text-xs font-bold uppercase tracking-[0.08em] text-[#c78951]">
               {t.connect}
             </p>
 
             <div className="mt-5 space-y-4 font-manrope text-sm text-[#a9a3a4]">
-              {/* Phone */}
               <a
                 href="tel:+13055634756"
                 className="flex items-center gap-3 transition-colors hover:text-white"

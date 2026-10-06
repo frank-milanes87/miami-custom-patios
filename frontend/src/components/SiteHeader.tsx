@@ -19,7 +19,7 @@ const serviceGroups = [
       {
         en: "Motorized Louvered Roofs",
         es: "Techos de Lamas Motorizados",
-        href: "/services",
+        href: "/services/motorized-louvered-roofs",
       },
     ],
   },
@@ -35,46 +35,23 @@ const serviceGroups = [
         href: "/services/outdoor-kitchens",
       },
       {
-        en: "Concrete",
-        es: "Concreto",
-        href: "/services/concrete-pavers",
-      },
-      {
-        en: "Pavers",
-        es: "Pavers",
+        en: "Concrete & Pavers",
+        es: "Concreto y Pavers",
         href: "/services/concrete-pavers",
       },
     ],
   },
   {
     title: {
-      en: "Fencing",
-      es: "Cercas",
+      en: "Fencing & Flooring",
+      es: "Cercas y Pisos",
     },
     items: [
       {
-        en: "Wood Fencing",
-        es: "Cercas de Madera",
+        en: "Modern Fencing",
+        es: "Cercas Modernas",
         href: "/services/modern-fencing",
       },
-      {
-        en: "Aluminum Fencing",
-        es: "Cercas de Aluminio",
-        href: "/services/modern-fencing",
-      },
-      {
-        en: "PVC Fencing",
-        es: "Cercas de PVC",
-        href: "/services/modern-fencing",
-      },
-    ],
-  },
-  {
-    title: {
-      en: "Epoxy Flooring",
-      es: "Pisos Epóxicos",
-    },
-    items: [
       {
         en: "Epoxy Flooring",
         es: "Pisos Epóxicos",
@@ -89,14 +66,9 @@ const serviceGroups = [
     },
     items: [
       {
-        en: "Impact Windows Doors",
+        en: "Impact Windows & Doors",
         es: "Ventanas y Puertas de Impacto",
         href: "/services/impact-windows-doors",
-      },
-      {
-        en: "Modern Aluminum Mailboxes",
-        es: "Buzones Modernos de Aluminio",
-        href: "/services/modern-mailboxes",
       },
       {
         en: "Accordion Shutters",
@@ -104,9 +76,14 @@ const serviceGroups = [
         href: "/services/accordion-shutters",
       },
       {
+        en: "Modern Mailboxes",
+        es: "Buzones Modernos",
+        href: "/services/modern-mailboxes",
+      },
+      {
         en: "Interior Design",
         es: "Diseño de Interiores",
-        href: "/services",
+        href: "/services/interior-design",
       },
     ],
   },
@@ -116,7 +93,7 @@ const navigation = [
   {
     en: "Projects",
     es: "Proyectos",
-    href: "/#portfolio",
+    href: "/projects",
   },
   {
     en: "About Us",
