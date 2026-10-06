@@ -4,19 +4,19 @@ import Link from "next/link";
 import { useLang } from "@/lib/lang";
 
 type ServiceHeroProps = {
-    content: {
-        eyebrow: string;
-        title: string;
-        description: string;
-        features: string[];
-        cta: string;
-    };
-    image: string;
-    imageAlt: string;
-    number: string;
-    total: string;
-    category: string;
-    projectLabel: string;
+  content: {
+    eyebrow: string;
+    title: string;
+    description: string;
+    features: readonly string[];
+    cta: string;
+  };
+  image: string;
+  imageAlt: string;
+  number: string;
+  total: string;
+  category: string;
+  projectLabel: string;
 };
 
 export default function ServiceHero({
