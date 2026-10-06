@@ -1,19 +1,41 @@
+"use client";
+
+import { useLang } from "@/lib/lang";
+
 export default function ProjectPartners() {
+  const { lang } = useLang();
+
   const partners = [
     {
-      location: "Medley, FL",
+      location: {
+        en: "Medley, FL",
+        es: "Medley, FL",
+      },
       name: "American Aluminum Fabricators",
-      category: "Precision-Fabricated Impact Products",
-      description:
-        "Impact windows, doors and structural-grade aluminum components.",
+      category: {
+        en: "Precision-Fabricated Impact Products",
+        es: "Productos de Impacto Fabricados con Precisión",
+      },
+      description: {
+        en: "Impact windows, doors and structural-grade aluminum components.",
+        es: "Ventanas y puertas de impacto y componentes de aluminio de grado estructural.",
+      },
       number: "01",
     },
     {
-      location: "Miami, FL",
+      location: {
+        en: "Miami, FL",
+        es: "Miami, FL",
+      },
       name: "Garcell Designs",
-      category: "Interior Design Collaboration",
-      description:
-        "Full-scope interior design consultation and styling.",
+      category: {
+        en: "Interior Design Collaboration",
+        es: "Colaboración de Diseño de Interiores",
+      },
+      description: {
+        en: "Full-scope interior design consultation and styling.",
+        es: "Consultoría integral de diseño de interiores y estilismo.",
+      },
       number: "02",
     },
   ];
@@ -31,10 +53,11 @@ export default function ProjectPartners() {
                   : "lg:pl-14"
               }`}
             >
-              {/* Top */}
               <div className="flex items-center justify-between">
                 <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#5f5a54]">
-                  Project partner · {partner.location}
+                  {lang === "en"
+                    ? `Project partner · ${partner.location.en}`
+                    : `Socio del proyecto · ${partner.location.es}`}
                 </p>
 
                 <span className="font-sora text-xs tracking-[0.15em] text-black/30">
@@ -42,7 +65,6 @@ export default function ProjectPartners() {
                 </span>
               </div>
 
-              {/* Main content */}
               <div className="mt-16 sm:mt-20">
                 <h3 className="max-w-xl font-sora text-3xl font-medium leading-[1.08] tracking-[-0.035em] text-[#110c0d] sm:text-4xl lg:text-[2.7rem]">
                   {partner.name}
@@ -51,22 +73,22 @@ export default function ProjectPartners() {
                 <div className="mt-6 h-px w-10 bg-[#c78951] transition-all duration-500 group-hover:w-20" />
 
                 <p className="mt-6 max-w-md font-sora text-base font-medium leading-6 text-[#c78951] sm:text-lg">
-                  {partner.category}
+                  {partner.category[lang]}
                 </p>
 
                 <p className="mt-4 max-w-md text-sm leading-7 text-[#5f5a54] sm:text-[15px]">
-                  {partner.description}
+                  {partner.description[lang]}
                 </p>
               </div>
 
-              {/* Bottom */}
               <div className="mt-12 flex items-center">
                 <button
                   type="button"
-                  className="group/button inline-flex items-center gap-4 text-[10px] font-bold uppercase tracking-[0.22em] text-[#110c0d] cursor-pointer"
+                  className="group/button inline-flex cursor-pointer items-center gap-4 text-[10px] font-bold uppercase tracking-[0.22em] text-[#110c0d]"
                 >
                   <span className="relative">
-                    Learn More
+                    {lang === "en" ? "Learn More" : "Más Información"}
+
                     <span className="absolute -bottom-2 left-0 h-px w-full origin-left bg-[#110c0d] transition-transform duration-300 group-hover/button:scale-x-0" />
                   </span>
 
@@ -91,7 +113,6 @@ export default function ProjectPartners() {
                 </button>
               </div>
 
-              {/* Subtle hover accent */}
               <div className="pointer-events-none absolute bottom-0 left-0 h-[2px] w-0 bg-[#c78951] transition-all duration-500 group-hover:w-full" />
             </article>
           ))}

@@ -1,20 +1,38 @@
+"use client";
+
+import { useLang } from "@/lib/lang";
+
 export default function ProcessSection() {
+  const { lang } = useLang();
+
   const steps = [
     {
       number: "01",
-      title: "Tell Us About Your Project",
+      title: {
+        en: "Tell Us About Your Project",
+        es: "Cuéntenos Sobre Su Proyecto",
+      },
     },
     {
       number: "02",
-      title: "Virtual Estimate or In-Home Consultation",
+      title: {
+        en: "Virtual Estimate or In-Home Consultation",
+        es: "Estimado Virtual o Consulta en el Hogar",
+      },
     },
     {
       number: "03",
-      title: "Design & Project Planning",
+      title: {
+        en: "Design & Project Planning",
+        es: "Diseño y Planificación del Proyecto",
+      },
     },
     {
       number: "04",
-      title: "Build Your Custom Space",
+      title: {
+        en: "Build Your Custom Space",
+        es: "Construya Su Espacio Personalizado",
+      },
     },
   ];
 
@@ -24,17 +42,22 @@ export default function ProcessSection() {
         <div className="flex flex-col justify-between gap-10 lg:flex-row lg:items-end">
           <div>
             <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-[#c78951]">
-              A considered process
+              {lang === "en"
+                ? "A considered process"
+                : "Un proceso bien pensado"}
             </p>
 
             <h2 className="mt-5 max-w-3xl font-sora text-4xl font-medium uppercase leading-[1.05] tracking-[-0.035em] sm:text-5xl lg:text-6xl">
-              From Idea To Outdoor Room
+              {lang === "en"
+                ? "From Idea To Outdoor Room"
+                : "De la Idea al Espacio Exterior"}
             </h2>
           </div>
 
           <p className="max-w-md text-sm leading-7 text-white/45">
-            Virtual estimates are free. In-home consultations are $75,
-            reimbursed when you proceed within 30 days.
+            {lang === "en"
+              ? "Virtual estimates are free. In-home consultations are $75, reimbursed when you proceed within 30 days."
+              : "Los estimados virtuales son gratis. Las consultas en el hogar cuestan $75 y se reembolsan si continúa dentro de 30 días."}
           </p>
         </div>
 
@@ -56,7 +79,7 @@ export default function ProcessSection() {
                 <div className="mb-5 h-px w-8 bg-[#c78951] transition-all duration-500 group-hover:w-16" />
 
                 <h3 className="max-w-[260px] font-sora text-lg font-medium leading-6 text-white">
-                  {step.title}
+                  {step.title[lang]}
                 </h3>
               </div>
 
