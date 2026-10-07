@@ -1,6 +1,6 @@
 "use client";
 
-import EstimateForm from "@/components/EstimateForm";
+import EstimateForm from "@/components/estimate/EstimateForm";
 import { useLang } from "@/lib/lang";
 
 function ArrowRightIcon() {
@@ -83,9 +83,9 @@ export default function Hero() {
       className="
         relative isolate overflow-hidden
         bg-[#110c0d] text-white
-        pt-[72px]
-        min-h-[940px]
-        lg:min-h-[820px]
+        pt-[60px]
+        min-h-[920px]
+        lg:min-h-[800px]
       "
     >
       {/* Background Image */}
