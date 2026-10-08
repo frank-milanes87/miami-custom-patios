@@ -1,15 +1,16 @@
-import Hero from "@/components/Hero";
-import Credentials from "@/components/Credentials";
-import Services from "@/components/Services";
-import CustomPergolas from "@/components/CustomPergolas";
-import Projects from "@/components/Projects";
-import AboutSouthFlorida from "@/components/AboutSouthFlorida";
-import ProjectPartners from "@/components/ProjectPartners";
-import ProcessSection from "@/components/ProcessSection";
-import ReviewsSection from "@/components/ReviewsSection";
-import FaqSection from "@/components/FaqSection";
-import FinalCtaSection from "@/components/FinalCtaSection";
-import ContactSection from "@/components/ContactSection";
+import Hero from "@/components/home/Hero";
+import Credentials from "@/components/home/Credentials";
+import Services from "@/components/home/Services";
+import CustomPergolas from "@/components/home/CustomPergolas";
+import Projects from "@/components/home/Projects";
+import AboutSouthFlorida from "@/components/home/AboutSouthFlorida";
+import WhoWeAre from "@/components/home/WhoWeAre";
+import ProjectPartners from "@/components/home/ProjectPartners";
+import ProcessSection from "@/components/home/ProcessSection";
+import ReviewsSection from "@/components/home/ReviewsSection";
+import FaqSection from "@/components/home/FaqSection";
+import FinalCtaSection from "@/components/home/FinalCtaSection";
+import ContactSection from "@/components/home/ContactSection";
 import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <CustomPergolas />
       <Projects />
       <AboutSouthFlorida />
+      < WhoWeAre />
       <ProjectPartners />
       <ProcessSection />
       <ReviewsSection />

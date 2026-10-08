@@ -35,7 +35,7 @@ export default function ProjectsCTA() {
         <div>
           <div className="flex flex-col gap-3 sm:flex-row">
             <a
-              href="/#contact"
+              href="/contact"
               className="inline-flex h-auto min-h-13 cursor-pointer items-center justify-center gap-2 whitespace-normal rounded-none bg-[var(--accent)] px-7 py-4 text-xs font-bold uppercase tracking-widest text-white shadow-none transition-colors hover:brightness-95"
             >
               {lang === "en"

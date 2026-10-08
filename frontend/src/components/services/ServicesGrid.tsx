@@ -115,6 +115,17 @@ const serviceItems = [
       line: "Espacios interiores cuidadosamente diseñados para complementar su hogar",
     },
   },
+  {
+    slug: "artificial-turf",
+    en: {
+      name: "Artificial Turf",
+      line: "A polished ground-finish option for patios, pool decks, pergolas and paver projects",
+    },
+    es: {
+      name: "Césped Artificial",
+      line: "Una opción de acabado para patios, áreas de piscina, pérgolas y proyectos con pavers",
+    },
+  },
 ];
 
 export default function ServicesGrid() {
@@ -127,20 +138,6 @@ export default function ServicesGrid() {
     (service) => service.slug === activeService.slug,
   )?.image;
 
-  /*
-   * Scroll to the matching service section.
-   *
-   * 01 -> #pergolas-screen-enclosures
-   * 02 -> #modern-fencing
-   * 03 -> #epoxy-flooring
-   * 04 -> #concrete-pavers
-   * 05 -> #impact-windows-doors
-   * 06 -> #accordion-shutters
-   * 07 -> #modern-mailboxes
-   * 08 -> #motorized-louvered-roofs
-   * 09 -> #outdoor-kitchens
-   * 10 -> #interior-design
-   */
   const scrollToService = (slug: string) => {
     const section = document.getElementById(slug);
 
@@ -159,7 +156,6 @@ export default function ServicesGrid() {
       behavior: "smooth",
     });
 
-    // Update URL hash without triggering another browser jump
     window.history.replaceState(null, "", `#${slug}`);
   };
 
@@ -175,7 +171,7 @@ export default function ServicesGrid() {
         ========================================= */}
         <div className="lg:sticky lg:top-28 lg:self-start">
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--accent)]">
-            01 — 10
+            01 — 11
           </p>
 
           <h2 className="font-sora mt-4 text-4xl font-semibold uppercase tracking-[-0.04em] sm:text-5xl">
@@ -184,8 +180,8 @@ export default function ServicesGrid() {
 
           <p className="mt-5 max-w-sm text-[15px] leading-7 text-black/55">
             {lang === "en"
-              ? "Ten specialties for outdoor living, property improvement, home protection and refined South Florida spaces."
-              : "Diez especialidades para espacios exteriores, mejoras de propiedad, protección del hogar y espacios refinados en el Sur de Florida."}
+              ? "Eleven specialties for outdoor living, property improvement, home protection and refined South Florida spaces."
+              : "Once especialidades para espacios exteriores, mejoras de propiedad, protección del hogar y espacios refinados en el Sur de Florida."}
           </p>
 
           <div className="relative mt-10 hidden aspect-[4/3] overflow-hidden bg-[#eee8df] lg:block">
@@ -243,19 +239,17 @@ export default function ServicesGrid() {
                   onClick={() => scrollToService(service.slug)}
                   onMouseEnter={() => setHovered(index)}
                   onFocus={() => setHovered(index)}
-                  className={`group relative grid w-full cursor-pointer grid-cols-[3.5rem_1fr_auto] items-center gap-4 px-2 py-7 text-left transition-all duration-300 sm:grid-cols-[5rem_1fr_auto] sm:px-4 lg:py-8 ${
-                    isActive
+                  className={`group relative grid w-full cursor-pointer grid-cols-[3.5rem_1fr_auto] items-center gap-4 px-2 py-7 text-left transition-all duration-300 sm:grid-cols-[5rem_1fr_auto] sm:px-4 lg:py-8 ${isActive
                       ? "bg-[#f3eee7]"
                       : "hover:bg-[#f3eee7]"
-                  }`}
+                    }`}
                 >
                   {/* NUMBER */}
                   <span
-                    className={`font-sora text-3xl font-semibold leading-none tracking-[-0.05em] transition-all duration-300 sm:text-4xl ${
-                      isActive
+                    className={`font-sora text-3xl font-semibold leading-none tracking-[-0.05em] transition-all duration-300 sm:text-4xl ${isActive
                         ? "text-[var(--accent)]"
                         : "text-[var(--warm-deep)] group-hover:text-[var(--accent)]"
-                    }`}
+                      }`}
                   >
                     {number}
                   </span>
@@ -273,11 +267,10 @@ export default function ServicesGrid() {
 
                   {/* ARROW */}
                   <span
-                    className={`flex size-10 items-center justify-center border transition-all duration-300 ${
-                      isActive
+                    className={`flex size-10 items-center justify-center border transition-all duration-300 ${isActive
                         ? "border-[var(--accent)] bg-[var(--accent)] text-white"
                         : "border-[#d8d0c5] text-black/40 group-hover:border-[var(--accent)] group-hover:bg-[var(--accent)] group-hover:text-white"
-                    }`}
+                      }`}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -299,11 +292,10 @@ export default function ServicesGrid() {
 
                   {/* ACTIVE SIDE BAR */}
                   <span
-                    className={`absolute bottom-0 left-0 top-0 w-[3px] origin-left bg-[var(--accent)] transition-transform duration-300 ${
-                      isActive
+                    className={`absolute bottom-0 left-0 top-0 w-[3px] origin-left bg-[var(--accent)] transition-transform duration-300 ${isActive
                         ? "scale-y-100"
                         : "scale-y-0"
-                    }`}
+                      }`}
                   />
                 </button>
               </li>

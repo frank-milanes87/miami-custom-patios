@@ -14,18 +14,16 @@ type ServiceHeroProps = {
   image: string;
   imageAlt: string;
   number: string;
-  total: string;
   category: string;
   projectLabel: string;
 };
 
 export default function ServiceHero({
-    content,
-    image,
-    imageAlt,
-    number,
-    total,
-    projectLabel,
+  content,
+  image,
+  imageAlt,
+  number,
+  projectLabel,
 }: ServiceHeroProps) {
     const { lang } = useLang();
 
@@ -71,9 +69,9 @@ export default function ServiceHero({
                     <p className="text-7xl font-medium leading-none text-[var(--accent)] sm:text-8xl">
                         {number}
 
-                        <span className="ml-3 text-lg text-black/40">
-                            / {total}
-                        </span>
+                    <span className="ml-3 text-lg text-black/40">
+  / 11
+</span>
                     </p>
 
                     <p className="mt-7 text-[10px] font-bold uppercase tracking-widest text-black/50">
@@ -109,7 +107,7 @@ export default function ServiceHero({
 <div className="lg:col-start-1 lg:row-start-2 lg:mt-0">
     <div className="flex flex-col gap-3 sm:items-start">
         <a
-            href="/#contact"
+            href="/contact"
             className="inline-flex min-h-13 max-w-full items-center justify-center gap-2 rounded-none bg-[var(--accent)] px-7 py-4 text-center text-xs font-bold uppercase tracking-widest text-white shadow-none transition-colors hover:brightness-95"
         >
             {content.cta}

@@ -1,7 +1,7 @@
 "use client";
 
 import { useLang } from "@/lib/lang";
-import EstimateForm from "@/components/EstimateForm";
+import EstimateForm from "@/components/estimate/EstimateForm";
 
 export default function ContactSection() {
   const { lang } = useLang();
@@ -37,7 +37,6 @@ export default function ContactSection() {
       className="scroll-mt-20 bg-[#fef8fa] py-20 sm:py-24 lg:py-32"
     >
       <div className="mx-auto grid w-full max-w-[1440px] gap-10 px-5 sm:px-6 md:gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start lg:gap-16 lg:px-10">
-        {/* Contact information */}
         <div className="lg:pt-4">
           <p className="font-manrope text-[10px] font-bold uppercase tracking-[0.28em] text-[#c78951] sm:text-xs">
             {t.eyebrow}
@@ -52,7 +51,6 @@ export default function ContactSection() {
           </p>
 
           <dl className="mt-8 space-y-6 border-t border-black/10 pt-7 sm:mt-10 sm:space-y-7 sm:pt-8">
-            {/* Phone */}
             <div>
               <dt className="font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#5f5a54]/60">
                 {t.phone}
@@ -67,8 +65,6 @@ export default function ContactSection() {
                 </a>
               </dd>
             </div>
-
-            {/* Email */}
             <div>
               <dt className="font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#5f5a54]/60">
                 {t.email}
@@ -83,8 +79,6 @@ export default function ContactSection() {
                 </a>
               </dd>
             </div>
-
-            {/* Service area */}
             <div>
               <dt className="font-manrope text-[10px] font-bold uppercase tracking-[0.2em] text-[#5f5a54]/60">
                 {t.serviceArea}
@@ -96,8 +90,6 @@ export default function ContactSection() {
             </div>
           </dl>
         </div>
-
-        {/* Same estimate form and Supabase pipeline as Hero */}
         <div className="w-full min-w-0">
           <EstimateForm />
         </div>

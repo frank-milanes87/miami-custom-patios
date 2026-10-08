@@ -12,12 +12,20 @@ export default function ProcessSection() {
         en: "Tell Us About Your Project",
         es: "Cuéntenos Sobre Su Proyecto",
       },
+      description: {
+        en: "Share your vision, property details, and the services you're considering.",
+        es: "Comparta su visión, los detalles de su propiedad y los servicios que está considerando.",
+      },
     },
     {
       number: "02",
       title: {
         en: "Virtual Estimate or In-Home Consultation",
         es: "Estimado Virtual o Consulta en el Hogar",
+      },
+      description: {
+        en: "We review your project and help determine the right next steps for your space.",
+        es: "Revisamos su proyecto y le ayudamos a determinar los siguientes pasos para su espacio.",
       },
     },
     {
@@ -26,12 +34,20 @@ export default function ProcessSection() {
         en: "Design & Project Planning",
         es: "Diseño y Planificación del Proyecto",
       },
+      description: {
+        en: "Plans, materials, finishes, and project details are refined before construction begins.",
+        es: "Definimos planos, materiales, acabados y detalles del proyecto antes de comenzar la construcción.",
+      },
     },
     {
       number: "04",
       title: {
         en: "Build Your Custom Space",
         es: "Construya Su Espacio Personalizado",
+      },
+      description: {
+        en: "Our team brings the approved design to life with a focus on quality and craftsmanship.",
+        es: "Nuestro equipo convierte el diseño aprobado en realidad, enfocándose en la calidad y la excelencia.",
       },
     },
   ];
@@ -65,7 +81,7 @@ export default function ProcessSection() {
           {steps.map((step) => (
             <article
               key={step.number}
-              className="group relative min-h-[270px] border-b border-white/10 p-7 transition-colors duration-500 hover:bg-white/[0.035] sm:p-8 lg:min-h-[310px] lg:border-r"
+              className="group relative border-b border-white/10 p-7 transition-colors duration-500 hover:bg-white/[0.035] sm:p-8 lg:border-r"
             >
               <div className="flex items-start justify-between">
                 <span className="font-sora text-4xl font-medium tracking-[-0.04em] text-[#c78951]">
@@ -75,12 +91,16 @@ export default function ProcessSection() {
                 <span className="h-2 w-2 rounded-full border border-[#c78951]/50 transition-all duration-500 group-hover:bg-[#c78951] group-hover:shadow-[0_0_18px_rgba(199,137,81,0.35)]" />
               </div>
 
-              <div className="absolute bottom-8 left-7 right-7 sm:left-8 sm:right-8">
+              <div className="mt-20">
                 <div className="mb-5 h-px w-8 bg-[#c78951] transition-all duration-500 group-hover:w-16" />
 
                 <h3 className="max-w-[260px] font-sora text-lg font-medium leading-6 text-white">
                   {step.title[lang]}
                 </h3>
+
+                <p className="mt-4 max-w-[280px] text-sm leading-6 text-white/45">
+                  {step.description[lang]}
+                </p>
               </div>
 
               <div className="absolute bottom-0 left-0 h-px w-0 bg-[#c78951] transition-all duration-700 group-hover:w-full" />

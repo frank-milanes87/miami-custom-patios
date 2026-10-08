@@ -85,6 +85,11 @@ const serviceGroups = [
         es: "Diseño de Interiores",
         href: "/services/interior-design",
       },
+      {
+  en: "Artificial Turf",
+  es: "Césped Artificial",
+  href: "/services/artificial-turf",
+},
     ],
   },
 ];
@@ -108,7 +113,7 @@ const navigation = [
   {
     en: "Contact",
     es: "Contacto",
-    href: "/#contact",
+    href: "/contact",
   },
 ];
 
@@ -391,7 +396,7 @@ export default function SiteHeader() {
           </a>
 
           <Link
-            href="/#contact"
+            href="/contact"
             onClick={closeMenus}
             className="flex h-[44px] min-w-[182px] items-center justify-center whitespace-nowrap bg-[#c78951] px-6 font-sora text-[12px] font-semibold text-white transition-colors hover:bg-[#b47742]"
           >
@@ -523,7 +528,7 @@ export default function SiteHeader() {
             </a>
 
             <Link
-              href="/#contact"
+              href="/contact"
               onClick={closeMenus}
               className="flex min-h-[52px] items-center justify-center bg-[#c78951] px-5 text-center font-sora text-[12px] font-semibold uppercase tracking-[0.04em] text-white"
             >

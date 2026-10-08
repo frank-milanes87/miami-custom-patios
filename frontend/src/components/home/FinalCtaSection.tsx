@@ -29,12 +29,12 @@ export default function FinalCtaSection() {
         </p>
 
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-          <button
-            type="button"
-            className="h-13 rounded-none bg-[#c78951] px-7 text-xs font-bold uppercase tracking-widest text-white transition-all duration-300 hover:bg-[#b87843] hover:shadow-[0_8px_30px_rgba(199,137,81,0.2)]"
+          <a 
+            href="/contact"
+            className="h-13 rounded-none bg-[#c78951] px-7 items-center inline-flex text-xs font-bold uppercase tracking-widest text-white transition-all duration-300 hover:bg-[#b87843] hover:shadow-[0_8px_30px_rgba(199,137,81,0.2)]"
           >
             {t.home.estimate}
-          </button>
+          </a>
 
           <a
             href="tel:+13055634756"

@@ -177,10 +177,10 @@ const credentials = [
   },
   {
     icon: ShieldCheckIcon,
-    enTitle: "Licensed &",
-    enSubtitle: "Fully Insured",
-    esTitle: "Con Licencia y",
-    esSubtitle: "Totalmente Asegurados",
+    enTitle: "Licensed & Insured",
+    enSubtitle: "Subcontractors",
+    esTitle: "Subcontratistas con",
+    esSubtitle: "Licencia y Seguro",
   },
   {
     icon: SparklesIcon,
@@ -198,13 +198,12 @@ const credentials = [
   },
   {
     icon: WalletCardsIcon,
-    enTitle: "Flexible Financing",
-    enSubtitle: "Options",
-    esTitle: "Opciones de",
-    esSubtitle: "Financiamiento Flexible",
+    enTitle: "Financing Available",
+    enSubtitle: "Through Our Partners",
+    esTitle: "Financiamiento Disponible",
+    esSubtitle: "A Través de Nuestros Socios",
   },
 ];
-
 export default function Credentials() {
   const { lang } = useLang();
 

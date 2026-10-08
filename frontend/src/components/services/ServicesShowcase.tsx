@@ -433,6 +433,47 @@ const serviceContent = [
       alt: "Diseño de interiores residencial refinado en el Sur de Florida",
     },
   },
+    {
+    slug: "artificial-turf",
+
+    en: {
+      name: "Artificial Turf",
+      projectLine: "A refined ground finish for South Florida outdoor spaces",
+      headline: [
+        "A cleaner",
+        "ground finish",
+        "for outdoor living.",
+      ],
+      body: "Artificial turf installation provides a polished, low-maintenance ground-finish option that complements patios, pool decks, pergolas and paver projects. Material and installation are included.",
+      features: [
+        "Patio applications",
+        "Poolside areas",
+        "Pergola surroundings",
+        "Paver project integration",
+        "Low-maintenance ground finish",
+      ],
+      alt: "Artificial turf installation complementing a South Florida outdoor living space",
+    },
+
+    es: {
+      name: "Césped Artificial",
+      projectLine: "Un acabado refinado para espacios exteriores del Sur de Florida",
+      headline: [
+        "Un acabado",
+        "más limpio",
+        "para exteriores.",
+      ],
+      body: "La instalación de césped artificial ofrece una opción de acabado práctica y de bajo mantenimiento que complementa patios, áreas de piscina, pérgolas y proyectos con pavers. Material e instalación incluidos.",
+      features: [
+        "Aplicaciones para patios",
+        "Áreas junto a piscinas",
+        "Alrededores de pérgolas",
+        "Integración con proyectos de pavers",
+        "Acabado de bajo mantenimiento",
+      ],
+      alt: "Instalación de césped artificial complementando un espacio exterior en el Sur de Florida",
+    },
+  },
 ];
 
 export default function ServicesShowcase() {

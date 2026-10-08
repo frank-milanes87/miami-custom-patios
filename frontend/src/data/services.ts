@@ -371,4 +371,39 @@ export const services = [
 
     image: "/assets/images/interior-design.webp",
   },
+    {
+    slug: "artificial-turf",
+
+    en: {
+      title: "Artificial Turf",
+      shortDescription:
+        "Artificial turf installation designed to complement patios, pool decks, pergolas, and paver projects.",
+      description:
+        "Add a polished ground-finish option to your outdoor space with artificial turf designed to complement patios, pool decks, pergolas, and paver projects. Material and installation included.",
+      features: [
+        "Patio applications",
+        "Poolside areas",
+        "Pergola surroundings",
+        "Paver project integration",
+        "Low-maintenance ground finish",
+      ],
+    },
+
+    es: {
+      title: "Césped Artificial",
+      shortDescription:
+        "Instalación de césped artificial diseñada para complementar patios, áreas de piscina, pérgolas y proyectos con pavers.",
+      description:
+        "Agregue un acabado refinado a su espacio exterior con césped artificial diseñado para complementar patios, áreas de piscina, pérgolas y proyectos con pavers. Material e instalación incluidos.",
+      features: [
+        "Aplicaciones para patios",
+        "Áreas junto a piscinas",
+        "Alrededores de pérgolas",
+        "Integración con proyectos de pavers",
+        "Acabado de bajo mantenimiento",
+      ],
+    },
+
+    image: "/assets/images/artificial-turf.webp",
+  },
 ];

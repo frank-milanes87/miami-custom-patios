@@ -27,7 +27,7 @@ export default function ProjectPartners() {
         en: "Miami, FL",
         es: "Miami, FL",
       },
-      name: "Garcell Designs",
+      name: "Garcells Interiors",
       category: {
         en: "Interior Design Collaboration",
         es: "Colaboración de Diseño de Interiores",
@@ -47,11 +47,10 @@ export default function ProjectPartners() {
           {partners.map((partner, index) => (
             <article
               key={partner.name}
-              className={`group relative flex min-h-[420px] flex-col justify-between border-b border-black/10 py-10 sm:py-12 lg:min-h-[500px] lg:py-14 ${
-                index === 0
+              className={`group relative flex min-h-[420px] flex-col justify-between border-b border-black/10 py-10 sm:py-12 lg:min-h-[500px] lg:py-14 ${index === 0
                   ? "lg:border-r lg:pr-14"
                   : "lg:pl-14"
-              }`}
+                }`}
             >
               <div className="flex items-center justify-between">
                 <p className="text-[10px] font-bold uppercase tracking-[0.24em] text-[#5f5a54]">

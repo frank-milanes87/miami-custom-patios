@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useLang } from "@/lib/lang";
 
 import EstimateProgress from "./EstimateProgress";
@@ -8,6 +8,8 @@ import EstimateStep1 from "./EstimateStep1";
 import EstimateStep2 from "./EstimateStep2";
 import EstimateStep3 from "./EstimateStep3";
 import EstimateStep4 from "./EstimateStep4";
+
+import { getEstimateService } from "./estimate-services";
 
 import type {
   ContactData,
@@ -36,17 +38,28 @@ export default function EstimateForm() {
   const { lang, t } = useLang();
 
   const [step, setStep] = useState(1);
+
   const [contact, setContact] =
     useState<ContactData>(initialContact);
+
   const [selectedServices, setSelectedServices] =
     useState<string[]>([]);
+
   const [serviceDetails, setServiceDetails] =
     useState<ServiceDetails>({});
+
   const [property, setProperty] =
     useState<PropertyData>(initialProperty);
 
+  const hasDetailedService = useMemo(() => {
+    return selectedServices.some(
+      (serviceId) =>
+        getEstimateService(serviceId)?.detailed === true,
+    );
+  }, [selectedServices]);
+
   function handleStep1Next() {
-    setStep(2);
+    setStep(hasDetailedService ? 2 : 3);
   }
 
   function handleStep2Back() {
@@ -58,7 +71,7 @@ export default function EstimateForm() {
   }
 
   function handleStep3Back() {
-    setStep(2);
+    setStep(hasDetailedService ? 2 : 1);
   }
 
   function handleStep3Next() {
@@ -106,7 +119,11 @@ export default function EstimateForm() {
           </div>
         </div>
 
-        <EstimateProgress step={step} lang={lang} />
+        <EstimateProgress
+          step={step}
+          lang={lang}
+          hasDetailedService={hasDetailedService}
+        />
 
         <div className="mt-5 rounded-xl border border-black/[0.06] bg-[#f7f4ef] p-4 shadow-[0_8px_30px_rgba(0,0,0,0.05)] sm:p-5">
           {step === 1 && (
@@ -119,15 +136,15 @@ export default function EstimateForm() {
             />
           )}
 
-          {step === 2 && (
-           <EstimateStep2
-  selectedServices={selectedServices}
-  serviceDetails={serviceDetails}
-  setServiceDetails={setServiceDetails}
-  lang={lang}
-  onBack={handleStep2Back}
-  onNext={handleStep2Next}
-/>
+          {step === 2 && hasDetailedService && (
+            <EstimateStep2
+              selectedServices={selectedServices}
+              serviceDetails={serviceDetails}
+              setServiceDetails={setServiceDetails}
+              lang={lang}
+              onBack={handleStep2Back}
+              onNext={handleStep2Next}
+            />
           )}
 
           {step === 3 && (

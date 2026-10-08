@@ -67,7 +67,7 @@ export default function ServicesCTA() {
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
             <a
-              href="/#contact"
+              href="/contact"
               className="group inline-flex h-13 w-full items-center justify-center gap-3 rounded-none bg-[var(--accent)] px-7 text-xs font-bold uppercase tracking-[0.16em] text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:opacity-90 sm:w-auto"
             >
               {t.start}

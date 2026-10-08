@@ -733,107 +733,108 @@ export const servicePages = {
     },
 
     faq: {
-      en: [
-        {
-          number: "01",
-          question: "How much does a project cost?",
-          answer:
-            "Every project is different. Price depends on size, materials, whether there's existing concrete, and the permit. Send us your measurements and we'll walk you through the options.",
-        },
-        {
-          number: "02",
-          question: "Do I need a permit?",
-          answer:
-            "Yes. Under the Florida Building Code, a permanently installed pergola or patio structure requires a building permit, and that applies across South Florida. The permit fee is $2,000, which covers architectural fees, city fees, inspections, and a two-year warranty.",
-        },
-        {
-          number: "03",
-          question: "Does existing concrete change the price?",
-          answer:
-            "Yes. If you already have a concrete slab, we can bracket the columns directly to it. Without concrete, each column requires a footing dug and poured, at $500 per hole.",
-        },
-        {
-          number: "04",
-          question: "Do you charge for estimates?",
-          answer:
-            "Virtual estimates are free. An in-home estimate without a prior virtual estimate is $75, refunded if you sign a contract within 30 days.",
-        },
-        {
-          number: "05",
-          question: "Can I get a drawing of my project?",
-          answer:
-            "Yes. A basic sketch is $150, credited back if you move forward. A full 3D rendering is $350, which is a flat fee.",
-        },
-        {
-          number: "06",
-          question: "How long does the project take?",
-          answer:
-            "Without a permit, typically five to seven days depending on availability. With a permit, the timeline depends on the city and the architect, which is outside our control.",
-        },
-        {
-          number: "07",
-          question: "What are the payment terms?",
-          answer:
-            "Without a permit: 50% deposit, 50% at completion. With a permit: the $2,000 permit fee upfront, then of the remaining balance, 20% at signing, 40% when the permit is ready, and 40% after installation.",
-        },
-        {
-          number: "08",
-          question: "Is the work warrantied?",
-          answer:
-            "Yes — two years on parts and labor, on every project, permit or not. That covers installation defects, leaks, and manufacturer faults. If something is damaged or scratched after installation, we'll handle the labor to replace it, but the material cost is the client's.",
-        },
-      ],
-      es: [
-        {
-          number: "01",
-          question: "¿Cuánto cuesta un proyecto?",
-          answer:
-            "Cada proyecto es diferente. El precio depende del tamaño, los materiales, si existe concreto y el permiso. Envíenos sus medidas y le explicaremos las opciones.",
-        },
-        {
-          number: "02",
-          question: "¿Necesito un permiso?",
-          answer:
-            "Sí. Según el Florida Building Code, una pérgola o estructura de patio instalada permanentemente requiere un permiso de construcción, y esto aplica en todo el Sur de Florida. El costo del permiso es de $2,000 e incluye honorarios arquitectónicos, tarifas de la ciudad, inspecciones y una garantía de dos años.",
-        },
-        {
-          number: "03",
-          question: "¿El concreto existente cambia el precio?",
-          answer:
-            "Sí. Si ya tiene una losa de concreto, podemos fijar las columnas directamente a ella. Sin concreto, cada columna requiere una zapata excavada y vertida, a $500 por cada hueco.",
-        },
-        {
-          number: "04",
-          question: "¿Cobran por los estimados?",
-          answer:
-            "Los estimados virtuales son gratis. Un estimado en el hogar sin un estimado virtual previo cuesta $75 y se reembolsa si firma un contrato dentro de 30 días.",
-        },
-        {
-          number: "05",
-          question: "¿Puedo obtener un dibujo de mi proyecto?",
-          answer:
-            "Sí. Un boceto básico cuesta $150 y se acredita si decide continuar. Una representación completa en 3D cuesta $350, que es una tarifa fija.",
-        },
-        {
-          number: "06",
-          question: "¿Cuánto tiempo toma el proyecto?",
-          answer:
-            "Sin permiso, normalmente de cinco a siete días, dependiendo de la disponibilidad. Con permiso, el tiempo depende de la ciudad y del arquitecto, lo cual está fuera de nuestro control.",
-        },
-        {
-          number: "07",
-          question: "¿Cuáles son los términos de pago?",
-          answer:
-            "Sin permiso: 50% de depósito y 50% al completar. Con permiso: los $2,000 del permiso por adelantado; luego, del saldo restante, 20% al firmar, 40% cuando el permiso esté listo y 40% después de la instalación.",
-        },
-        {
-          number: "08",
-          question: "¿El trabajo tiene garantía?",
-          answer:
-            "Sí — dos años en piezas y mano de obra, en cada proyecto, con o sin permiso. Esto cubre defectos de instalación, filtraciones y fallas del fabricante. Si algo se daña o se raya después de la instalación, nosotros cubriremos la mano de obra para reemplazarlo, pero el costo del material será responsabilidad del cliente.",
-        },
-      ],
+  en: [
+    {
+      number: "01",
+      question: "How much does a fencing project cost?",
+      answer:
+        "Every fencing project is different. The cost depends on the size and layout of the property, the fence style and materials selected, site conditions, and installation requirements. Send us your measurements or photos and we'll review the options with you.",
     },
+    {
+      number: "02",
+      question: "What fencing materials and styles are available?",
+      answer:
+        "We can review modern fencing options based on the look, privacy, durability, and overall design you want for your property. The recommended material and style will depend on the project and existing conditions.",
+    },
+    {
+      number: "03",
+      question: "Can fencing be installed around an existing patio, pool, or landscaping?",
+      answer:
+        "Yes. Fencing can be planned around existing patios, pool areas, landscaping, walkways, gates, and other features. We review the property layout so the fence fits properly with the existing space.",
+    },
+    {
+      number: "04",
+      question: "Do you charge for estimates?",
+      answer:
+        "Virtual estimates are free. An in-home estimate without a prior virtual estimate is $75, refunded if you sign a contract within 30 days.",
+    },
+    {
+      number: "05",
+      question: "Can I get a drawing of my fencing project?",
+      answer:
+        "Yes. We can review the proposed layout and discuss the fencing design for your property. Drawing or rendering services, when needed, can be reviewed as part of the project scope.",
+    },
+    {
+      number: "06",
+      question: "How long does a fencing project take?",
+      answer:
+        "The timeline depends on the size of the project, the selected materials, site conditions, and availability. After reviewing your property and project scope, we can provide a more specific timeline.",
+    },
+    {
+      number: "07",
+      question: "What are the payment terms?",
+      answer:
+        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+    },
+    {
+      number: "08",
+      question: "Is the fencing work warrantied?",
+      answer:
+        "Warranty coverage depends on the specific fencing materials and project. The applicable warranty details will be reviewed with you as part of the project.",
+    },
+  ],
+
+  es: [
+    {
+      number: "01",
+      question: "¿Cuánto cuesta un proyecto de cercado?",
+      answer:
+        "Cada proyecto de cercado es diferente. El costo depende del tamaño y la distribución de la propiedad, el estilo y los materiales seleccionados, las condiciones del lugar y los requisitos de instalación. Envíenos sus medidas o fotografías y revisaremos las opciones con usted.",
+    },
+    {
+      number: "02",
+      question: "¿Qué materiales y estilos de cercas están disponibles?",
+      answer:
+        "Podemos revisar opciones de cercas modernas según la apariencia, privacidad, durabilidad y diseño general que desea para su propiedad. El material y estilo recomendado dependerán del proyecto y de las condiciones existentes.",
+    },
+    {
+      number: "03",
+      question: "¿Se puede instalar una cerca alrededor de un patio, piscina o paisajismo existente?",
+      answer:
+        "Sí. La cerca puede planificarse alrededor de patios, áreas de piscina, paisajismo, caminos, portones y otras características existentes. Revisamos la distribución de la propiedad para que la cerca se integre correctamente con el espacio.",
+    },
+    {
+      number: "04",
+      question: "¿Cobran por los estimados?",
+      answer:
+        "Los estimados virtuales son gratis. Un estimado en el hogar sin un estimado virtual previo cuesta $75 y se reembolsa si firma un contrato dentro de 30 días.",
+    },
+    {
+      number: "05",
+      question: "¿Puedo obtener un dibujo de mi proyecto de cercado?",
+      answer:
+        "Sí. Podemos revisar la distribución propuesta y conversar sobre el diseño de la cerca para su propiedad. Los servicios de dibujo o representación, cuando sean necesarios, pueden revisarse como parte del alcance del proyecto.",
+    },
+    {
+      number: "06",
+      question: "¿Cuánto tiempo toma un proyecto de cercado?",
+      answer:
+        "El tiempo depende del tamaño del proyecto, los materiales seleccionados, las condiciones del lugar y la disponibilidad. Después de revisar su propiedad y el alcance del proyecto, podemos proporcionar un tiempo más específico.",
+    },
+    {
+      number: "07",
+      question: "¿Cuáles son los términos de pago?",
+      answer:
+        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+    },
+    {
+      number: "08",
+      question: "¿El trabajo de cercado tiene garantía?",
+      answer:
+        "La cobertura de garantía depende de los materiales de cercado y del proyecto específico. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+    },
+  ],
+},
 
     relatedServices: [
       {
@@ -1187,96 +1188,61 @@ export const servicePages = {
       ],
     },
 
-    faq: {
-      en: [
-        {
-          number: "01",
-          question: "How much does a project cost?",
-          answer:
-            "Every project is different. Price depends on size, materials, whether there's existing concrete, and the permit. Send us your measurements and we'll walk you through the options.",
-        },
-        {
-          number: "02",
-          question: "Do you charge for estimates?",
-          answer:
-            "Virtual estimates are free. An in-home estimate without a prior virtual estimate is $75, refunded if you sign a contract within 30 days.",
-        },
-        {
-          number: "03",
-          question: "Does existing concrete change the price?",
-          answer:
-            "Yes. If you already have a concrete slab, we can bracket the columns directly to it. Without concrete, each column requires a footing dug and poured, at $500 per hole.",
-        },
-        {
-          number: "04",
-          question: "Can I get a drawing of my project?",
-          answer:
-            "Yes. A basic sketch is $150, credited back if you move forward. A full 3D rendering is $350, which is a flat fee.",
-        },
-        {
-          number: "05",
-          question: "How long does the project take?",
-          answer:
-            "Without a permit, typically five to seven days depending on availability. With a permit, the timeline depends on the city and the architect, which is outside our control.",
-        },
-        {
-          number: "06",
-          question: "What are the payment terms?",
-          answer:
-            "Without a permit: 50% deposit, 50% at completion. With a permit: the $2,000 permit fee upfront, then of the remaining balance, 20% at signing, 40% when the permit is ready, and 40% after installation.",
-        },
-        {
-          number: "07",
-          question: "Is the work warrantied?",
-          answer:
-            "Yes — two years on parts and labor, on every project, permit or not. That covers installation defects, leaks, and manufacturer faults. If something is damaged or scratched after installation, we'll handle the labor to replace it, but the material cost is the client's.",
-        },
-      ],
-      es: [
-        {
-          number: "01",
-          question: "¿Cuánto cuesta un proyecto?",
-          answer:
-            "Cada proyecto es diferente. El precio depende del tamaño, los materiales, si existe concreto y el permiso. Envíenos sus medidas y le explicaremos las opciones.",
-        },
-        {
-          number: "02",
-          question: "¿Cobran por los estimados?",
-          answer:
-            "Los estimados virtuales son gratis. Un estimado en el hogar sin un estimado virtual previo cuesta $75 y se reembolsa si firma un contrato dentro de 30 días.",
-        },
-        {
-          number: "03",
-          question: "¿El concreto existente cambia el precio?",
-          answer:
-            "Sí. Si ya tiene una losa de concreto, podemos fijar las columnas directamente a ella. Sin concreto, cada columna requiere una zapata excavada y vertida, a $500 por cada hueco.",
-        },
-        {
-          number: "04",
-          question: "¿Puedo obtener un dibujo de mi proyecto?",
-          answer:
-            "Sí. Un boceto básico cuesta $150 y se acredita si decide continuar. Una representación completa en 3D cuesta $350, que es una tarifa fija.",
-        },
-        {
-          number: "05",
-          question: "¿Cuánto tiempo toma el proyecto?",
-          answer:
-            "Sin permiso, normalmente de cinco a siete días, dependiendo de la disponibilidad. Con permiso, el tiempo depende de la ciudad y del arquitecto, lo cual está fuera de nuestro control.",
-        },
-        {
-          number: "06",
-          question: "¿Cuáles son los términos de pago?",
-          answer:
-            "Sin permiso: 50% de depósito y 50% al completar. Con permiso: los $2,000 del permiso por adelantado; luego, del saldo restante, 20% al firmar, 40% cuando el permiso esté listo y 40% después de la instalación.",
-        },
-        {
-          number: "07",
-          question: "¿El trabajo tiene garantía?",
-          answer:
-            "Sí — dos años en piezas y mano de obra, en cada proyecto, con o sin permiso. Esto cubre defectos de instalación, filtraciones y fallas del fabricante. Si algo se daña o se raya después de la instalación, nosotros cubriremos la mano de obra para reemplazarlo, pero el costo del material será responsabilidad del cliente.",
-        },
-      ],
+  faq: {
+  en: [
+    {
+      number: "01",
+      question: "Do you charge for estimates?",
+      answer:
+        "Virtual estimates are free. An in-person estimate is also available at no charge for epoxy flooring projects.",
     },
+    {
+      number: "02",
+      question: "Can I get a drawing of my project?",
+      answer:
+        "Yes. We can review the project layout and discuss the proposed epoxy flooring design and finish as part of the project planning process.",
+    },
+    {
+      number: "03",
+      question: "What are the payment terms?",
+      answer:
+        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+    },
+    {
+      number: "04",
+      question: "Is the work warrantied?",
+      answer:
+        "Warranty coverage depends on the specific epoxy flooring system and materials selected. The applicable warranty details will be reviewed with you as part of the project.",
+    },
+  ],
+
+  es: [
+    {
+      number: "01",
+      question: "¿Cobran por los estimados?",
+      answer:
+        "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de pisos epóxicos.",
+    },
+    {
+      number: "02",
+      question: "¿Puedo obtener un dibujo de mi proyecto?",
+      answer:
+        "Sí. Podemos revisar la distribución del proyecto y conversar sobre el diseño y acabado propuesto para el piso epóxico como parte del proceso de planificación.",
+    },
+    {
+      number: "03",
+      question: "¿Cuáles son los términos de pago?",
+      answer:
+        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+    },
+    {
+      number: "04",
+      question: "¿El trabajo tiene garantía?",
+      answer:
+        "La cobertura de garantía depende del sistema de piso epóxico y de los materiales seleccionados. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+    },
+  ],
+},
 
     relatedServices: [
       {
@@ -1630,96 +1596,85 @@ export const servicePages = {
       ],
     },
 
-    faq: {
-      en: [
-        {
-          number: "01",
-          question: "How much does a project cost?",
-          answer:
-            "Every project is different. Price depends on size, materials, whether there's existing concrete, and the permit. Send us your measurements and we'll walk you through the options.",
-        },
-        {
-          number: "02",
-          question: "Does existing concrete change the price?",
-          answer:
-            "Yes. If you already have a concrete slab, we can bracket the columns directly to it. Without concrete, each column requires a footing dug and poured, at $500 per hole.",
-        },
-        {
-          number: "03",
-          question: "Do you charge for estimates?",
-          answer:
-            "Virtual estimates are free. An in-home estimate without a prior virtual estimate is $75, refunded if you sign a contract within 30 days.",
-        },
-        {
-          number: "04",
-          question: "Can I get a drawing of my project?",
-          answer:
-            "Yes. A basic sketch is $150, credited back if you move forward. A full 3D rendering is $350, which is a flat fee.",
-        },
-        {
-          number: "05",
-          question: "How long does the project take?",
-          answer:
-            "Without a permit, typically five to seven days depending on availability. With a permit, the timeline depends on the city and the architect, which is outside our control.",
-        },
-        {
-          number: "06",
-          question: "What are the payment terms?",
-          answer:
-            "Without a permit: 50% deposit, 50% at completion. With a permit: the $2,000 permit fee upfront, then of the remaining balance, 20% at signing, 40% when the permit is ready, and 40% after installation.",
-        },
-        {
-          number: "07",
-          question: "Is the work warrantied?",
-          answer:
-            "Yes — two years on parts and labor, on every project, permit or not. That covers installation defects, leaks, and manufacturer faults. If something is damaged or scratched after installation, we'll handle the labor to replace it, but the material cost is the client's.",
-        },
-      ],
-      es: [
-        {
-          number: "01",
-          question: "¿Cuánto cuesta un proyecto?",
-          answer:
-            "Cada proyecto es diferente. El precio depende del tamaño, los materiales, si existe concreto y el permiso. Envíenos sus medidas y le explicaremos las opciones.",
-        },
-        {
-          number: "02",
-          question: "¿El concreto existente cambia el precio?",
-          answer:
-            "Sí. Si ya tiene una losa de concreto, podemos fijar las columnas directamente a ella. Sin concreto, cada columna requiere una zapata excavada y vertida, a $500 por cada hueco.",
-        },
-        {
-          number: "03",
-          question: "¿Cobran por los estimados?",
-          answer:
-            "Los estimados virtuales son gratis. Un estimado en el hogar sin un estimado virtual previo cuesta $75 y se reembolsa si firma un contrato dentro de 30 días.",
-        },
-        {
-          number: "04",
-          question: "¿Puedo obtener un dibujo de mi proyecto?",
-          answer:
-            "Sí. Un boceto básico cuesta $150 y se acredita si decide continuar. Una representación completa en 3D cuesta $350, que es una tarifa fija.",
-        },
-        {
-          number: "05",
-          question: "¿Cuánto tiempo toma el proyecto?",
-          answer:
-            "Sin permiso, normalmente de cinco a siete días, dependiendo de la disponibilidad. Con permiso, el tiempo depende de la ciudad y del arquitecto, lo cual está fuera de nuestro control.",
-        },
-        {
-          number: "06",
-          question: "¿Cuáles son los términos de pago?",
-          answer:
-            "Sin permiso: 50% de depósito y 50% al completar. Con permiso: los $2,000 del permiso por adelantado; luego, del saldo restante, 20% al firmar, 40% cuando el permiso esté listo y 40% después de la instalación.",
-        },
-        {
-          number: "07",
-          question: "¿El trabajo tiene garantía?",
-          answer:
-            "Sí — dos años en piezas y mano de obra, en cada proyecto, con o sin permiso. Esto cubre defectos de instalación, filtraciones y fallas del fabricante. Si algo se daña o se raya después de la instalación, nosotros cubriremos la mano de obra para reemplazarlo, pero el costo del material será responsabilidad del cliente.",
-        },
-      ],
+ faq: {
+  en: [
+    {
+      number: "01",
+      question: "How much does a project cost?",
+      answer:
+        "Every project is different. Price depends on the size of the area, materials selected, existing surfaces, site conditions, and the installation requirements. Send us your measurements and we'll walk you through the options.",
     },
+    {
+      number: "02",
+      question: "Do you charge for estimates?",
+      answer:
+        "Virtual estimates are free. An in-home estimate without a prior virtual estimate is $75, refunded if you sign a contract within 30 days.",
+    },
+    {
+      number: "03",
+      question: "Can I get a drawing of my project?",
+      answer:
+        "Yes. We can review the proposed layout and discuss the design, materials, and finishes for your concrete or paver project as part of the planning process.",
+    },
+    {
+      number: "04",
+      question: "How long does the project take?",
+      answer:
+        "The timeline depends on the size of the project, materials selected, site conditions, preparation requirements, and availability. After reviewing the project scope, we can provide a more specific timeline.",
+    },
+    {
+      number: "05",
+      question: "What are the payment terms?",
+      answer:
+        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+    },
+    {
+      number: "06",
+      question: "Is the work warrantied?",
+      answer:
+        "Warranty coverage depends on the specific project and materials selected. The applicable warranty details will be reviewed with you as part of the project.",
+    },
+  ],
+
+  es: [
+    {
+      number: "01",
+      question: "¿Cuánto cuesta un proyecto?",
+      answer:
+        "Cada proyecto es diferente. El precio depende del tamaño del área, los materiales seleccionados, las superficies existentes, las condiciones del lugar y los requisitos de instalación. Envíenos sus medidas y le explicaremos las opciones.",
+    },
+    {
+      number: "02",
+      question: "¿Cobran por los estimados?",
+      answer:
+        "Los estimados virtuales son gratis. Un estimado en el hogar sin un estimado virtual previo cuesta $75 y se reembolsa si firma un contrato dentro de 30 días.",
+    },
+    {
+      number: "03",
+      question: "¿Puedo obtener un dibujo de mi proyecto?",
+      answer:
+        "Sí. Podemos revisar la distribución propuesta y conversar sobre el diseño, materiales y acabados de su proyecto de concreto o pavers como parte del proceso de planificación.",
+    },
+    {
+      number: "04",
+      question: "¿Cuánto tiempo toma el proyecto?",
+      answer:
+        "El tiempo depende del tamaño del proyecto, los materiales seleccionados, las condiciones del lugar, los requisitos de preparación y la disponibilidad. Después de revisar el alcance del proyecto, podemos proporcionar un tiempo más específico.",
+    },
+    {
+      number: "05",
+      question: "¿Cuáles son los términos de pago?",
+      answer:
+        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+    },
+    {
+      number: "06",
+      question: "¿El trabajo tiene garantía?",
+      answer:
+        "La cobertura de garantía depende del proyecto específico y de los materiales seleccionados. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+    },
+  ],
+},
 
     relatedServices: [
       {
@@ -2073,84 +2028,61 @@ export const servicePages = {
       ],
     },
 
-    faq: {
-      en: [
-        {
-          number: "01",
-          question: "How much does a project cost?",
-          answer:
-            "Every project is different. Price depends on size, materials, whether there's existing concrete, and the permit. Send us your measurements and we'll walk you through the options.",
-        },
-        {
-          number: "02",
-          question: "Do you charge for estimates?",
-          answer:
-            "Virtual estimates are free. An in-home estimate without a prior virtual estimate is $75, refunded if you sign a contract within 30 days.",
-        },
-        {
-          number: "03",
-          question: "Can I get a drawing of my project?",
-          answer:
-            "Yes. A basic sketch is $150, credited back if you move forward. A full 3D rendering is $350, which is a flat fee.",
-        },
-        {
-          number: "04",
-          question: "How long does the project take?",
-          answer:
-            "Without a permit, typically five to seven days depending on availability. With a permit, the timeline depends on the city and the architect, which is outside our control.",
-        },
-        {
-          number: "05",
-          question: "What are the payment terms?",
-          answer:
-            "Without a permit: 50% deposit, 50% at completion. With a permit: the $2,000 permit fee upfront, then of the remaining balance, 20% at signing, 40% when the permit is ready, and 40% after installation.",
-        },
-        {
-          number: "06",
-          question: "Is the work warrantied?",
-          answer:
-            "Yes — two years on parts and labor, on every project, permit or not. That covers installation defects, leaks, and manufacturer faults. If something is damaged or scratched after installation, we'll handle the labor to replace it, but the material cost is the client's.",
-        },
-      ],
-      es: [
-        {
-          number: "01",
-          question: "¿Cuánto cuesta un proyecto?",
-          answer:
-            "Cada proyecto es diferente. El precio depende del tamaño, los materiales, si existe concreto y el permiso. Envíenos sus medidas y le explicaremos las opciones.",
-        },
-        {
-          number: "02",
-          question: "¿Cobran por los estimados?",
-          answer:
-            "Los estimados virtuales son gratis. Un estimado en el hogar sin un estimado virtual previo cuesta $75 y se reembolsa si firma un contrato dentro de 30 días.",
-        },
-        {
-          number: "03",
-          question: "¿Puedo obtener un dibujo de mi proyecto?",
-          answer:
-            "Sí. Un boceto básico cuesta $150 y se acredita si decide continuar. Una representación completa en 3D cuesta $350, que es una tarifa fija.",
-        },
-        {
-          number: "04",
-          question: "¿Cuánto tiempo toma el proyecto?",
-          answer:
-            "Sin permiso, normalmente de cinco a siete días, dependiendo de la disponibilidad. Con permiso, el tiempo depende de la ciudad y del arquitecto, lo cual está fuera de nuestro control.",
-        },
-        {
-          number: "05",
-          question: "¿Cuáles son los términos de pago?",
-          answer:
-            "Sin permiso: 50% de depósito y 50% al completar. Con permiso: los $2,000 del permiso por adelantado; luego, del saldo restante, 20% al firmar, 40% cuando el permiso esté listo y 40% después de la instalación.",
-        },
-        {
-          number: "06",
-          question: "¿El trabajo tiene garantía?",
-          answer:
-            "Sí — dos años en piezas y mano de obra, en cada proyecto, con o sin permiso. Esto cubre defectos de instalación, filtraciones y fallas del fabricante. Si algo se daña o se raya después de la instalación, nosotros cubriremos la mano de obra para reemplazarlo, pero el costo del material será responsabilidad del cliente.",
-        },
-      ],
+   faq: {
+  en: [
+    {
+      number: "01",
+      question: "Do you charge for estimates?",
+      answer:
+        "Virtual estimates are free. An in-person estimate is also available at no charge for impact windows and doors projects.",
     },
+    {
+      number: "02",
+      question: "Can I get a drawing of my project?",
+      answer:
+        "Yes. We can review the proposed window and door layout and discuss the design and product options as part of the project planning process.",
+    },
+    {
+      number: "03",
+      question: "What are the payment terms?",
+      answer:
+        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+    },
+    {
+      number: "04",
+      question: "Is the work warrantied?",
+      answer:
+        "Warranty coverage depends on the specific products and installation selected. The applicable warranty details will be reviewed with you as part of the project.",
+    },
+  ],
+
+  es: [
+    {
+      number: "01",
+      question: "¿Cobran por los estimados?",
+      answer:
+        "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de ventanas y puertas de impacto.",
+    },
+    {
+      number: "02",
+      question: "¿Puedo obtener un dibujo de mi proyecto?",
+      answer:
+        "Sí. Podemos revisar la distribución propuesta de las ventanas y puertas y conversar sobre el diseño y las opciones de productos como parte del proceso de planificación.",
+    },
+    {
+      number: "03",
+      question: "¿Cuáles son los términos de pago?",
+      answer:
+        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+    },
+    {
+      number: "04",
+      question: "¿El trabajo tiene garantía?",
+      answer:
+        "La cobertura de garantía depende de los productos y la instalación seleccionados. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+    },
+  ],
+},
 
     relatedServices: [
       {
@@ -2505,83 +2437,60 @@ export const servicePages = {
     },
 
     faq: {
-      en: [
-        {
-          number: "01",
-          question: "How much does a project cost?",
-          answer:
-            "Every project is different. Price depends on size, materials, whether there's existing concrete, and the permit. Send us your measurements and we'll walk you through the options.",
-        },
-        {
-          number: "02",
-          question: "Do you charge for estimates?",
-          answer:
-            "Virtual estimates are free. An in-home estimate without a prior virtual estimate is $75, refunded if you sign a contract within 30 days.",
-        },
-        {
-          number: "03",
-          question: "Can I get a drawing of my project?",
-          answer:
-            "Yes. A basic sketch is $150, credited back if you move forward. A full 3D rendering is $350, which is a flat fee.",
-        },
-        {
-          number: "04",
-          question: "How long does the project take?",
-          answer:
-            "Without a permit, typically five to seven days depending on availability. With a permit, the timeline depends on the city and the architect, which is outside our control.",
-        },
-        {
-          number: "05",
-          question: "What are the payment terms?",
-          answer:
-            "Without a permit: 50% deposit, 50% at completion. With a permit: the $2,000 permit fee upfront, then of the remaining balance, 20% at signing, 40% when the permit is ready, and 40% after installation.",
-        },
-        {
-          number: "06",
-          question: "Is the work warrantied?",
-          answer:
-            "Yes — two years on parts and labor, on every project, permit or not. That covers installation defects, leaks, and manufacturer faults. If something is damaged or scratched after installation, we'll handle the labor to replace it, but the material cost is the client's.",
-        },
-      ],
-      es: [
-        {
-          number: "01",
-          question: "¿Cuánto cuesta un proyecto?",
-          answer:
-            "Cada proyecto es diferente. El precio depende del tamaño, los materiales, si existe concreto y el permiso. Envíenos sus medidas y le explicaremos las opciones.",
-        },
-        {
-          number: "02",
-          question: "¿Cobran por los estimados?",
-          answer:
-            "Los estimados virtuales son gratis. Un estimado en el hogar sin un estimado virtual previo cuesta $75 y se reembolsa si firma un contrato dentro de 30 días.",
-        },
-        {
-          number: "03",
-          question: "¿Puedo obtener un dibujo de mi proyecto?",
-          answer:
-            "Sí. Un boceto básico cuesta $150 y se acredita si decide continuar. Una representación completa en 3D cuesta $350, que es una tarifa fija.",
-        },
-        {
-          number: "04",
-          question: "¿Cuánto tiempo toma el proyecto?",
-          answer:
-            "Sin permiso, normalmente de cinco a siete días, dependiendo de la disponibilidad. Con permiso, el tiempo depende de la ciudad y del arquitecto, lo cual está fuera de nuestro control.",
-        },
-        {
-          number: "05",
-          question: "¿Cuáles son los términos de pago?",
-          answer:
-            "Sin permiso: 50% de depósito y 50% al completar. Con permiso: los $2,000 del permiso por adelantado; luego, del saldo restante, 20% al firmar, 40% cuando el permiso esté listo y 40% después de la instalación.",
-        },
-        {
-          number: "06",
-          question: "¿El trabajo tiene garantía?",
-          answer:
-            "Sí — dos años en piezas y mano de obra, en cada proyecto, con o sin permiso. Esto cubre defectos de instalación, filtraciones y fallas del fabricante. Si algo se daña o se raya después de la instalación, nosotros cubriremos la mano de obra para reemplazarlo, pero el costo del material será responsabilidad del cliente.",
-        },
-      ],
+  en: [
+    {
+      number: "01",
+      question: "Do you charge for estimates?",
+      answer:
+        "Virtual estimates are free. An in-person estimate is also available at no charge for accordion shutter projects.",
     },
+    {
+      number: "02",
+      question: "Can I get a drawing of my project?",
+      answer:
+        "Yes. We can review the proposed shutter layout and discuss the design and product options as part of the project planning process.",
+    },
+    {
+      number: "03",
+      question: "What are the payment terms?",
+      answer:
+        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+    },
+    {
+      number: "04",
+      question: "Is the work warrantied?",
+      answer:
+        "Warranty coverage depends on the specific accordion shutters and installation selected. The applicable warranty details will be reviewed with you as part of the project.",
+    },
+  ],
+
+  es: [
+    {
+      number: "01",
+      question: "¿Cobran por los estimados?",
+      answer:
+        "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de persianas acordeón.",
+    },
+    {
+      number: "02",
+      question: "¿Puedo obtener un dibujo de mi proyecto?",
+      answer:
+        "Sí. Podemos revisar la distribución propuesta de las persianas y conversar sobre el diseño y las opciones de productos como parte del proceso de planificación.",
+    },
+    {
+      number: "03",
+      question: "¿Cuáles son los términos de pago?",
+      answer:
+        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+    },
+    {
+      number: "04",
+      question: "¿El trabajo tiene garantía?",
+      answer:
+        "La cobertura de garantía depende de las persianas acordeón y la instalación seleccionadas. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+    },
+  ],
+},
 
     relatedServices: [
       {
@@ -2935,85 +2844,61 @@ export const servicePages = {
       ],
     },
 
-    faq: {
-      en: [
-        {
-          number: "01",
-          question: "How much does a project cost?",
-          answer:
-            "Every project is different. Price depends on size, materials, whether there's existing concrete, and the permit. Send us your measurements and we'll walk you through the options.",
-        },
-        {
-          number: "02",
-          question: "Do you charge for estimates?",
-          answer:
-            "Virtual estimates are free. An in-home estimate without a prior virtual estimate is $75, refunded if you sign a contract within 30 days.",
-        },
-        {
-          number: "03",
-          question: "Can I get a drawing of my project?",
-          answer:
-            "Yes. A basic sketch is $150, credited back if you move forward. A full 3D rendering is $350, which is a flat fee.",
-        },
-        {
-          number: "04",
-          question: "How long does the project take?",
-          answer:
-            "Without a permit, typically five to seven days depending on availability. With a permit, the timeline depends on the city and the architect, which is outside our control.",
-        },
-        {
-          number: "05",
-          question: "What are the payment terms?",
-          answer:
-            "Without a permit: 50% deposit, 50% at completion. With a permit: the $2,000 permit fee upfront, then of the remaining balance, 20% at signing, 40% when the permit is ready, and 40% after installation.",
-        },
-        {
-          number: "06",
-          question: "Is the work warrantied?",
-          answer:
-            "Yes — two years on parts and labor, on every project, permit or not. That covers installation defects, leaks, and manufacturer faults. If something is damaged or scratched after installation, we'll handle the labor to replace it, but the material cost is the client's.",
-        },
-      ],
-      es: [
-        {
-          number: "01",
-          question: "¿Cuánto cuesta un proyecto?",
-          answer:
-            "Cada proyecto es diferente. El precio depende del tamaño, los materiales, si existe concreto y el permiso. Envíenos sus medidas y le explicaremos las opciones.",
-        },
-        {
-          number: "02",
-          question: "¿Cobran por los estimados?",
-          answer:
-            "Los estimados virtuales son gratis. Un estimado en el hogar sin un estimado virtual previo cuesta $75 y se reembolsa si firma un contrato dentro de 30 días.",
-        },
-        {
-          number: "03",
-          question: "¿Puedo obtener un dibujo de mi proyecto?",
-          answer:
-            "Sí. Un boceto básico cuesta $150 y se acredita si decide continuar. Una representación completa en 3D cuesta $350, que es una tarifa fija.",
-        },
-        {
-          number: "04",
-          question: "¿Cuánto tiempo toma el proyecto?",
-          answer:
-            "Sin permiso, normalmente de cinco a siete días, dependiendo de la disponibilidad. Con permiso, el tiempo depende de la ciudad y del arquitecto, lo cual está fuera de nuestro control.",
-        },
-        {
-          number: "05",
-          question: "¿Cuáles son los términos de pago?",
-          answer:
-            "Sin permiso: 50% de depósito y 50% al completar. Con permiso: los $2,000 del permiso por adelantado; luego, del saldo restante, 20% al firmar, 40% cuando el permiso esté listo y 40% después de la instalación.",
-        },
-        {
-          number: "06",
-          question: "¿El trabajo tiene garantía?",
-          answer:
-            "Sí — dos años en piezas y mano de obra, en cada proyecto, con o sin permiso. Esto cubre defectos de instalación, filtraciones y fallas del fabricante. Si algo se daña o se raya después de la instalación, nosotros cubriremos la mano de obra para reemplazarlo, pero el costo del material será responsabilidad del cliente.",
-        },
-      ],
+   faq: {
+  en: [
+    {
+      number: "01",
+      question: "Do you charge for estimates?",
+      answer:
+        "Virtual estimates are free. An in-person estimate is also available at no charge for modern mailbox projects.",
     },
+    {
+      number: "02",
+      question: "Can I get a drawing of my project?",
+      answer:
+        "Yes. We can review the proposed mailbox layout and discuss the design and product options as part of the project planning process.",
+    },
+    {
+      number: "03",
+      question: "What are the payment terms?",
+      answer:
+        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+    },
+    {
+      number: "04",
+      question: "Is the work warrantied?",
+      answer:
+        "Warranty coverage depends on the specific mailbox and installation selected. The applicable warranty details will be reviewed with you as part of the project.",
+    },
+  ],
 
+  es: [
+    {
+      number: "01",
+      question: "¿Cobran por los estimados?",
+      answer:
+        "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de buzones modernos.",
+    },
+    {
+      number: "02",
+      question: "¿Puedo obtener un dibujo de mi proyecto?",
+      answer:
+        "Sí. Podemos revisar la distribución propuesta del buzón y conversar sobre el diseño y las opciones de productos como parte del proceso de planificación.",
+    },
+    {
+      number: "03",
+      question: "¿Cuáles son los términos de pago?",
+      answer:
+        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+    },
+    {
+      number: "04",
+      question: "¿El trabajo tiene garantía?",
+      answer:
+        "La cobertura de garantía depende del buzón y la instalación seleccionados. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+    },
+  ],
+},
     relatedServices: [
       {
         number: "02",
@@ -3366,108 +3251,61 @@ export const servicePages = {
       ],
     },
 
-    faq: {
-      en: [
-        {
-          number: "01",
-          question: "How much does a project cost?",
-          answer:
-            "Every project is different. Price depends on size, materials, whether there's existing concrete, and the permit. Send us your measurements and we'll walk you through the options.",
-        },
-        {
-          number: "02",
-          question: "Do I need a permit?",
-          answer:
-            "Yes. Under the Florida Building Code, a permanently installed pergola or patio structure requires a building permit, and that applies across South Florida. The permit fee is $2,000, which covers architectural fees, city fees, inspections, and a two-year warranty.",
-        },
-        {
-          number: "03",
-          question: "Does existing concrete change the price?",
-          answer:
-            "Yes. If you already have a concrete slab, we can bracket the columns directly to it. Without concrete, each column requires a footing dug and poured, at $500 per hole.",
-        },
-        {
-          number: "04",
-          question: "Do you charge for estimates?",
-          answer:
-            "Virtual estimates are free. An in-home estimate without a prior virtual estimate is $75, refunded if you sign a contract within 30 days.",
-        },
-        {
-          number: "05",
-          question: "Can I get a drawing of my project?",
-          answer:
-            "Yes. A basic sketch is $150, credited back if you move forward. A full 3D rendering is $350, which is a flat fee.",
-        },
-        {
-          number: "06",
-          question: "How long does the project take?",
-          answer:
-            "Without a permit, typically five to seven days depending on availability. With a permit, the timeline depends on the city and the architect, which is outside our control.",
-        },
-        {
-          number: "07",
-          question: "What are the payment terms?",
-          answer:
-            "Without a permit: 50% deposit, 50% at completion. With a permit: the $2,000 permit fee upfront, then of the remaining balance, 20% at signing, 40% when the permit is ready, and 40% after installation.",
-        },
-        {
-          number: "08",
-          question: "Is the work warrantied?",
-          answer:
-            "Yes — two years on parts and labor, on every project, permit or not. That covers installation defects, leaks, and manufacturer faults. If something is damaged or scratched after installation, we'll handle the labor to replace it, but the material cost is the client's.",
-        },
-      ],
-      es: [
-        {
-          number: "01",
-          question: "¿Cuánto cuesta un proyecto?",
-          answer:
-            "Cada proyecto es diferente. El precio depende del tamaño, los materiales, si existe concreto y el permiso. Envíenos sus medidas y le explicaremos las opciones.",
-        },
-        {
-          number: "02",
-          question: "¿Necesito un permiso?",
-          answer:
-            "Sí. Según el Florida Building Code, una pérgola o estructura de patio instalada permanentemente requiere un permiso de construcción, y esto aplica en todo el Sur de Florida. El costo del permiso es de $2,000 e incluye honorarios arquitectónicos, tarifas de la ciudad, inspecciones y una garantía de dos años.",
-        },
-        {
-          number: "03",
-          question: "¿El concreto existente cambia el precio?",
-          answer:
-            "Sí. Si ya tiene una losa de concreto, podemos fijar las columnas directamente a ella. Sin concreto, cada columna requiere una zapata excavada y vertida, a $500 por cada hueco.",
-        },
-        {
-          number: "04",
-          question: "¿Cobran por los estimados?",
-          answer:
-            "Los estimados virtuales son gratis. Un estimado en el hogar sin un estimado virtual previo cuesta $75 y se reembolsa si firma un contrato dentro de 30 días.",
-        },
-        {
-          number: "05",
-          question: "¿Puedo obtener un dibujo de mi proyecto?",
-          answer:
-            "Sí. Un boceto básico cuesta $150 y se acredita si decide continuar. Una representación completa en 3D cuesta $350, que es una tarifa fija.",
-        },
-        {
-          number: "06",
-          question: "¿Cuánto tiempo toma el proyecto?",
-          answer:
-            "Sin permiso, normalmente de cinco a siete días, dependiendo de la disponibilidad. Con permiso, el tiempo depende de la ciudad y del arquitecto, lo cual está fuera de nuestro control.",
-        },
-        {
-          number: "07",
-          question: "¿Cuáles son los términos de pago?",
-          answer:
-            "Sin permiso: 50% de depósito y 50% al completar. Con permiso: los $2,000 del permiso por adelantado; luego, del saldo restante, 20% al firmar, 40% cuando el permiso esté listo y 40% después de la instalación.",
-        },
-        {
-          number: "08",
-          question: "¿El trabajo tiene garantía?",
-          answer:
-            "Sí — dos años en piezas y mano de obra, en cada proyecto, con o sin permiso. Esto cubre defectos de instalación, filtraciones y fallas del fabricante. Si algo se daña o se raya después de la instalación, nosotros cubriremos la mano de obra para reemplazarlo, pero el costo del material será responsabilidad del cliente.",
-        },
-      ],
+   faq: {
+  en: [
+    {
+      number: "01",
+      question: "Do you charge for estimates?",
+      answer:
+        "Virtual estimates are free. An in-person estimate is also available at no charge for motorized louvered roof projects.",
     },
+    {
+      number: "02",
+      question: "Can I get a drawing of my project?",
+      answer:
+        "Yes. We can review the proposed roof layout and discuss the design, configuration, and product options as part of the project planning process.",
+    },
+    {
+      number: "03",
+      question: "What are the payment terms?",
+      answer:
+        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+    },
+    {
+      number: "04",
+      question: "Is the work warrantied?",
+      answer:
+        "Warranty coverage depends on the specific motorized louvered roof system, products, and installation selected. The applicable warranty details will be reviewed with you as part of the project.",
+    },
+  ],
+
+  es: [
+    {
+      number: "01",
+      question: "¿Cobran por los estimados?",
+      answer:
+        "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de techos de lamas motorizados.",
+    },
+    {
+      number: "02",
+      question: "¿Puedo obtener un dibujo de mi proyecto?",
+      answer:
+        "Sí. Podemos revisar la distribución propuesta del techo y conversar sobre el diseño, la configuración y las opciones de productos como parte del proceso de planificación.",
+    },
+    {
+      number: "03",
+      question: "¿Cuáles son los términos de pago?",
+      answer:
+        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+    },
+    {
+      number: "04",
+      question: "¿El trabajo tiene garantía?",
+      answer:
+        "La cobertura de garantía depende del sistema de techo de lamas motorizado, los productos y la instalación seleccionados. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+    },
+  ],
+},
 
     relatedServices: [
       {
@@ -3821,85 +3659,61 @@ export const servicePages = {
       ],
     },
 
-    faq: {
-      en: [
-        {
-          number: "01",
-          question: "How much does a project cost?",
-          answer:
-            "Every project is different. Price depends on size, materials, whether there's existing concrete, and the permit. Send us your measurements and we'll walk you through the options.",
-        },
-        {
-          number: "02",
-          question: "Do you charge for estimates?",
-          answer:
-            "Virtual estimates are free. An in-home estimate without a prior virtual estimate is $75, refunded if you sign a contract within 30 days.",
-        },
-        {
-          number: "03",
-          question: "Can I get a drawing of my project?",
-          answer:
-            "Yes. A basic sketch is $150, credited back if you move forward. A full 3D rendering is $350, which is a flat fee.",
-        },
-        {
-          number: "04",
-          question: "How long does the project take?",
-          answer:
-            "Without a permit, typically five to seven days depending on availability. With a permit, the timeline depends on the city and the architect, which is outside our control.",
-        },
-        {
-          number: "05",
-          question: "What are the payment terms?",
-          answer:
-            "Without a permit: 50% deposit, 50% at completion. With a permit: the $2,000 permit fee upfront, then of the remaining balance, 20% at signing, 40% when the permit is ready, and 40% after installation.",
-        },
-        {
-          number: "06",
-          question: "Is the work warrantied?",
-          answer:
-            "Yes — two years on parts and labor, on every project, permit or not. That covers installation defects, leaks, and manufacturer faults. If something is damaged or scratched after installation, we'll handle the labor to replace it, but the material cost is the client's.",
-        },
-      ],
-      es: [
-        {
-          number: "01",
-          question: "¿Cuánto cuesta un proyecto?",
-          answer:
-            "Cada proyecto es diferente. El precio depende del tamaño, los materiales, si existe concreto y el permiso. Envíenos sus medidas y le explicaremos las opciones.",
-        },
-        {
-          number: "02",
-          question: "¿Cobran por los estimados?",
-          answer:
-            "Los estimados virtuales son gratis. Un estimado en el hogar sin un estimado virtual previo cuesta $75 y se reembolsa si firma un contrato dentro de 30 días.",
-        },
-        {
-          number: "03",
-          question: "¿Puedo obtener un dibujo de mi proyecto?",
-          answer:
-            "Sí. Un boceto básico cuesta $150 y se acredita si decide continuar. Una representación completa en 3D cuesta $350, que es una tarifa fija.",
-        },
-        {
-          number: "04",
-          question: "¿Cuánto tiempo toma el proyecto?",
-          answer:
-            "Sin permiso, normalmente de cinco a siete días, dependiendo de la disponibilidad. Con permiso, el tiempo depende de la ciudad y del arquitecto, lo cual está fuera de nuestro control.",
-        },
-        {
-          number: "05",
-          question: "¿Cuáles son los términos de pago?",
-          answer:
-            "Sin permiso: 50% de depósito y 50% al completar. Con permiso: los $2,000 del permiso por adelantado; luego, del saldo restante, 20% al firmar, 40% cuando el permiso esté listo y 40% después de la instalación.",
-        },
-        {
-          number: "06",
-          question: "¿El trabajo tiene garantía?",
-          answer:
-            "Sí — dos años en piezas y mano de obra, en cada proyecto, con o sin permiso. Esto cubre defectos de instalación, filtraciones y fallas del fabricante. Si algo se daña o se raya después de la instalación, nosotros cubriremos la mano de obra para reemplazarlo, pero el costo del material será responsabilidad del cliente.",
-        },
-      ],
+   faq: {
+  en: [
+    {
+      number: "01",
+      question: "Do you charge for estimates?",
+      answer:
+        "Virtual estimates are free. An in-person estimate is also available at no charge for outdoor kitchen projects.",
     },
+    {
+      number: "02",
+      question: "Can I get a drawing of my project?",
+      answer:
+        "Yes. We can review the proposed outdoor kitchen layout and discuss the design, materials, finishes, and features as part of the project planning process.",
+    },
+    {
+      number: "03",
+      question: "What are the payment terms?",
+      answer:
+        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+    },
+    {
+      number: "04",
+      question: "Is the work warrantied?",
+      answer:
+        "Warranty coverage depends on the specific outdoor kitchen components, materials, and installation selected. The applicable warranty details will be reviewed with you as part of the project.",
+    },
+  ],
 
+  es: [
+    {
+      number: "01",
+      question: "¿Cobran por los estimados?",
+      answer:
+        "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de cocinas exteriores.",
+    },
+    {
+      number: "02",
+      question: "¿Puedo obtener un dibujo de mi proyecto?",
+      answer:
+        "Sí. Podemos revisar la distribución propuesta de la cocina exterior y conversar sobre el diseño, materiales, acabados y características como parte del proceso de planificación.",
+    },
+    {
+      number: "03",
+      question: "¿Cuáles son los términos de pago?",
+      answer:
+        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+    },
+    {
+      number: "04",
+      question: "¿El trabajo tiene garantía?",
+      answer:
+        "La cobertura de garantía depende de los componentes, materiales y la instalación seleccionados para la cocina exterior. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+    },
+  ],
+},
     relatedServices: [
       {
         number: "01",
@@ -4252,84 +4066,61 @@ export const servicePages = {
       ],
     },
 
-    faq: {
-      en: [
-        {
-          number: "01",
-          question: "How much does a project cost?",
-          answer:
-            "Every project is different. Price depends on size, materials, whether there's existing concrete, and the permit. Send us your measurements and we'll walk you through the options.",
-        },
-        {
-          number: "02",
-          question: "Do you charge for estimates?",
-          answer:
-            "Virtual estimates are free. An in-home estimate without a prior virtual estimate is $75, refunded if you sign a contract within 30 days.",
-        },
-        {
-          number: "03",
-          question: "Can I get a drawing of my project?",
-          answer:
-            "Yes. A basic sketch is $150, credited back if you move forward. A full 3D rendering is $350, which is a flat fee.",
-        },
-        {
-          number: "04",
-          question: "How long does the project take?",
-          answer:
-            "Without a permit, typically five to seven days depending on availability. With a permit, the timeline depends on the city and the architect, which is outside our control.",
-        },
-        {
-          number: "05",
-          question: "What are the payment terms?",
-          answer:
-            "Without a permit: 50% deposit, 50% at completion. With a permit: the $2,000 permit fee upfront, then of the remaining balance, 20% at signing, 40% when the permit is ready, and 40% after installation.",
-        },
-        {
-          number: "06",
-          question: "Is the work warrantied?",
-          answer:
-            "Yes — two years on parts and labor, on every project, permit or not. That covers installation defects, leaks, and manufacturer faults. If something is damaged or scratched after installation, we'll handle the labor to replace it, but the material cost is the client's.",
-        },
-      ],
-      es: [
-        {
-          number: "01",
-          question: "¿Cuánto cuesta un proyecto?",
-          answer:
-            "Cada proyecto es diferente. El precio depende del tamaño, los materiales, si existe concreto y el permiso. Envíenos sus medidas y le explicaremos las opciones.",
-        },
-        {
-          number: "02",
-          question: "¿Cobran por los estimados?",
-          answer:
-            "Los estimados virtuales son gratis. Un estimado en el hogar sin un estimado virtual previo cuesta $75 y se reembolsa si firma un contrato dentro de 30 días.",
-        },
-        {
-          number: "03",
-          question: "¿Puedo obtener un dibujo de mi proyecto?",
-          answer:
-            "Sí. Un boceto básico cuesta $150 y se acredita si decide continuar. Una representación completa en 3D cuesta $350, que es una tarifa fija.",
-        },
-        {
-          number: "04",
-          question: "¿Cuánto tiempo toma el proyecto?",
-          answer:
-            "Sin permiso, normalmente de cinco a siete días, dependiendo de la disponibilidad. Con permiso, el tiempo depende de la ciudad y del arquitecto, lo cual está fuera de nuestro control.",
-        },
-        {
-          number: "05",
-          question: "¿Cuáles son los términos de pago?",
-          answer:
-            "Sin permiso: 50% de depósito y 50% al completar. Con permiso: los $2,000 del permiso por adelantado; luego, del saldo restante, 20% al firmar, 40% cuando el permiso esté listo y 40% después de la instalación.",
-        },
-        {
-          number: "06",
-          question: "¿El trabajo tiene garantía?",
-          answer:
-            "Sí — dos años en piezas y mano de obra, en cada proyecto, con o sin permiso. Esto cubre defectos de instalación, filtraciones y fallas del fabricante. Si algo se daña o se raya después de la instalación, nosotros cubriremos la mano de obra para reemplazarlo, pero el costo del material será responsabilidad del cliente.",
-        },
-      ],
+  faq: {
+  en: [
+    {
+      number: "01",
+      question: "Do you charge for estimates?",
+      answer:
+        "Virtual estimates are free. An in-person estimate is also available at no charge for interior design projects.",
     },
+    {
+      number: "02",
+      question: "Can I get a drawing of my project?",
+      answer:
+        "Yes. We can review your design needs and discuss drawings, layouts, and design concepts as part of the project planning process.",
+    },
+    {
+      number: "03",
+      question: "What are the payment terms?",
+      answer:
+        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+    },
+    {
+      number: "04",
+      question: "Is the work warrantied?",
+      answer:
+        "Warranty coverage depends on the specific products, materials, and services included in the project. The applicable warranty details will be reviewed with you as part of the project.",
+    },
+  ],
+
+  es: [
+    {
+      number: "01",
+      question: "¿Cobran por los estimados?",
+      answer:
+        "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de diseño de interiores.",
+    },
+    {
+      number: "02",
+      question: "¿Puedo obtener un dibujo de mi proyecto?",
+      answer:
+        "Sí. Podemos revisar sus necesidades de diseño y conversar sobre dibujos, distribuciones y conceptos de diseño como parte del proceso de planificación.",
+    },
+    {
+      number: "03",
+      question: "¿Cuáles son los términos de pago?",
+      answer:
+        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+    },
+    {
+      number: "04",
+      question: "¿El trabajo tiene garantía?",
+      answer:
+        "La cobertura de garantía depende de los productos, materiales y servicios específicos incluidos en el proyecto. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+    },
+  ],
+},
 
     relatedServices: [
       {
@@ -4405,4 +4196,439 @@ export const servicePages = {
       cta: "Solicitar un Estimado",
     },
   },
+  "artificial-turf": {
+    number: "11",
+    image: "/assets/images/artificial-turf.webp",
+    imageAlt: "Artificial turf installation in a Miami residential outdoor space",
+    category: "Artificial Turf",
+    projectLabel: "Residential artificial turf",
+
+    introduction: {
+      en: {
+        title: "A cleaner, more consistent outdoor finish.",
+        paragraphs: [
+          "Artificial turf provides a practical ground-finish option for residential outdoor spaces where a clean, consistent appearance is desired.",
+          "Miami Custom Patios installs artificial turf as a complementary finish for patios, pool decks, pergolas, paver areas and other outdoor living spaces.",
+          "Each project is planned around the existing property, available space, surrounding hardscape and the way the outdoor area will be used.",
+        ],
+      },
+      es: {
+        title: "Un acabado exterior más limpio y uniforme.",
+        paragraphs: [
+          "El césped artificial ofrece una opción práctica de acabado para espacios exteriores residenciales donde se busca una apariencia limpia y uniforme.",
+          "Miami Custom Patios instala césped artificial como un acabado complementario para patios, áreas de piscina, pérgolas, espacios con pavers y otras áreas exteriores.",
+          "Cada proyecto se planifica considerando la propiedad existente, el espacio disponible, las áreas pavimentadas y la forma en que se utilizará el espacio exterior.",
+        ],
+      },
+    },
+
+    offerings: {
+      en: [
+        {
+          number: "01",
+          title: "Artificial turf installation",
+          description:
+            "Install artificial turf as a finished ground surface for residential outdoor areas.",
+        },
+        {
+          number: "02",
+          title: "Patio & paver transitions",
+          description:
+            "Create a clean transition between artificial turf, patios, pavers and other hardscape areas.",
+        },
+        {
+          number: "03",
+          title: "Poolside areas",
+          description:
+            "Use artificial turf to create a consistent ground finish around selected pool and outdoor living areas.",
+        },
+        {
+          number: "04",
+          title: "Pergola surroundings",
+          description:
+            "Complete areas around pergolas and outdoor living structures with a finished ground surface.",
+        },
+        {
+          number: "05",
+          title: "Complete installation",
+          description:
+            "Material and installation are included as part of the planned artificial turf project.",
+        },
+      ],
+
+      es: [
+        {
+          number: "01",
+          title: "Instalación de césped artificial",
+          description:
+            "Instale césped artificial como una superficie terminada para áreas exteriores residenciales.",
+        },
+        {
+          number: "02",
+          title: "Transiciones con patios y pavers",
+          description:
+            "Cree una transición limpia entre el césped artificial, patios, pavers y otras áreas de hardscape.",
+        },
+        {
+          number: "03",
+          title: "Áreas alrededor de piscinas",
+          description:
+            "Utilice césped artificial para crear un acabado uniforme alrededor de determinadas áreas de piscina y espacios exteriores.",
+        },
+        {
+          number: "04",
+          title: "Alrededor de pérgolas",
+          description:
+            "Complete las áreas alrededor de pérgolas y estructuras exteriores con una superficie exterior terminada.",
+        },
+        {
+          number: "05",
+          title: "Instalación completa",
+          description:
+            "El material y la instalación están incluidos como parte del proyecto de césped artificial.",
+        },
+      ],
+    },
+
+    applications: {
+      en: [
+        {
+          number: "01",
+          title: "Pool areas",
+          description:
+            "Create a finished ground surface that complements pool decks and outdoor living areas.",
+        },
+        {
+          number: "02",
+          title: "Patios",
+          description:
+            "Add artificial turf alongside patios to create a balanced combination of hardscape and softscape.",
+        },
+        {
+          number: "03",
+          title: "Pergola areas",
+          description:
+            "Finish the surrounding ground area of pergolas and outdoor entertainment spaces.",
+        },
+        {
+          number: "04",
+          title: "Paver projects",
+          description:
+            "Combine artificial turf with pavers to create defined outdoor zones and clean transitions.",
+        },
+      ],
+
+      es: [
+        {
+          number: "01",
+          title: "Áreas de piscina",
+          description:
+            "Cree una superficie exterior terminada que complemente las áreas de piscina y espacios exteriores.",
+        },
+        {
+          number: "02",
+          title: "Patios",
+          description:
+            "Agregue césped artificial junto a patios para crear una combinación equilibrada de hardscape y áreas verdes.",
+        },
+        {
+          number: "03",
+          title: "Áreas de pérgolas",
+          description:
+            "Complete el área de terreno alrededor de pérgolas y espacios de entretenimiento exterior.",
+        },
+        {
+          number: "04",
+          title: "Proyectos con pavers",
+          description:
+            "Combine césped artificial con pavers para crear zonas exteriores definidas y transiciones limpias.",
+        },
+      ],
+    },
+
+    showcase: {
+      title: {
+        en: "A finished outdoor space that feels complete.",
+        es: "Un espacio exterior que se siente completo.",
+      },
+      projectLabel: {
+        en: "Residential artificial turf",
+        es: "Césped artificial residencial",
+      },
+    },
+
+    localContext: {
+      title: {
+        en: "Designed for Miami outdoor spaces.",
+        es: "Diseñado para espacios exteriores de Miami.",
+      },
+      counties: {
+        en: "Miami-Dade County / Broward County",
+        es: "Miami-Dade County / Broward County",
+      },
+      paragraphs: {
+        en: [
+          "Miami homes often combine patios, pools, pergolas, pavers and other outdoor living areas. Artificial turf can help create a consistent ground finish between these spaces.",
+          "Each installation should be planned around the property's existing layout, surrounding materials, available space and intended use.",
+        ],
+        es: [
+          "Los hogares de Miami suelen combinar patios, piscinas, pérgolas, pavers y otras áreas de vida exterior. El césped artificial puede ayudar a crear un acabado uniforme entre estos espacios.",
+          "Cada instalación debe planificarse considerando la distribución existente de la propiedad, los materiales alrededor, el espacio disponible y el uso previsto.",
+        ],
+      },
+    },
+
+    considerations: [
+      {
+        number: "01",
+        en: {
+          title: "Project area",
+          description:
+            "Provide the approximate square footage of the area where artificial turf is being considered.",
+        },
+        es: {
+          title: "Área del proyecto",
+          description:
+            "Proporcione los pies cuadrados aproximados del área donde está considerando instalar césped artificial.",
+        },
+      },
+      {
+        number: "02",
+        en: {
+          title: "Existing surfaces",
+          description:
+            "Consider how the turf will connect with existing patios, pavers, concrete, pool areas and landscaping.",
+        },
+        es: {
+          title: "Superficies existentes",
+          description:
+            "Considere cómo el césped se conectará con patios, pavers, concreto, áreas de piscina y paisajismo existentes.",
+        },
+      },
+      {
+        number: "03",
+        en: {
+          title: "Intended use",
+          description:
+            "Explain how the space will be used so the project can be planned around the property's needs.",
+        },
+        es: {
+          title: "Uso del espacio",
+          description:
+            "Explique cómo se utilizará el espacio para que el proyecto pueda planificarse según las necesidades de la propiedad.",
+        },
+      },
+    ],
+
+    process: {
+      en: [
+        {
+          number: "01",
+          title: "Tell us about your space",
+          description:
+            "Share your ZIP code, approximate square footage, photos or plans and your desired timing.",
+        },
+        {
+          number: "02",
+          title: "Review the area",
+          description:
+            "Consider the existing ground surface, surrounding hardscape, layout and intended use.",
+        },
+        {
+          number: "03",
+          title: "Plan the installation",
+          description:
+            "Confirm the project scope, turf area and installation approach.",
+        },
+        {
+          number: "04",
+          title: "Move forward",
+          description:
+            "Review the agreed project details and timing before installation begins.",
+        },
+      ],
+
+      es: [
+        {
+          number: "01",
+          title: "Cuéntenos sobre su espacio",
+          description:
+            "Comparta su código postal, pies cuadrados aproximados, fotografías o planos y el tiempo deseado.",
+        },
+        {
+          number: "02",
+          title: "Revise el área",
+          description:
+            "Considere la superficie existente, las áreas pavimentadas, la distribución y el uso previsto.",
+        },
+        {
+          number: "03",
+          title: "Planifique la instalación",
+          description:
+            "Confirme el alcance del proyecto, el área de césped y el método de instalación.",
+        },
+        {
+          number: "04",
+          title: "Avance con el proyecto",
+          description:
+            "Revise los detalles y tiempos acordados antes de comenzar la instalación.",
+        },
+      ],
+    },
+
+    faq: {
+      en: [
+        {
+          number: "01",
+          question: "How much does an artificial turf project cost?",
+          answer:
+            "Every project is different. The scope depends on the size of the area, existing surfaces, site conditions and installation requirements. Send us your project details and we can review the options with you.",
+        },
+        {
+          number: "02",
+          question: "Do you offer free estimates?",
+          answer:
+            "Yes. We offer a free virtual estimate. An in-person estimate is also available when needed.",
+        },
+        {
+          number: "03",
+          question: "Can I send photos or plans?",
+          answer:
+            "Yes. Photos and plans can help us understand the existing space and prepare for the estimate.",
+        },
+        {
+          number: "04",
+          question: "How much artificial turf do I need?",
+          answer:
+            "The required amount depends on the dimensions and layout of the project area. Provide your approximate square footage and we can review the space with you.",
+        },
+        {
+          number: "05",
+          question: "Can artificial turf be combined with pavers or a patio?",
+          answer:
+            "Yes. Artificial turf can be planned alongside patios, pavers, pool areas and pergolas to create defined outdoor zones and clean transitions.",
+        },
+        {
+          number: "06",
+          question: "Is the work warrantied?",
+          answer:
+            "Warranty coverage depends on the specific project and materials selected. The applicable warranty details will be reviewed as part of the project.",
+        },
+      ],
+
+      es: [
+        {
+          number: "01",
+          question: "¿Cuánto cuesta un proyecto de césped artificial?",
+          answer:
+            "Cada proyecto es diferente. El alcance depende del tamaño del área, las superficies existentes, las condiciones del lugar y los requisitos de instalación. Envíenos los detalles de su proyecto y revisaremos las opciones con usted.",
+        },
+        {
+          number: "02",
+          question: "¿Ofrecen estimados gratis?",
+          answer:
+            "Sí. Ofrecemos un estimado virtual gratis. También hay estimados en persona disponibles cuando sean necesarios.",
+        },
+        {
+          number: "03",
+          question: "¿Puedo enviar fotografías o planos?",
+          answer:
+            "Sí. Las fotografías y los planos pueden ayudarnos a entender el espacio existente y prepararnos para el estimado.",
+        },
+        {
+          number: "04",
+          question: "¿Cuánto césped artificial necesito?",
+          answer:
+            "La cantidad necesaria depende de las dimensiones y distribución del área. Proporcione los pies cuadrados aproximados y podemos revisar el espacio con usted.",
+        },
+        {
+          number: "05",
+          question: "¿Se puede combinar el césped artificial con pavers o un patio?",
+          answer:
+            "Sí. El césped artificial puede planificarse junto con patios, pavers, áreas de piscina y pérgolas para crear zonas exteriores definidas y transiciones limpias.",
+        },
+        {
+          number: "06",
+          question: "¿El trabajo tiene garantía?",
+          answer:
+            "La cobertura de garantía depende del proyecto específico y de los materiales seleccionados. Los detalles de la garantía aplicable se revisarán como parte del proyecto.",
+        },
+      ],
+    },
+
+    relatedServices: [
+      {
+        number: "04",
+        href: "/services/concrete-pavers",
+        en: "Concrete & Pavers",
+        es: "Concreto y Pavers",
+      },
+      {
+        number: "01",
+        href: "/services/pergolas-screen-enclosures",
+        en: "Pergolas & Screen Enclosures",
+        es: "Pérgolas y Cerramientos",
+      },
+      {
+        number: "09",
+        href: "/services/outdoor-kitchens",
+        en: "Outdoor Kitchens",
+        es: "Cocinas Exteriores",
+      },
+      {
+        number: "08",
+        href: "/services/motorized-louvered-roofs",
+        en: "Motorized Louvered Roofs",
+        es: "Techos de Lamas Motorizados",
+      },
+    ],
+
+    estimateCta: {
+      title: {
+        en: "Ready to improve your outdoor space?",
+        es: "¿Listo para mejorar su espacio exterior?",
+      },
+      description: {
+        en: "Tell us about your turf area, approximate square footage and outdoor project goals.",
+        es: "Cuéntenos sobre el área de césped, los pies cuadrados aproximados y sus objetivos para el espacio exterior.",
+      },
+      subject: {
+        en: "Artificial turf estimate",
+        es: "Estimado de césped artificial",
+      },
+    },
+
+    en: {
+      eyebrow: "Artificial Turf",
+      breadcrumbTitle: "Artificial Turf",
+      title: "Artificial Turf Installation in Miami",
+      description:
+        "Create a clean, consistent outdoor finish with artificial turf designed to complement patios, pool decks, pergolas and paver projects.",
+      features: [
+        "Residential artificial turf",
+        "Patio & paver integration",
+        "Poolside outdoor areas",
+        "Pergola surroundings",
+        "Material & installation included",
+      ],
+      cta: "Get a Free Estimate",
+    },
+
+    es: {
+      eyebrow: "Césped Artificial",
+      breadcrumbTitle: "Césped Artificial",
+      title: "Instalación de Césped Artificial en Miami",
+      description:
+        "Cree un acabado exterior limpio y uniforme con césped artificial diseñado para complementar patios, áreas de piscina, pérgolas y proyectos con pavers.",
+      features: [
+        "Césped artificial residencial",
+        "Integración con patios y pavers",
+        "Áreas exteriores junto a piscinas",
+        "Áreas alrededor de pérgolas",
+        "Material e instalación incluidos",
+      ],
+      cta: "Solicitar un Estimado",
+    },
+  },
+
 } as const;

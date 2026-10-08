@@ -99,7 +99,7 @@ export default function ServiceEstimateCta({
           <div className="border-l border-white/10 pl-6 lg:pl-12">
             <div className="flex flex-col gap-3 sm:items-start">
             <a
-  href="/#contact"
+  href="/contact"
   className="group inline-flex min-h-13 max-w-full items-center justify-center gap-3 bg-[var(--accent)] px-7 py-4 text-center text-xs font-bold uppercase tracking-widest text-white transition-all duration-300 hover:brightness-110"
 >
   <span>

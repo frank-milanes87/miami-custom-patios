@@ -64,6 +64,11 @@ export default function Hero() {
       ? "Pérgolas, cubiertas para patios, cocinas exteriores, cercas, productos de impacto y soluciones completas para espacios exteriores diseñadas para hogares del Sur de Florida."
       : "Custom pergolas, patio covers, outdoor kitchens, fencing, impact products, and complete outdoor living solutions designed for South Florida homes.";
 
+  const companyStatement =
+    lang === "es"
+      ? "Nosotros manejamos todo. Profesionales licenciados y asegurados realizan la construcción."
+      : "We handle everything. Licensed, insured pros do the building.";
+
   const virtual =
     lang === "es" ? "Cotizaciones Virtuales" : "Virtual Estimates";
 
@@ -73,6 +78,11 @@ export default function Hero() {
     lang === "es" ? "Cotizaciones en Casa" : "In-Home Estimates";
 
   const reimbursement =
+    lang === "es"
+      ? "Los estimados en el hogar cuestan $75."
+      : "In-home estimates are $75.";
+
+  const reimbursementDetails =
     lang === "es"
       ? "Se reembolsa completamente al avanzar con el proyecto dentro de 30 días."
       : "Fully reimbursed when you move forward within 30 days.";
@@ -88,7 +98,6 @@ export default function Hero() {
         lg:min-h-[800px]
       "
     >
-      {/* Background Image */}
       <img
         src="/assets/images/pergola-project-pool.webp"
         alt={imageAlt}
@@ -99,7 +108,6 @@ export default function Hero() {
         "
       />
 
-      {/* Dark Gradient Overlay */}
       <div
         aria-hidden="true"
         className="
@@ -108,7 +116,6 @@ export default function Hero() {
         "
       />
 
-      {/* Content Container */}
       <div
         className="
           mx-auto grid w-full
@@ -123,9 +130,7 @@ export default function Hero() {
           lg:py-[60px]
         "
       >
-        {/* Left Content */}
         <div className="max-w-3xl">
-          {/* Eyebrow */}
           <p
             className="
               font-sora
@@ -139,7 +144,6 @@ export default function Hero() {
             {t.home.eyebrow}
           </p>
 
-          {/* Heading */}
           <h1
             className="
               mt-6
@@ -160,7 +164,6 @@ export default function Hero() {
             <span className="text-[#c78951]">{titleAccent}</span>
           </h1>
 
-          {/* Description */}
           <p
             className="
               mt-4
@@ -175,10 +178,33 @@ export default function Hero() {
             {description}
           </p>
 
-          {/* CTA Buttons */}
+          {/* Client positioning */}
+          <div
+            className="
+              mt-6
+              max-w-2xl
+              border-l-2
+              border-[#c78951]
+              pl-4
+            "
+          >
+            <p
+              className="
+                font-sora
+                text-sm
+                font-semibold
+                leading-6
+                text-white
+                sm:text-base
+              "
+            >
+              {companyStatement}
+            </p>
+          </div>
+
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
-              href="#estimate"
+              href="/contact"
               className="
                 inline-flex
                 h-[52px]
@@ -233,13 +259,13 @@ export default function Hero() {
               "
             >
               <PhoneIcon />
+
               {lang === "es"
                 ? "Llamar al (305) 563-4756"
                 : "Call (305) 563-4756"}
             </a>
           </div>
 
-          {/* Estimate Pricing */}
           <div
             className="
               mt-8
@@ -251,7 +277,6 @@ export default function Hero() {
               py-4
             "
           >
-            {/* Virtual */}
             <div className="pr-4">
               <p
                 className="
@@ -278,7 +303,6 @@ export default function Hero() {
               </p>
             </div>
 
-            {/* In Home */}
             <div
               className="
                 border-l
@@ -309,23 +333,23 @@ export default function Hero() {
                 $75
               </p>
 
-              <p
+              <div
                 className="
                   mt-1
-                  max-w-[220px]
+                  max-w-[240px]
                   font-manrope
                   text-[11px]
                   leading-4
                   text-[#a9a3a4]
                 "
               >
-                {reimbursement}
-              </p>
+                <p>{reimbursement}</p>
+                <p>{reimbursementDetails}</p>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Right - Estimate Form */}
         <div
           id="estimate"
           className="
@@ -333,10 +357,7 @@ export default function Hero() {
             lg:pt-4
           "
         >
-          <div id="estimate">
-      <EstimateForm />
-   </div>
-        
+          <EstimateForm />
         </div>
       </div>
     </section>
