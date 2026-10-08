@@ -14,6 +14,7 @@ type ServiceHeroProps = {
   image: string;
   imageAlt: string;
   number: string;
+  total: string;
   category: string;
   projectLabel: string;
 };
