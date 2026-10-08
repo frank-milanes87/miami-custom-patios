@@ -25,7 +25,7 @@ export const copy = {
       inHome: "In-Home Estimates",
       price: "$75",
       reimbursement:
-        "Fully reimbursed when you move forward within 30 days.",
+  "In-home estimates are $75. Fully reimbursed when you move forward within 30 days.",
       imageAlt: "Modern poolside pergola by Miami Custom Patios",
       services: "Explore Services",
       designed: "Custom Designed",
@@ -113,7 +113,7 @@ export const copy = {
       inHome: "Cotizaciones en Casa",
       price: "$75",
       reimbursement:
-        "Se reembolsa completamente al avanzar con el proyecto dentro de 30 días.",
+        "Los presupuestos a domicilio cuestan 75 dólares. Se reembolsan íntegramente si decide seguir adelante con el proyecto en un plazo de 30 días.",
       imageAlt:
         "Pérgola moderna junto a una piscina de Miami Custom Patios",
       services: "Explorar Servicios",

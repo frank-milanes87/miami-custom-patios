@@ -77,11 +77,6 @@ export default function Hero() {
   const inHome =
     lang === "es" ? "Cotizaciones en Casa" : "In-Home Estimates";
 
-  const reimbursement =
-    lang === "es"
-      ? "Los estimados en el hogar cuestan $75."
-      : "In-home estimates are $75.";
-
   const reimbursementDetails =
     lang === "es"
       ? "Se reembolsa completamente al avanzar con el proyecto dentro de 30 días."
@@ -177,8 +172,6 @@ export default function Hero() {
           >
             {description}
           </p>
-
-          {/* Client positioning */}
           <div
             className="
               mt-6
@@ -343,7 +336,6 @@ export default function Hero() {
                   text-[#a9a3a4]
                 "
               >
-                <p>{reimbursement}</p>
                 <p>{reimbursementDetails}</p>
               </div>
             </div>
