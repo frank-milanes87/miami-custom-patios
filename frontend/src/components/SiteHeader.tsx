@@ -108,7 +108,7 @@ const navigation = [
   {
     en: "Reviews",
     es: "Reseñas",
-    href: "/#reviews",
+    href: "/reviews",
   },
   {
     en: "Contact",
