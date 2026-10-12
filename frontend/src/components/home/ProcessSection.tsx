@@ -46,8 +46,8 @@ export default function ProcessSection() {
         es: "Construya Su Espacio Personalizado",
       },
       description: {
-        en: "Our team brings the approved design to life with a focus on quality and craftsmanship.",
-        es: "Nuestro equipo convierte el diseño aprobado en realidad, enfocándose en la calidad y la excelencia.",
+        en: "Our licensed and insured partners bring the approved design to life with a focus on quality and craftsmanship.",
+        es: "Nuestros socios con licencia y seguro llevan el diseño aprobado a la realidad, con un enfoque en la calidad y la excelencia en la ejecución.",
       },
     },
   ];
