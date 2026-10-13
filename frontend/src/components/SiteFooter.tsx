@@ -22,7 +22,7 @@ const navigation = [
   {
     en: "About Us",
     es: "Nosotros",
-    href: "/#about",
+    href: "/about-us",
   },
   {
     en: "Reviews",
