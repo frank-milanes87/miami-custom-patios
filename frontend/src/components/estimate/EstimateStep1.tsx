@@ -175,7 +175,6 @@ export default function EstimateStep1({
           max-h-[calc(100vh-350px)]
           min-h-0
           overflow-y-auto
-          overscroll-contain
           pr-3
           sm:max-h-[560px]
           sm:pr-4

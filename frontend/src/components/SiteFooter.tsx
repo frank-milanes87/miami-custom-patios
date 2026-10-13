@@ -279,7 +279,7 @@ export default function SiteFooter() {
               ))}
             </ul>
           </div>
-          <div className="border-t border-white/10 py-8 md:border-l md:px-7 md:py-0 lg:px-8">
+          <div className=" border-white/10 py-8 md:border-l md:px-7 md:py-0 lg:px-8">
             <p className="font-sora text-xs font-bold uppercase tracking-[0.08em] text-[#c78951]">
               {t.connect}
             </p>
