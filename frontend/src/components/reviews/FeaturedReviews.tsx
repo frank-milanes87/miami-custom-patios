@@ -116,9 +116,9 @@ export default function FeaturedReviews() {
                 </div>
               </div>
 
-              <blockquote className="mt-5 flex-1 font-sora text-xl font-medium leading-[1.55] tracking-[-0.025em] text-[#21191a] sm:text-2xl sm:leading-[1.5]">
+              {/* <blockquote className="mt-5 flex-1 font-sora text-xl font-medium leading-[1.55] tracking-[-0.025em] text-[#21191a] sm:text-2xl sm:leading-[1.5]">
                 {review.quote[isSpanish ? "es" : "en"]}
-              </blockquote>
+              </blockquote> */}
 
               <div className="mt-9 h-px w-full bg-[#171112]/10" />
 

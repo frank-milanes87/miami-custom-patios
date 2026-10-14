@@ -9,8 +9,8 @@ import "swiper/css";
 const reviews = [
   {
     quote: {
-      en: "The project turned out awesome! Every person that comes to my house can't believe how it looks in the back compared to before.",
-      es: "¡El proyecto ha quedado genial! Todos los que vienen a mi casa no se pueden creer cómo ha quedado la parte de atrás en comparación con antes.",
+      en: "",
+      es: "",
     },
     name: "Joseph X.",
     project: {
@@ -136,9 +136,9 @@ export default function ReviewsSection() {
                       ★★★★★
                     </p>
 
-                    <blockquote className="mt-8 text-2xl font-medium leading-10 text-[var(--black)]">
+                    {/* <blockquote className="mt-8 text-2xl font-medium leading-10 text-[var(--black)]">
                       “{review.quote[lang]}”
-                    </blockquote>
+                    </blockquote> */}
 
                     <div className="mt-10 border-t border-black/10 pt-5">
                       <strong className="text-[var(--black)]">

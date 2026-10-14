@@ -24,7 +24,24 @@ export const servicePages = {
         ],
       },
     },
-
+    estimateContent: {
+      en: {
+        virtualLabel: "Virtual Estimate",
+        virtualPrice: "Free",
+        inHomeLabel: "In-Home Estimate",
+        inHomePrice: "$75",
+        description:
+          "In-home estimates are $75 and reimbursed if you move forward with your project within 30 days of receiving the estimate.",
+      },
+      es: {
+        virtualLabel: "Estimado Virtual",
+        virtualPrice: "Gratis",
+        inHomeLabel: "Estimado en Casa",
+        inHomePrice: "$75",
+        description:
+          "Los estimados en casa cuestan $75 y se reembolsan si decide continuar con su proyecto dentro de los 30 días posteriores a recibir el estimado.",
+      },
+    },
     offerings: {
       en: [
         {
@@ -480,7 +497,24 @@ export const servicePages = {
         ],
       },
     },
-
+    estimateContent: {
+      en: {
+        virtualLabel: "Virtual Estimate",
+        virtualPrice: "Free",
+        inHomeLabel: "In-Home Estimate",
+        inHomePrice: "$75",
+        description:
+          "In-home estimates are $75 and reimbursed if you move forward with your project within 30 days of receiving the estimate.",
+      },
+      es: {
+        virtualLabel: "Estimado Virtual",
+        virtualPrice: "Gratis",
+        inHomeLabel: "Estimado en Casa",
+        inHomePrice: "$75",
+        description:
+          "Los estimados en casa cuestan $75 y se reembolsan si decide continuar con su proyecto dentro de los 30 días posteriores a recibir el estimado.",
+      },
+    },
     offerings: {
       en: [
         {
@@ -733,108 +767,108 @@ export const servicePages = {
     },
 
     faq: {
-  en: [
-    {
-      number: "01",
-      question: "How much does a fencing project cost?",
-      answer:
-        "Every fencing project is different. The cost depends on the size and layout of the property, the fence style and materials selected, site conditions, and installation requirements. Send us your measurements or photos and we'll review the options with you.",
-    },
-    {
-      number: "02",
-      question: "What fencing materials and styles are available?",
-      answer:
-        "We can review modern fencing options based on the look, privacy, durability, and overall design you want for your property. The recommended material and style will depend on the project and existing conditions.",
-    },
-    {
-      number: "03",
-      question: "Can fencing be installed around an existing patio, pool, or landscaping?",
-      answer:
-        "Yes. Fencing can be planned around existing patios, pool areas, landscaping, walkways, gates, and other features. We review the property layout so the fence fits properly with the existing space.",
-    },
-    {
-      number: "04",
-      question: "Do you charge for estimates?",
-      answer:
-        "Virtual estimates are free. An in-home estimate without a prior virtual estimate is $75, refunded if you sign a contract within 30 days.",
-    },
-    {
-      number: "05",
-      question: "Can I get a drawing of my fencing project?",
-      answer:
-        "Yes. We can review the proposed layout and discuss the fencing design for your property. Drawing or rendering services, when needed, can be reviewed as part of the project scope.",
-    },
-    {
-      number: "06",
-      question: "How long does a fencing project take?",
-      answer:
-        "The timeline depends on the size of the project, the selected materials, site conditions, and availability. After reviewing your property and project scope, we can provide a more specific timeline.",
-    },
-    {
-      number: "07",
-      question: "What are the payment terms?",
-      answer:
-        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
-    },
-    {
-      number: "08",
-      question: "Is the fencing work warrantied?",
-      answer:
-        "Warranty coverage depends on the specific fencing materials and project. The applicable warranty details will be reviewed with you as part of the project.",
-    },
-  ],
+      en: [
+        {
+          number: "01",
+          question: "How much does a fencing project cost?",
+          answer:
+            "Every fencing project is different. The cost depends on the size and layout of the property, the fence style and materials selected, site conditions, and installation requirements. Send us your measurements or photos and we'll review the options with you.",
+        },
+        {
+          number: "02",
+          question: "What fencing materials and styles are available?",
+          answer:
+            "We can review modern fencing options based on the look, privacy, durability, and overall design you want for your property. The recommended material and style will depend on the project and existing conditions.",
+        },
+        {
+          number: "03",
+          question: "Can fencing be installed around an existing patio, pool, or landscaping?",
+          answer:
+            "Yes. Fencing can be planned around existing patios, pool areas, landscaping, walkways, gates, and other features. We review the property layout so the fence fits properly with the existing space.",
+        },
+        {
+          number: "04",
+          question: "Do you charge for estimates?",
+          answer:
+            "Virtual estimates are free. An in-home estimate without a prior virtual estimate is $75, refunded if you sign a contract within 30 days.",
+        },
+        {
+          number: "05",
+          question: "Can I get a drawing of my fencing project?",
+          answer:
+            "Yes. We can review the proposed layout and discuss the fencing design for your property. Drawing or rendering services, when needed, can be reviewed as part of the project scope.",
+        },
+        {
+          number: "06",
+          question: "How long does a fencing project take?",
+          answer:
+            "The timeline depends on the size of the project, the selected materials, site conditions, and availability. After reviewing your property and project scope, we can provide a more specific timeline.",
+        },
+        {
+          number: "07",
+          question: "What are the payment terms?",
+          answer:
+            "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+        },
+        {
+          number: "08",
+          question: "Is the fencing work warrantied?",
+          answer:
+            "Warranty coverage depends on the specific fencing materials and project. The applicable warranty details will be reviewed with you as part of the project.",
+        },
+      ],
 
-  es: [
-    {
-      number: "01",
-      question: "¿Cuánto cuesta un proyecto de cercado?",
-      answer:
-        "Cada proyecto de cercado es diferente. El costo depende del tamaño y la distribución de la propiedad, el estilo y los materiales seleccionados, las condiciones del lugar y los requisitos de instalación. Envíenos sus medidas o fotografías y revisaremos las opciones con usted.",
+      es: [
+        {
+          number: "01",
+          question: "¿Cuánto cuesta un proyecto de cercado?",
+          answer:
+            "Cada proyecto de cercado es diferente. El costo depende del tamaño y la distribución de la propiedad, el estilo y los materiales seleccionados, las condiciones del lugar y los requisitos de instalación. Envíenos sus medidas o fotografías y revisaremos las opciones con usted.",
+        },
+        {
+          number: "02",
+          question: "¿Qué materiales y estilos de cercas están disponibles?",
+          answer:
+            "Podemos revisar opciones de cercas modernas según la apariencia, privacidad, durabilidad y diseño general que desea para su propiedad. El material y estilo recomendado dependerán del proyecto y de las condiciones existentes.",
+        },
+        {
+          number: "03",
+          question: "¿Se puede instalar una cerca alrededor de un patio, piscina o paisajismo existente?",
+          answer:
+            "Sí. La cerca puede planificarse alrededor de patios, áreas de piscina, paisajismo, caminos, portones y otras características existentes. Revisamos la distribución de la propiedad para que la cerca se integre correctamente con el espacio.",
+        },
+        {
+          number: "04",
+          question: "¿Cobran por los estimados?",
+          answer:
+            "Los estimados virtuales son gratis. Un estimado en el hogar sin un estimado virtual previo cuesta $75 y se reembolsa si firma un contrato dentro de 30 días.",
+        },
+        {
+          number: "05",
+          question: "¿Puedo obtener un dibujo de mi proyecto de cercado?",
+          answer:
+            "Sí. Podemos revisar la distribución propuesta y conversar sobre el diseño de la cerca para su propiedad. Los servicios de dibujo o representación, cuando sean necesarios, pueden revisarse como parte del alcance del proyecto.",
+        },
+        {
+          number: "06",
+          question: "¿Cuánto tiempo toma un proyecto de cercado?",
+          answer:
+            "El tiempo depende del tamaño del proyecto, los materiales seleccionados, las condiciones del lugar y la disponibilidad. Después de revisar su propiedad y el alcance del proyecto, podemos proporcionar un tiempo más específico.",
+        },
+        {
+          number: "07",
+          question: "¿Cuáles son los términos de pago?",
+          answer:
+            "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+        },
+        {
+          number: "08",
+          question: "¿El trabajo de cercado tiene garantía?",
+          answer:
+            "La cobertura de garantía depende de los materiales de cercado y del proyecto específico. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+        },
+      ],
     },
-    {
-      number: "02",
-      question: "¿Qué materiales y estilos de cercas están disponibles?",
-      answer:
-        "Podemos revisar opciones de cercas modernas según la apariencia, privacidad, durabilidad y diseño general que desea para su propiedad. El material y estilo recomendado dependerán del proyecto y de las condiciones existentes.",
-    },
-    {
-      number: "03",
-      question: "¿Se puede instalar una cerca alrededor de un patio, piscina o paisajismo existente?",
-      answer:
-        "Sí. La cerca puede planificarse alrededor de patios, áreas de piscina, paisajismo, caminos, portones y otras características existentes. Revisamos la distribución de la propiedad para que la cerca se integre correctamente con el espacio.",
-    },
-    {
-      number: "04",
-      question: "¿Cobran por los estimados?",
-      answer:
-        "Los estimados virtuales son gratis. Un estimado en el hogar sin un estimado virtual previo cuesta $75 y se reembolsa si firma un contrato dentro de 30 días.",
-    },
-    {
-      number: "05",
-      question: "¿Puedo obtener un dibujo de mi proyecto de cercado?",
-      answer:
-        "Sí. Podemos revisar la distribución propuesta y conversar sobre el diseño de la cerca para su propiedad. Los servicios de dibujo o representación, cuando sean necesarios, pueden revisarse como parte del alcance del proyecto.",
-    },
-    {
-      number: "06",
-      question: "¿Cuánto tiempo toma un proyecto de cercado?",
-      answer:
-        "El tiempo depende del tamaño del proyecto, los materiales seleccionados, las condiciones del lugar y la disponibilidad. Después de revisar su propiedad y el alcance del proyecto, podemos proporcionar un tiempo más específico.",
-    },
-    {
-      number: "07",
-      question: "¿Cuáles son los términos de pago?",
-      answer:
-        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
-    },
-    {
-      number: "08",
-      question: "¿El trabajo de cercado tiene garantía?",
-      answer:
-        "La cobertura de garantía depende de los materiales de cercado y del proyecto específico. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
-    },
-  ],
-},
 
     relatedServices: [
       {
@@ -936,7 +970,24 @@ export const servicePages = {
         ],
       },
     },
-
+    estimateContent: {
+      en: {
+        virtualLabel: "Virtual Estimate",
+        virtualPrice: "Free",
+        inHomeLabel: "In-Person Estimate",
+        inHomePrice: "Free",
+        description:
+          "Virtual estimates are free. An in-person estimate is also available at no charge for epoxy flooring projects.",
+      },
+      es: {
+        virtualLabel: "Estimado Virtual",
+        virtualPrice: "Gratis",
+        inHomeLabel: "Estimado Presencial",
+        inHomePrice: "Gratis",
+        description:
+          "Los estimados virtuales son gratuitos. También ofrecemos estimados presenciales sin costo para proyectos de pisos de epoxi.",
+      },
+    },
     offerings: {
       en: [
         {
@@ -1188,61 +1239,61 @@ export const servicePages = {
       ],
     },
 
-  faq: {
-  en: [
-    {
-      number: "01",
-      question: "Do you charge for estimates?",
-      answer:
-        "Virtual estimates are free. An in-person estimate is also available at no charge for epoxy flooring projects.",
-    },
-    {
-      number: "02",
-      question: "Can I get a drawing of my project?",
-      answer:
-        "Yes. We can review the project layout and discuss the proposed epoxy flooring design and finish as part of the project planning process.",
-    },
-    {
-      number: "03",
-      question: "What are the payment terms?",
-      answer:
-        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
-    },
-    {
-      number: "04",
-      question: "Is the work warrantied?",
-      answer:
-        "Warranty coverage depends on the specific epoxy flooring system and materials selected. The applicable warranty details will be reviewed with you as part of the project.",
-    },
-  ],
+    faq: {
+      en: [
+        {
+          number: "01",
+          question: "Do you charge for estimates?",
+          answer:
+            "Virtual estimates are free. An in-person estimate is also available at no charge for epoxy flooring projects.",
+        },
+        {
+          number: "02",
+          question: "Can I get a drawing of my project?",
+          answer:
+            "Yes. We can review the project layout and discuss the proposed epoxy flooring design and finish as part of the project planning process.",
+        },
+        {
+          number: "03",
+          question: "What are the payment terms?",
+          answer:
+            "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+        },
+        {
+          number: "04",
+          question: "Is the work warrantied?",
+          answer:
+            "Warranty coverage depends on the specific epoxy flooring system and materials selected. The applicable warranty details will be reviewed with you as part of the project.",
+        },
+      ],
 
-  es: [
-    {
-      number: "01",
-      question: "¿Cobran por los estimados?",
-      answer:
-        "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de pisos epóxicos.",
+      es: [
+        {
+          number: "01",
+          question: "¿Cobran por los estimados?",
+          answer:
+            "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de pisos epóxicos.",
+        },
+        {
+          number: "02",
+          question: "¿Puedo obtener un dibujo de mi proyecto?",
+          answer:
+            "Sí. Podemos revisar la distribución del proyecto y conversar sobre el diseño y acabado propuesto para el piso epóxico como parte del proceso de planificación.",
+        },
+        {
+          number: "03",
+          question: "¿Cuáles son los términos de pago?",
+          answer:
+            "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+        },
+        {
+          number: "04",
+          question: "¿El trabajo tiene garantía?",
+          answer:
+            "La cobertura de garantía depende del sistema de piso epóxico y de los materiales seleccionados. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+        },
+      ],
     },
-    {
-      number: "02",
-      question: "¿Puedo obtener un dibujo de mi proyecto?",
-      answer:
-        "Sí. Podemos revisar la distribución del proyecto y conversar sobre el diseño y acabado propuesto para el piso epóxico como parte del proceso de planificación.",
-    },
-    {
-      number: "03",
-      question: "¿Cuáles son los términos de pago?",
-      answer:
-        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
-    },
-    {
-      number: "04",
-      question: "¿El trabajo tiene garantía?",
-      answer:
-        "La cobertura de garantía depende del sistema de piso epóxico y de los materiales seleccionados. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
-    },
-  ],
-},
 
     relatedServices: [
       {
@@ -1344,7 +1395,24 @@ export const servicePages = {
         ],
       },
     },
-
+    estimateContent: {
+      en: {
+        virtualLabel: "Virtual Estimate",
+        virtualPrice: "Free",
+        inHomeLabel: "In-Home Estimate",
+        inHomePrice: "$75",
+        description:
+          "In-home estimates are $75 and reimbursed if you move forward with your project within 30 days of receiving the estimate.",
+      },
+      es: {
+        virtualLabel: "Estimado Virtual",
+        virtualPrice: "Gratis",
+        inHomeLabel: "Estimado en Casa",
+        inHomePrice: "$75",
+        description:
+          "Los estimados en casa cuestan $75 y se reembolsan si decide continuar con su proyecto dentro de los 30 días posteriores a recibir el estimado.",
+      },
+    },
     offerings: {
       en: [
         {
@@ -1596,85 +1664,85 @@ export const servicePages = {
       ],
     },
 
- faq: {
-  en: [
-    {
-      number: "01",
-      question: "How much does a project cost?",
-      answer:
-        "Every project is different. Price depends on the size of the area, materials selected, existing surfaces, site conditions, and the installation requirements. Send us your measurements and we'll walk you through the options.",
-    },
-    {
-      number: "02",
-      question: "Do you charge for estimates?",
-      answer:
-        "Virtual estimates are free. An in-home estimate without a prior virtual estimate is $75, refunded if you sign a contract within 30 days.",
-    },
-    {
-      number: "03",
-      question: "Can I get a drawing of my project?",
-      answer:
-        "Yes. We can review the proposed layout and discuss the design, materials, and finishes for your concrete or paver project as part of the planning process.",
-    },
-    {
-      number: "04",
-      question: "How long does the project take?",
-      answer:
-        "The timeline depends on the size of the project, materials selected, site conditions, preparation requirements, and availability. After reviewing the project scope, we can provide a more specific timeline.",
-    },
-    {
-      number: "05",
-      question: "What are the payment terms?",
-      answer:
-        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
-    },
-    {
-      number: "06",
-      question: "Is the work warrantied?",
-      answer:
-        "Warranty coverage depends on the specific project and materials selected. The applicable warranty details will be reviewed with you as part of the project.",
-    },
-  ],
+    faq: {
+      en: [
+        {
+          number: "01",
+          question: "How much does a project cost?",
+          answer:
+            "Every project is different. Price depends on the size of the area, materials selected, existing surfaces, site conditions, and the installation requirements. Send us your measurements and we'll walk you through the options.",
+        },
+        {
+          number: "02",
+          question: "Do you charge for estimates?",
+          answer:
+            "Virtual estimates are free. An in-home estimate without a prior virtual estimate is $75, refunded if you sign a contract within 30 days.",
+        },
+        {
+          number: "03",
+          question: "Can I get a drawing of my project?",
+          answer:
+            "Yes. We can review the proposed layout and discuss the design, materials, and finishes for your concrete or paver project as part of the planning process.",
+        },
+        {
+          number: "04",
+          question: "How long does the project take?",
+          answer:
+            "The timeline depends on the size of the project, materials selected, site conditions, preparation requirements, and availability. After reviewing the project scope, we can provide a more specific timeline.",
+        },
+        {
+          number: "05",
+          question: "What are the payment terms?",
+          answer:
+            "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+        },
+        {
+          number: "06",
+          question: "Is the work warrantied?",
+          answer:
+            "Warranty coverage depends on the specific project and materials selected. The applicable warranty details will be reviewed with you as part of the project.",
+        },
+      ],
 
-  es: [
-    {
-      number: "01",
-      question: "¿Cuánto cuesta un proyecto?",
-      answer:
-        "Cada proyecto es diferente. El precio depende del tamaño del área, los materiales seleccionados, las superficies existentes, las condiciones del lugar y los requisitos de instalación. Envíenos sus medidas y le explicaremos las opciones.",
+      es: [
+        {
+          number: "01",
+          question: "¿Cuánto cuesta un proyecto?",
+          answer:
+            "Cada proyecto es diferente. El precio depende del tamaño del área, los materiales seleccionados, las superficies existentes, las condiciones del lugar y los requisitos de instalación. Envíenos sus medidas y le explicaremos las opciones.",
+        },
+        {
+          number: "02",
+          question: "¿Cobran por los estimados?",
+          answer:
+            "Los estimados virtuales son gratis. Un estimado en el hogar sin un estimado virtual previo cuesta $75 y se reembolsa si firma un contrato dentro de 30 días.",
+        },
+        {
+          number: "03",
+          question: "¿Puedo obtener un dibujo de mi proyecto?",
+          answer:
+            "Sí. Podemos revisar la distribución propuesta y conversar sobre el diseño, materiales y acabados de su proyecto de concreto o pavers como parte del proceso de planificación.",
+        },
+        {
+          number: "04",
+          question: "¿Cuánto tiempo toma el proyecto?",
+          answer:
+            "El tiempo depende del tamaño del proyecto, los materiales seleccionados, las condiciones del lugar, los requisitos de preparación y la disponibilidad. Después de revisar el alcance del proyecto, podemos proporcionar un tiempo más específico.",
+        },
+        {
+          number: "05",
+          question: "¿Cuáles son los términos de pago?",
+          answer:
+            "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+        },
+        {
+          number: "06",
+          question: "¿El trabajo tiene garantía?",
+          answer:
+            "La cobertura de garantía depende del proyecto específico y de los materiales seleccionados. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+        },
+      ],
     },
-    {
-      number: "02",
-      question: "¿Cobran por los estimados?",
-      answer:
-        "Los estimados virtuales son gratis. Un estimado en el hogar sin un estimado virtual previo cuesta $75 y se reembolsa si firma un contrato dentro de 30 días.",
-    },
-    {
-      number: "03",
-      question: "¿Puedo obtener un dibujo de mi proyecto?",
-      answer:
-        "Sí. Podemos revisar la distribución propuesta y conversar sobre el diseño, materiales y acabados de su proyecto de concreto o pavers como parte del proceso de planificación.",
-    },
-    {
-      number: "04",
-      question: "¿Cuánto tiempo toma el proyecto?",
-      answer:
-        "El tiempo depende del tamaño del proyecto, los materiales seleccionados, las condiciones del lugar, los requisitos de preparación y la disponibilidad. Después de revisar el alcance del proyecto, podemos proporcionar un tiempo más específico.",
-    },
-    {
-      number: "05",
-      question: "¿Cuáles son los términos de pago?",
-      answer:
-        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
-    },
-    {
-      number: "06",
-      question: "¿El trabajo tiene garantía?",
-      answer:
-        "La cobertura de garantía depende del proyecto específico y de los materiales seleccionados. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
-    },
-  ],
-},
 
     relatedServices: [
       {
@@ -1776,7 +1844,24 @@ export const servicePages = {
         ],
       },
     },
-
+    estimateContent: {
+      en: {
+        virtualLabel: "Virtual Estimate",
+        virtualPrice: "Free",
+        inHomeLabel: "In-Person Estimate",
+        inHomePrice: "Free",
+        description:
+          "Virtual estimates are free. An in-person estimate is also available at no charge for impact windows and doors projects.",
+      },
+      es: {
+        virtualLabel: "Estimado Virtual",
+        virtualPrice: "Gratis",
+        inHomeLabel: "Estimado Presencial",
+        inHomePrice: "Gratis",
+        description:
+          "Los estimados virtuales son gratuitos. También ofrecemos estimados presenciales sin costo para proyectos de ventanas y puertas resistentes a impactos.",
+      },
+    },
     offerings: {
       en: [
         {
@@ -2028,61 +2113,61 @@ export const servicePages = {
       ],
     },
 
-   faq: {
-  en: [
-    {
-      number: "01",
-      question: "Do you charge for estimates?",
-      answer:
-        "Virtual estimates are free. An in-person estimate is also available at no charge for impact windows and doors projects.",
-    },
-    {
-      number: "02",
-      question: "Can I get a drawing of my project?",
-      answer:
-        "Yes. We can review the proposed window and door layout and discuss the design and product options as part of the project planning process.",
-    },
-    {
-      number: "03",
-      question: "What are the payment terms?",
-      answer:
-        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
-    },
-    {
-      number: "04",
-      question: "Is the work warrantied?",
-      answer:
-        "Warranty coverage depends on the specific products and installation selected. The applicable warranty details will be reviewed with you as part of the project.",
-    },
-  ],
+    faq: {
+      en: [
+        {
+          number: "01",
+          question: "Do you charge for estimates?",
+          answer:
+            "Virtual estimates are free. An in-person estimate is also available at no charge for impact windows and doors projects.",
+        },
+        {
+          number: "02",
+          question: "Can I get a drawing of my project?",
+          answer:
+            "Yes. We can review the proposed window and door layout and discuss the design and product options as part of the project planning process.",
+        },
+        {
+          number: "03",
+          question: "What are the payment terms?",
+          answer:
+            "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+        },
+        {
+          number: "04",
+          question: "Is the work warrantied?",
+          answer:
+            "Warranty coverage depends on the specific products and installation selected. The applicable warranty details will be reviewed with you as part of the project.",
+        },
+      ],
 
-  es: [
-    {
-      number: "01",
-      question: "¿Cobran por los estimados?",
-      answer:
-        "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de ventanas y puertas de impacto.",
+      es: [
+        {
+          number: "01",
+          question: "¿Cobran por los estimados?",
+          answer:
+            "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de ventanas y puertas de impacto.",
+        },
+        {
+          number: "02",
+          question: "¿Puedo obtener un dibujo de mi proyecto?",
+          answer:
+            "Sí. Podemos revisar la distribución propuesta de las ventanas y puertas y conversar sobre el diseño y las opciones de productos como parte del proceso de planificación.",
+        },
+        {
+          number: "03",
+          question: "¿Cuáles son los términos de pago?",
+          answer:
+            "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+        },
+        {
+          number: "04",
+          question: "¿El trabajo tiene garantía?",
+          answer:
+            "La cobertura de garantía depende de los productos y la instalación seleccionados. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+        },
+      ],
     },
-    {
-      number: "02",
-      question: "¿Puedo obtener un dibujo de mi proyecto?",
-      answer:
-        "Sí. Podemos revisar la distribución propuesta de las ventanas y puertas y conversar sobre el diseño y las opciones de productos como parte del proceso de planificación.",
-    },
-    {
-      number: "03",
-      question: "¿Cuáles son los términos de pago?",
-      answer:
-        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
-    },
-    {
-      number: "04",
-      question: "¿El trabajo tiene garantía?",
-      answer:
-        "La cobertura de garantía depende de los productos y la instalación seleccionados. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
-    },
-  ],
-},
 
     relatedServices: [
       {
@@ -2184,7 +2269,24 @@ export const servicePages = {
         ],
       },
     },
-
+    estimateContent: {
+  en: {
+    virtualLabel: "Virtual Estimate",
+    virtualPrice: "Free",
+    inHomeLabel: "In-Person Estimate",
+    inHomePrice: "Free",
+    description:
+      "Virtual estimates are free. An in-person estimate is also available at no charge for accordion shutter projects.",
+  },
+  es: {
+    virtualLabel: "Estimado Virtual",
+    virtualPrice: "Gratis",
+    inHomeLabel: "Estimado Presencial",
+    inHomePrice: "Gratis",
+    description:
+      "Los estimados virtuales son gratuitos. También ofrecemos estimados presenciales sin costo para proyectos de contraventanas tipo acordeón.",
+  },
+},
     offerings: {
       en: [
         {
@@ -2437,60 +2539,60 @@ export const servicePages = {
     },
 
     faq: {
-  en: [
-    {
-      number: "01",
-      question: "Do you charge for estimates?",
-      answer:
-        "Virtual estimates are free. An in-person estimate is also available at no charge for accordion shutter projects.",
-    },
-    {
-      number: "02",
-      question: "Can I get a drawing of my project?",
-      answer:
-        "Yes. We can review the proposed shutter layout and discuss the design and product options as part of the project planning process.",
-    },
-    {
-      number: "03",
-      question: "What are the payment terms?",
-      answer:
-        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
-    },
-    {
-      number: "04",
-      question: "Is the work warrantied?",
-      answer:
-        "Warranty coverage depends on the specific accordion shutters and installation selected. The applicable warranty details will be reviewed with you as part of the project.",
-    },
-  ],
+      en: [
+        {
+          number: "01",
+          question: "Do you charge for estimates?",
+          answer:
+            "Virtual estimates are free. An in-person estimate is also available at no charge for accordion shutter projects.",
+        },
+        {
+          number: "02",
+          question: "Can I get a drawing of my project?",
+          answer:
+            "Yes. We can review the proposed shutter layout and discuss the design and product options as part of the project planning process.",
+        },
+        {
+          number: "03",
+          question: "What are the payment terms?",
+          answer:
+            "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+        },
+        {
+          number: "04",
+          question: "Is the work warrantied?",
+          answer:
+            "Warranty coverage depends on the specific accordion shutters and installation selected. The applicable warranty details will be reviewed with you as part of the project.",
+        },
+      ],
 
-  es: [
-    {
-      number: "01",
-      question: "¿Cobran por los estimados?",
-      answer:
-        "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de persianas acordeón.",
+      es: [
+        {
+          number: "01",
+          question: "¿Cobran por los estimados?",
+          answer:
+            "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de persianas acordeón.",
+        },
+        {
+          number: "02",
+          question: "¿Puedo obtener un dibujo de mi proyecto?",
+          answer:
+            "Sí. Podemos revisar la distribución propuesta de las persianas y conversar sobre el diseño y las opciones de productos como parte del proceso de planificación.",
+        },
+        {
+          number: "03",
+          question: "¿Cuáles son los términos de pago?",
+          answer:
+            "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+        },
+        {
+          number: "04",
+          question: "¿El trabajo tiene garantía?",
+          answer:
+            "La cobertura de garantía depende de las persianas acordeón y la instalación seleccionadas. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+        },
+      ],
     },
-    {
-      number: "02",
-      question: "¿Puedo obtener un dibujo de mi proyecto?",
-      answer:
-        "Sí. Podemos revisar la distribución propuesta de las persianas y conversar sobre el diseño y las opciones de productos como parte del proceso de planificación.",
-    },
-    {
-      number: "03",
-      question: "¿Cuáles son los términos de pago?",
-      answer:
-        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
-    },
-    {
-      number: "04",
-      question: "¿El trabajo tiene garantía?",
-      answer:
-        "La cobertura de garantía depende de las persianas acordeón y la instalación seleccionadas. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
-    },
-  ],
-},
 
     relatedServices: [
       {
@@ -2592,7 +2694,24 @@ export const servicePages = {
         ],
       },
     },
-
+    estimateContent: {
+      en: {
+        virtualLabel: "Virtual Estimate",
+        virtualPrice: "Free",
+        inHomeLabel: "In-Person Estimate",
+        inHomePrice: "Free",
+        description:
+          "Virtual estimates are free. An in-person estimate is also available at no charge for modern mailbox projects.",
+      },
+      es: {
+        virtualLabel: "Estimado Virtual",
+        virtualPrice: "Gratis",
+        inHomeLabel: "Estimado Presencial",
+        inHomePrice: "Gratis",
+        description:
+          "Los estimados virtuales son gratuitos. También ofrecemos estimados presenciales sin costo para proyectos de buzones modernos.",
+      },
+    },
     offerings: {
       en: [
         {
@@ -2844,61 +2963,61 @@ export const servicePages = {
       ],
     },
 
-   faq: {
-  en: [
-    {
-      number: "01",
-      question: "Do you charge for estimates?",
-      answer:
-        "Virtual estimates are free. An in-person estimate is also available at no charge for modern mailbox projects.",
-    },
-    {
-      number: "02",
-      question: "Can I get a drawing of my project?",
-      answer:
-        "Yes. We can review the proposed mailbox layout and discuss the design and product options as part of the project planning process.",
-    },
-    {
-      number: "03",
-      question: "What are the payment terms?",
-      answer:
-        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
-    },
-    {
-      number: "04",
-      question: "Is the work warrantied?",
-      answer:
-        "Warranty coverage depends on the specific mailbox and installation selected. The applicable warranty details will be reviewed with you as part of the project.",
-    },
-  ],
+    faq: {
+      en: [
+        {
+          number: "01",
+          question: "Do you charge for estimates?",
+          answer:
+            "Virtual estimates are free. An in-person estimate is also available at no charge for modern mailbox projects.",
+        },
+        {
+          number: "02",
+          question: "Can I get a drawing of my project?",
+          answer:
+            "Yes. We can review the proposed mailbox layout and discuss the design and product options as part of the project planning process.",
+        },
+        {
+          number: "03",
+          question: "What are the payment terms?",
+          answer:
+            "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+        },
+        {
+          number: "04",
+          question: "Is the work warrantied?",
+          answer:
+            "Warranty coverage depends on the specific mailbox and installation selected. The applicable warranty details will be reviewed with you as part of the project.",
+        },
+      ],
 
-  es: [
-    {
-      number: "01",
-      question: "¿Cobran por los estimados?",
-      answer:
-        "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de buzones modernos.",
+      es: [
+        {
+          number: "01",
+          question: "¿Cobran por los estimados?",
+          answer:
+            "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de buzones modernos.",
+        },
+        {
+          number: "02",
+          question: "¿Puedo obtener un dibujo de mi proyecto?",
+          answer:
+            "Sí. Podemos revisar la distribución propuesta del buzón y conversar sobre el diseño y las opciones de productos como parte del proceso de planificación.",
+        },
+        {
+          number: "03",
+          question: "¿Cuáles son los términos de pago?",
+          answer:
+            "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+        },
+        {
+          number: "04",
+          question: "¿El trabajo tiene garantía?",
+          answer:
+            "La cobertura de garantía depende del buzón y la instalación seleccionados. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+        },
+      ],
     },
-    {
-      number: "02",
-      question: "¿Puedo obtener un dibujo de mi proyecto?",
-      answer:
-        "Sí. Podemos revisar la distribución propuesta del buzón y conversar sobre el diseño y las opciones de productos como parte del proceso de planificación.",
-    },
-    {
-      number: "03",
-      question: "¿Cuáles son los términos de pago?",
-      answer:
-        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
-    },
-    {
-      number: "04",
-      question: "¿El trabajo tiene garantía?",
-      answer:
-        "La cobertura de garantía depende del buzón y la instalación seleccionados. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
-    },
-  ],
-},
     relatedServices: [
       {
         number: "02",
@@ -2999,7 +3118,24 @@ export const servicePages = {
         ],
       },
     },
-
+    estimateContent: {
+      en: {
+        virtualLabel: "Virtual Estimate",
+        virtualPrice: "Free",
+        inHomeLabel: "In-Person Estimate",
+        inHomePrice: "Free",
+        description:
+          "Virtual estimates are free. An in-person estimate is also available at no charge for motorized louvered roof projects.",
+      },
+      es: {
+        virtualLabel: "Estimado Virtual",
+        virtualPrice: "Gratis",
+        inHomeLabel: "Estimado Presencial",
+        inHomePrice: "Gratis",
+        description:
+          "Los estimados virtuales son gratuitos. También ofrecemos estimados presenciales sin costo para proyectos de techos de lamas motorizadas.",
+      },
+    },
     offerings: {
       en: [
         {
@@ -3251,61 +3387,61 @@ export const servicePages = {
       ],
     },
 
-   faq: {
-  en: [
-    {
-      number: "01",
-      question: "Do you charge for estimates?",
-      answer:
-        "Virtual estimates are free. An in-person estimate is also available at no charge for motorized louvered roof projects.",
-    },
-    {
-      number: "02",
-      question: "Can I get a drawing of my project?",
-      answer:
-        "Yes. We can review the proposed roof layout and discuss the design, configuration, and product options as part of the project planning process.",
-    },
-    {
-      number: "03",
-      question: "What are the payment terms?",
-      answer:
-        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
-    },
-    {
-      number: "04",
-      question: "Is the work warrantied?",
-      answer:
-        "Warranty coverage depends on the specific motorized louvered roof system, products, and installation selected. The applicable warranty details will be reviewed with you as part of the project.",
-    },
-  ],
+    faq: {
+      en: [
+        {
+          number: "01",
+          question: "Do you charge for estimates?",
+          answer:
+            "Virtual estimates are free. An in-person estimate is also available at no charge for motorized louvered roof projects.",
+        },
+        {
+          number: "02",
+          question: "Can I get a drawing of my project?",
+          answer:
+            "Yes. We can review the proposed roof layout and discuss the design, configuration, and product options as part of the project planning process.",
+        },
+        {
+          number: "03",
+          question: "What are the payment terms?",
+          answer:
+            "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+        },
+        {
+          number: "04",
+          question: "Is the work warrantied?",
+          answer:
+            "Warranty coverage depends on the specific motorized louvered roof system, products, and installation selected. The applicable warranty details will be reviewed with you as part of the project.",
+        },
+      ],
 
-  es: [
-    {
-      number: "01",
-      question: "¿Cobran por los estimados?",
-      answer:
-        "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de techos de lamas motorizados.",
+      es: [
+        {
+          number: "01",
+          question: "¿Cobran por los estimados?",
+          answer:
+            "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de techos de lamas motorizados.",
+        },
+        {
+          number: "02",
+          question: "¿Puedo obtener un dibujo de mi proyecto?",
+          answer:
+            "Sí. Podemos revisar la distribución propuesta del techo y conversar sobre el diseño, la configuración y las opciones de productos como parte del proceso de planificación.",
+        },
+        {
+          number: "03",
+          question: "¿Cuáles son los términos de pago?",
+          answer:
+            "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+        },
+        {
+          number: "04",
+          question: "¿El trabajo tiene garantía?",
+          answer:
+            "La cobertura de garantía depende del sistema de techo de lamas motorizado, los productos y la instalación seleccionados. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+        },
+      ],
     },
-    {
-      number: "02",
-      question: "¿Puedo obtener un dibujo de mi proyecto?",
-      answer:
-        "Sí. Podemos revisar la distribución propuesta del techo y conversar sobre el diseño, la configuración y las opciones de productos como parte del proceso de planificación.",
-    },
-    {
-      number: "03",
-      question: "¿Cuáles son los términos de pago?",
-      answer:
-        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
-    },
-    {
-      number: "04",
-      question: "¿El trabajo tiene garantía?",
-      answer:
-        "La cobertura de garantía depende del sistema de techo de lamas motorizado, los productos y la instalación seleccionados. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
-    },
-  ],
-},
 
     relatedServices: [
       {
@@ -3407,7 +3543,24 @@ export const servicePages = {
         ],
       },
     },
-
+   estimateContent: {
+  en: {
+    virtualLabel: "Virtual Estimate",
+    virtualPrice: "Free",
+    inHomeLabel: "In-Person Estimate",
+    inHomePrice: "Free",
+    description:
+      "Virtual estimates are free. An in-person estimate is also available at no charge for outdoor kitchen projects.",
+  },
+  es: {
+    virtualLabel: "Estimado Virtual",
+    virtualPrice: "Gratis",
+    inHomeLabel: "Estimado Presencial",
+    inHomePrice: "Gratis",
+    description:
+      "Los estimados virtuales son gratuitos. También ofrecemos estimados presenciales sin costo para proyectos de cocinas al aire libre.",
+  },
+},
     offerings: {
       en: [
         {
@@ -3659,61 +3812,61 @@ export const servicePages = {
       ],
     },
 
-   faq: {
-  en: [
-    {
-      number: "01",
-      question: "Do you charge for estimates?",
-      answer:
-        "Virtual estimates are free. An in-person estimate is also available at no charge for outdoor kitchen projects.",
-    },
-    {
-      number: "02",
-      question: "Can I get a drawing of my project?",
-      answer:
-        "Yes. We can review the proposed outdoor kitchen layout and discuss the design, materials, finishes, and features as part of the project planning process.",
-    },
-    {
-      number: "03",
-      question: "What are the payment terms?",
-      answer:
-        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
-    },
-    {
-      number: "04",
-      question: "Is the work warrantied?",
-      answer:
-        "Warranty coverage depends on the specific outdoor kitchen components, materials, and installation selected. The applicable warranty details will be reviewed with you as part of the project.",
-    },
-  ],
+    faq: {
+      en: [
+        {
+          number: "01",
+          question: "Do you charge for estimates?",
+          answer:
+            "Virtual estimates are free. An in-person estimate is also available at no charge for outdoor kitchen projects.",
+        },
+        {
+          number: "02",
+          question: "Can I get a drawing of my project?",
+          answer:
+            "Yes. We can review the proposed outdoor kitchen layout and discuss the design, materials, finishes, and features as part of the project planning process.",
+        },
+        {
+          number: "03",
+          question: "What are the payment terms?",
+          answer:
+            "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+        },
+        {
+          number: "04",
+          question: "Is the work warrantied?",
+          answer:
+            "Warranty coverage depends on the specific outdoor kitchen components, materials, and installation selected. The applicable warranty details will be reviewed with you as part of the project.",
+        },
+      ],
 
-  es: [
-    {
-      number: "01",
-      question: "¿Cobran por los estimados?",
-      answer:
-        "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de cocinas exteriores.",
+      es: [
+        {
+          number: "01",
+          question: "¿Cobran por los estimados?",
+          answer:
+            "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de cocinas exteriores.",
+        },
+        {
+          number: "02",
+          question: "¿Puedo obtener un dibujo de mi proyecto?",
+          answer:
+            "Sí. Podemos revisar la distribución propuesta de la cocina exterior y conversar sobre el diseño, materiales, acabados y características como parte del proceso de planificación.",
+        },
+        {
+          number: "03",
+          question: "¿Cuáles son los términos de pago?",
+          answer:
+            "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+        },
+        {
+          number: "04",
+          question: "¿El trabajo tiene garantía?",
+          answer:
+            "La cobertura de garantía depende de los componentes, materiales y la instalación seleccionados para la cocina exterior. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+        },
+      ],
     },
-    {
-      number: "02",
-      question: "¿Puedo obtener un dibujo de mi proyecto?",
-      answer:
-        "Sí. Podemos revisar la distribución propuesta de la cocina exterior y conversar sobre el diseño, materiales, acabados y características como parte del proceso de planificación.",
-    },
-    {
-      number: "03",
-      question: "¿Cuáles son los términos de pago?",
-      answer:
-        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
-    },
-    {
-      number: "04",
-      question: "¿El trabajo tiene garantía?",
-      answer:
-        "La cobertura de garantía depende de los componentes, materiales y la instalación seleccionados para la cocina exterior. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
-    },
-  ],
-},
     relatedServices: [
       {
         number: "01",
@@ -3814,7 +3967,24 @@ export const servicePages = {
         ],
       },
     },
-
+    estimateContent: {
+      en: {
+        virtualLabel: "Virtual Estimate",
+        virtualPrice: "Free",
+        inHomeLabel: "In-Person Estimate",
+        inHomePrice: "Free",
+        description:
+          "Virtual estimates are free. An in-person estimate is also available at no charge for interior design projects.",
+      },
+      es: {
+        virtualLabel: "Estimado Virtual",
+        virtualPrice: "Gratis",
+        inHomeLabel: "Estimado Presencial",
+        inHomePrice: "Gratis",
+        description:
+          "Los estimados virtuales son gratuitos. También ofrecemos estimados presenciales sin costo para proyectos de diseño de interiores.",
+      },
+    },
     offerings: {
       en: [
         {
@@ -4066,61 +4236,61 @@ export const servicePages = {
       ],
     },
 
-  faq: {
-  en: [
-    {
-      number: "01",
-      question: "Do you charge for estimates?",
-      answer:
-        "Virtual estimates are free. An in-person estimate is also available at no charge for interior design projects.",
-    },
-    {
-      number: "02",
-      question: "Can I get a drawing of my project?",
-      answer:
-        "Yes. We can review your design needs and discuss drawings, layouts, and design concepts as part of the project planning process.",
-    },
-    {
-      number: "03",
-      question: "What are the payment terms?",
-      answer:
-        "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
-    },
-    {
-      number: "04",
-      question: "Is the work warrantied?",
-      answer:
-        "Warranty coverage depends on the specific products, materials, and services included in the project. The applicable warranty details will be reviewed with you as part of the project.",
-    },
-  ],
+    faq: {
+      en: [
+        {
+          number: "01",
+          question: "Do you charge for estimates?",
+          answer:
+            "Virtual estimates are free. An in-person estimate is also available at no charge for interior design projects.",
+        },
+        {
+          number: "02",
+          question: "Can I get a drawing of my project?",
+          answer:
+            "Yes. We can review your design needs and discuss drawings, layouts, and design concepts as part of the project planning process.",
+        },
+        {
+          number: "03",
+          question: "What are the payment terms?",
+          answer:
+            "Payment terms depend on the project scope and agreement. The payment schedule will be reviewed with you before work begins.",
+        },
+        {
+          number: "04",
+          question: "Is the work warrantied?",
+          answer:
+            "Warranty coverage depends on the specific products, materials, and services included in the project. The applicable warranty details will be reviewed with you as part of the project.",
+        },
+      ],
 
-  es: [
-    {
-      number: "01",
-      question: "¿Cobran por los estimados?",
-      answer:
-        "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de diseño de interiores.",
+      es: [
+        {
+          number: "01",
+          question: "¿Cobran por los estimados?",
+          answer:
+            "Los estimados virtuales son gratis. También hay estimados en persona disponibles sin costo para proyectos de diseño de interiores.",
+        },
+        {
+          number: "02",
+          question: "¿Puedo obtener un dibujo de mi proyecto?",
+          answer:
+            "Sí. Podemos revisar sus necesidades de diseño y conversar sobre dibujos, distribuciones y conceptos de diseño como parte del proceso de planificación.",
+        },
+        {
+          number: "03",
+          question: "¿Cuáles son los términos de pago?",
+          answer:
+            "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
+        },
+        {
+          number: "04",
+          question: "¿El trabajo tiene garantía?",
+          answer:
+            "La cobertura de garantía depende de los productos, materiales y servicios específicos incluidos en el proyecto. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
+        },
+      ],
     },
-    {
-      number: "02",
-      question: "¿Puedo obtener un dibujo de mi proyecto?",
-      answer:
-        "Sí. Podemos revisar sus necesidades de diseño y conversar sobre dibujos, distribuciones y conceptos de diseño como parte del proceso de planificación.",
-    },
-    {
-      number: "03",
-      question: "¿Cuáles son los términos de pago?",
-      answer:
-        "Los términos de pago dependen del alcance y acuerdo del proyecto. El calendario de pagos se revisará con usted antes de comenzar el trabajo.",
-    },
-    {
-      number: "04",
-      question: "¿El trabajo tiene garantía?",
-      answer:
-        "La cobertura de garantía depende de los productos, materiales y servicios específicos incluidos en el proyecto. Los detalles de la garantía aplicable se revisarán con usted como parte del proyecto.",
-    },
-  ],
-},
 
     relatedServices: [
       {
@@ -4221,7 +4391,24 @@ export const servicePages = {
         ],
       },
     },
-
+    estimateContent: {
+      en: {
+        virtualLabel: "Virtual Estimate",
+        virtualPrice: "Free",
+        inHomeLabel: "In-Person Estimate",
+        inHomePrice: "Free",
+        description:
+  "We offer complimentary virtual estimates, with in-person consultations available when needed.",
+      },
+      es: {
+        virtualLabel: "Estimado Virtual",
+        virtualPrice: "Gratis",
+        inHomeLabel: "Estimado en Casa",
+        inHomePrice: "Gratis",
+        description:
+  "Ofrecemos estimados virtuales gratuitos y consultas presenciales cuando sea necesario.",
+      },
+    },
     offerings: {
       en: [
         {

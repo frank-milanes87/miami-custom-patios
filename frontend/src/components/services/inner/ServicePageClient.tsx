@@ -50,6 +50,23 @@ type ServicePageClientProps = {
                 paragraphs: readonly string[];
             };
         };
+        
+estimateContent?: {
+  en: {
+    virtualLabel: string;
+    virtualPrice: string;
+    inHomeLabel: string;
+    inHomePrice: string;
+    description: string;
+  };
+  es: {
+    virtualLabel: string;
+    virtualPrice: string;
+    inHomeLabel: string;
+    inHomePrice: string;
+    description: string;
+  };
+};
 
         offerings?: {
             en: readonly {
@@ -184,7 +201,9 @@ export default function ServicePageClient({
                 projectLabel={service.projectLabel}
             />
 
-            <ServiceEstimateBar />
+          {service.estimateContent && (
+  <ServiceEstimateBar content={service.estimateContent[lang]} />
+)}
 
             <ServiceSectionNav />
 
